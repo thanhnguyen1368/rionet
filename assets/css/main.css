@@ -112,9 +112,20 @@ a {
   .header--login .container {
     max-width: 890px; }
 
+.footer {
+  padding: 50px 0 40px;
+  background-color: #0A4CE0;
+  color: #fff;
+  text-align: center; }
+  .footer__logo {
+    margin-bottom: 45px; }
+  .footer__copyright {
+    font-size: 10px;
+    font-weight: 500; }
+
 .login-form {
   max-width: 400px;
-  margin: auto;
+  margin: 50px auto 80px;
   font-size: 14px; }
   .login-form .form-group {
     margin-bottom: 10px; }
@@ -196,7 +207,7 @@ a {
 
 .login-form {
   max-width: 400px;
-  margin: auto;
+  margin: 50px auto 80px;
   font-size: 14px; }
   .login-form .form-group {
     margin-bottom: 10px; }
