@@ -1,3 +1,9 @@
 .header {
+    padding: 10px 0px;
+    &--login {
+        .container {
+            max-width: 890px;
+        }
 
+    }
 }
