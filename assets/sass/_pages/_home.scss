@@ -746,13 +746,19 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: nowrap;
-                overflow-x: scroll;
                 a {
                     display: flex;
                     padding-right: 50px;
                     img {
                         padding-right: 5px;
                     }
+                }
+            }
+        }
+        @media (max-width:992px) {
+            .anchor-links {
+                .list {
+                    overflow-x: scroll;
                 }
             }
         }

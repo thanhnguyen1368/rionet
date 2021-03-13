@@ -99,3 +99,97 @@
     padding: 30px 0;
     font-size: 16px;
 }
+
+.convinient {
+    margin-bottom: 40px;
+    .container {
+        .content {
+            background: #EDF2F7;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            padding: 3% 0 2%;
+            align-items: center;
+            .explain {
+                width: 35%;
+                p {
+                    color: #0A4CE0;
+                    width: 70%;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #0A4CE0;
+                    background: white;
+                    border-radius: 30px;
+                    color: #0A4CE0;
+                    transition: .5s;
+                    width: 60%;
+                    margin-top: 15px;
+                    &:hover {
+                        background: #0A4CE0;
+                        color: white;
+                        img {
+                            filter: grayscale(100%) brightness(110%) contrast(3) invert(100%);
+                        }
+                    }
+                    img {
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .demo {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.sec-convinient__search {
+    .container {
+        .content {
+            .demo {
+                width: 40%;
+                position: relative;
+                .light {
+                    position: absolute;
+                }
+                .light1 {
+                    top: -4%;
+                    left: -24%;
+                }
+                .light2 {
+                    top: -10%;
+                    left: 10%;
+                }
+                .light3 {
+                    right: 25%;
+                    top: -5%;
+                }
+            }
+        }
+    }
+}
+
+.sec-convinient__video {
+    .container {
+        .content {
+            .demo {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.sec-convinient__list {
+    .container {
+        .content {
+            .demo {
+                width: 40%;
+            }
+        }
+    }
+}

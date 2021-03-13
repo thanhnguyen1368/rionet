@@ -792,13 +792,15 @@ a {
   .sec-connect .container .anchor-links .list {
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll; }
+    flex-wrap: nowrap; }
     .sec-connect .container .anchor-links .list a {
       display: flex;
       padding-right: 50px; }
       .sec-connect .container .anchor-links .list a img {
         padding-right: 5px; }
+  @media (max-width: 992px) {
+    .sec-connect .container .anchor-links .list {
+      overflow-x: scroll; } }
   @media (max-width: 768px) {
     .sec-connect .container .list-connect {
       justify-content: space-between; }
@@ -1000,5 +1002,63 @@ a {
 .general-introduce {
   padding: 30px 0;
   font-size: 16px; }
+
+.convinient {
+  margin-bottom: 40px; }
+  .convinient .container .content {
+    background: #EDF2F7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0 2%;
+    align-items: center; }
+    .convinient .container .content .explain {
+      width: 35%; }
+      .convinient .container .content .explain p {
+        color: #0A4CE0;
+        width: 70%;
+        font-size: 20px;
+        font-weight: 600; }
+      .convinient .container .content .explain .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0A4CE0;
+        background: white;
+        border-radius: 30px;
+        color: #0A4CE0;
+        transition: .5s;
+        width: 60%;
+        margin-top: 15px; }
+        .convinient .container .content .explain .btn:hover {
+          background: #0A4CE0;
+          color: white; }
+          .convinient .container .content .explain .btn:hover img {
+            filter: grayscale(100%) brightness(110%) contrast(3) invert(100%); }
+        .convinient .container .content .explain .btn img {
+          padding-left: 10px; }
+    .convinient .container .content .demo {
+      width: 40%; }
+
+.sec-convinient__search .container .content .demo {
+  width: 40%;
+  position: relative; }
+  .sec-convinient__search .container .content .demo .light {
+    position: absolute; }
+  .sec-convinient__search .container .content .demo .light1 {
+    top: -4%;
+    left: -24%; }
+  .sec-convinient__search .container .content .demo .light2 {
+    top: -10%;
+    left: 10%; }
+  .sec-convinient__search .container .content .demo .light3 {
+    right: 25%;
+    top: -5%; }
+
+.sec-convinient__video .container .content .demo {
+  width: 40%; }
+
+.sec-convinient__list .container .content .demo {
+  width: 40%; }
 
 /*# sourceMappingURL=main.css.map */
