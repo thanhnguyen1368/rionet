@@ -205,6 +205,198 @@ a {
   .slick-dots li.slick-active button:before {
     background-color: #0A4CE0; }
 
+.sec-introduce {
+  font-family: 'Noto Sans JP', sans-serif; }
+  .sec-introduce h1 {
+    color: #222222;
+    text-align: center;
+    font-size: 26px;
+    font-weight: medium;
+    padding: 10% 0; }
+  .sec-introduce .content {
+    padding-bottom: 7%; }
+    .sec-introduce .content dt {
+      color: #0A4CE0;
+      padding-bottom: 10px;
+      display: flex; }
+      .sec-introduce .content dt img {
+        padding-right: 10px; }
+      .sec-introduce .content dt:first-child {
+        border-bottom: 1px solid #0A4CE0;
+        margin-bottom: 10px; }
+      .sec-introduce .content dt h2 {
+        font-weight: medium;
+        font-size: 24px; }
+      .sec-introduce .content dt h3 {
+        font-size: 20px;
+        font-weight: medium; }
+      .sec-introduce .content dt h4 {
+        font-weight: medium;
+        font-size: 18px; }
+    .sec-introduce .content dd {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px 0 30px; }
+    .sec-introduce .content a {
+      font-size: 16px;
+      padding-bottom: 2px; }
+      .sec-introduce .content a img {
+        padding-right: 5px; }
+  .sec-introduce .less {
+    padding-top: 7%; }
+    .sec-introduce .less dl dt {
+      padding: 16px 0; }
+
+.sec-sampleImg {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 30px 0;
+  color: #333333; }
+  .sec-sampleImg .container .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0A4CE0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0A4CE0; }
+  .sec-sampleImg .container .content {
+    padding-bottom: 7%;
+    padding-top: 20px; }
+    .sec-sampleImg .container .content h2 {
+      display: flex;
+      align-items: center;
+      color: #0A4CE0;
+      font-size: 20px; }
+      .sec-sampleImg .container .content h2 img {
+        padding-right: 10px; }
+    .sec-sampleImg .container .content .text-full {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333333;
+      padding-bottom: 20px; }
+    .sec-sampleImg .container .content .row {
+      padding: 20px 0; }
+      .sec-sampleImg .container .content .row .text {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333333; }
+      .sec-sampleImg .container .content .row .img {
+        background: #E5E5E5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; }
+        .sec-sampleImg .container .content .row .img p {
+          width: 35%;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 600;
+          color: #F70214; }
+  .sec-sampleImg .container .content2 p {
+    font-size: 16px;
+    color: #333333;
+    padding-top: 15px;
+    font-weight: 500; }
+  .sec-sampleImg .container .content2 .group_image2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0; }
+    .sec-sampleImg .container .content2 .group_image2 .img {
+      width: 47%;
+      display: flex;
+      background: #E5E5E5;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 11% 0; }
+      .sec-sampleImg .container .content2 .group_image2 .img p {
+        width: 40%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        color: #F70214; }
+  .sec-sampleImg .container .content3 .row .img p {
+    width: 49%; }
+  .sec-sampleImg .container .content5 .text-full {
+    padding-top: 20px; }
+  .sec-sampleImg .container .content5 p {
+    font-weight: 500; }
+  .sec-sampleImg .container .content5 .img {
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30%;
+    margin-bottom: 10px; }
+    .sec-sampleImg .container .content5 .img p {
+      width: 50%;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: #F70214; }
+  .sec-sampleImg .container .content9 .vertical_ex {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start; }
+    .sec-sampleImg .container .content9 .vertical_ex .item {
+      display: flex;
+      flex-direction: column;
+      width: 17%;
+      margin: 0 15px; }
+      .sec-sampleImg .container .content9 .vertical_ex .item:first-child {
+        margin-left: 0; }
+      .sec-sampleImg .container .content9 .vertical_ex .item .rectangle {
+        width: 168px;
+        height: 252px;
+        background: #E5E5E5; }
+      .sec-sampleImg .container .content9 .vertical_ex .item p {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 0; }
+
+.sec-table-design .container .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0A4CE0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0A4CE0; }
+.sec-table-design .container .design1 {
+  padding: 20px 0; }
+  .sec-table-design .container .design1 table {
+    border-top: 1px solid #8C98C2;
+    border-bottom: 1px solid #8C98C2; }
+    .sec-table-design .container .design1 table tr td:nth-child(1),
+    .sec-table-design .container .design1 table tr th:nth-child(1) {
+      background: #EFF2FA;
+      width: 12.5%; }
+    .sec-table-design .container .design1 table tr:nth-child(2) {
+      border-bottom: 1px solid #8C98C2; }
+    .sec-table-design .container .design1 table th {
+      padding-top: 2%;
+      padding-left: 2%; }
+      .sec-table-design .container .design1 table th:last-child {
+        padding: 2% 0 .5% 5%; }
+    .sec-table-design .container .design1 table td:last-child {
+      padding: 2%;
+      padding-top: 0; }
+      .sec-table-design .container .design1 table td:last-child .img {
+        width: 47%;
+        display: flex;
+        background: #E5E5E5;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 8% 0;
+        margin: 10px 0; }
+        .sec-table-design .container .design1 table td:last-child .img p {
+          width: 45%;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 600;
+          color: #F70214; }
+
 .login-form {
   max-width: 400px;
   margin: 50px auto 80px;

@@ -1,7 +1,6 @@
 @import "../libs/bootstrap/css/bootstrap.css";
 @import "../libs/wowjs/css/animate.css";
 @import "../libs/slick_slider/css/slick.css";
-
 @import "_mixin/base";
 @import "_mixin/fonts";
 @import "_mixin/common";
@@ -9,12 +8,10 @@
 @import "_mixin/button";
 @import "_mixin/pagination";
 @import "_mixin/breadcrumb";
-
 // Component
 @import "_components/base";
 @import "_components/header";
 @import "_components/footer";
-
 // Page
 @import "_pages/login";
 @import "_pages/home";
