@@ -1,7 +1,9 @@
 var isClicked = false;
 $(document).ready(function(){
 
-
+    $('.btn-menu').click(function() {
+        $(this).toggleClass('active');
+    });
   /*----Slick slider----*/
   $('.slider-login').slick({
 		centerMode: false,

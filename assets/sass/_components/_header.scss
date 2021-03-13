@@ -1,9 +1,111 @@
 .header {
-    padding: 10px 0px;
+    box-shadow: 4px 12px 47px 0 rgba(0,0,0,.1);
     &--login {
+        padding: 10px 0px;
         .container {
             max-width: 890px;
         }
 
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            padding-left: 30px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+
+        .text {
+            color: $color-black-2;
+            padding-right: 24px;
+        }
+
+        .button {
+            background-color: $color-orange;
+            color: $color-white;
+            border: none;
+            border-radius: 8px;
+            padding: 5px 25px;
+            margin-right: 20px;
+            outline: none;
+        }
+
+        .btn-menu {
+            position: relative;
+            background: $color-primary;
+            cursor: pointer;
+            width: 65px;
+            height: 65px;
+            margin-top: -7px;
+            -webkit-transition: all ease .238s;
+            -moz-transition: all ease .238s;
+            transition: all ease .238s;
+
+            &:before, &:after, span {
+                background-color: $color-white;
+                -webkit-transition: all ease .238s;
+                -moz-transition: all ease .238s;
+                transition: all ease .238s;
+            }
+
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                height: 2px;
+                width: 28px;
+                left: 22px;
+                top: 50%;
+                -webkit-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+
+            span {
+                position: absolute;
+                width: 28px;
+                height: 2px;
+                left: 22px;
+                top: 50%;
+                overflow: hidden;
+                text-indent: 200%;
+            }
+
+            &:before {
+                transform: translate3d(0, -10px, 0);
+            }
+
+            &:after {
+                transform: translate3d(0, 10px, 0);
+            }
+
+            &.active {
+                span {
+                    opacity: 0;
+                }
+
+                &:before {
+                    background-color: $color-white;
+                    transform: rotate3d(0, 0, 1, 45deg);
+                }
+
+                &:after {
+                    background-color: $color-white;
+                    transform: rotate3d(0, 0, 1, -45deg);
+                }
+            }
+        }
+
+        @media (max-width: 992px) {
+            .text , .button {
+                display: none;
+            }
+        }
     }
 }
