@@ -6,6 +6,7 @@
     line-height: 20px;
     display: inline-block;
     width: 100%;
+    margin-bottom: 30px;
 
     &__thumb {
         float: left;
@@ -115,6 +116,81 @@
             overflow: initial;
             .title {
                 margin-bottom: 10px;
+            }
+
+            .des {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.video-box {
+    background-color: $color-gray;
+    padding: 15px 10% 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+
+    &__thumb {
+        position: relative;
+        margin-bottom: 5px;
+
+        img {
+            width: 100%;
+        }
+
+        &:before {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: url(../images/play.svg) center no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            pointer-events: none;
+        }
+
+        &.style-2 {
+            &:before {
+                background: url(../images/play-active.svg) center no-repeat;
+            }
+        }
+    }
+
+    &__content {
+        .meta {
+            font-size: 13px;
+            font-weight: 500;
+            color: $color-black-2;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .check-input {
+            width: 18px;
+            height: 18px;
+        }
+
+        .title {
+            color: $color-primary;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 3px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 15px 15px 20px;
+
+        &__content {
+            .title {
+                margin-bottom: 8px;
             }
 
             .des {
