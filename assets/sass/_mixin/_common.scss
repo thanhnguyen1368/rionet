@@ -24,8 +24,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   font-family: 'NotoSansCJKjp', sans-serif;
-  background-color: #fff;
-  color: #333333;
+  background-color: $color-white;
+  color: $color-theme;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -40,6 +40,11 @@ h1,h2,h3,h4,h5,h6 {
 
 ol, ul {
 	list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+    transition: all 0.3s;
 }
 blockquote, q {
 	quotes: none;
