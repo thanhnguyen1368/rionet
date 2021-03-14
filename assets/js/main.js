@@ -48,3 +48,30 @@ var wow = new WOW(
   }
 );
 wow.init();
+
+
+function choose_item(elm) {
+    $(elm).click(function(e) {
+        e.preventDefault();
+		$(this).toggleClass('has_under_open');
+        $(this).next().toggleClass('show');
+
+    })
+}
+$('.nav-tabs .nav-link').on("click",function(e){
+	$('.nav-tabs__choose').text($(this).text())
+	$('.nav-tabs').removeClass('show');
+})
+//Choose Item
+choose_item('.nav-tabs__choose');
+
+/**/
+$('.js-ckeck-all').on("click",function(){
+	$(this).toggleClass('is-click');
+
+	if($(this).hasClass('is-click')){
+		$(this).parents('section').find('.check-input').prop('checked', true);
+	}else{
+		$(this).parents('section').find('.check-input').prop('checked', false);
+	}
+});

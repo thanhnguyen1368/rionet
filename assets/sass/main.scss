@@ -14,11 +14,11 @@
 @import "_mixin/breadcrumb";
 
 // Component
+@import "_components/icomoon";
 @import "_components/base";
 @import "_components/header";
 @import "_components/footer";
-
 // Page
 @import "_pages/login";
 @import "_pages/home";
-@import "_pages/login";
+@import "_pages/product-info";
