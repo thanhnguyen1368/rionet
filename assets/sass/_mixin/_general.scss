@@ -27,6 +27,9 @@
             font-size: 12px;
             font-weight: 500;
             min-width: 68px;
+            a {
+                color: $color-white;
+            }
         }
         .meta {
             font-size: 13px;
