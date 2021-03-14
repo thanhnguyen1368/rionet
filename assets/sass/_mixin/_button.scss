@@ -27,4 +27,24 @@
             transition: all 0.3s;
         }
     }
+
+    &.style-2 {
+        color: $color-gray-3;
+        border-color: $color-gray-3;
+        padding: 4px 10px 5px;
+        min-width: 130px;
+    }
+
+    &.style-3 {
+        position: relative;
+        color: $color-primary;
+        border-color: $color-primary;
+        padding: 10px 10px;
+        min-width: 160px;
+        border-radius: 30px;
+
+        &:before {
+            right: 16px;
+        }
+    }
 }
