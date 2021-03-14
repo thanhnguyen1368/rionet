@@ -1,0 +1,79 @@
+.section-page {
+    .container {
+        .wrapper-page {
+            .content-top {
+                border-bottom: none;
+            }
+            .content-top__right {
+                a {
+                    border: 1px solid #0A4CE0;
+                    color: #0A4CE0;
+                    transition: .5s;
+                    &:last-child {
+                        margin-left: 10px;
+                    }
+                    &:hover {
+                        background: #0A4CE0;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        .title-page {
+            p:last-child {
+                font-size: 20px;
+                font-weight: 500;
+                margin: 3% 0;
+            }
+        }
+        .image-box {
+            .image-box__content {
+                .button:nth-child(2) {
+                    background: $color-white;
+                    color: #0A4CE0;
+                    border: 1px solid #0A4CE0;
+                }
+                @media (max-width:992px) {
+                    .button {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .style1 {
+            .image-box__content {
+                .title {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+                .des {
+                    font-size: 16px;
+                }
+                .gr_btn {
+                    margin-top: 20px;
+                    a {
+                        color: #0A4CE0;
+                        margin-right: 10px;
+                    }
+                    span {
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-top__news {
+    border-bottom: 1.5px solid #0A4CE0 !important;
+    .button {
+        color: #707070 !important;
+        border: #707070 1px solid !important;
+        box-sizing: border-box;
+        &:hover {
+            color: white !important;
+            border: #0A4CE0 1px solid !important;
+        }
+    }
+}
