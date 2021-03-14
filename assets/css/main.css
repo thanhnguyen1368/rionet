@@ -1081,15 +1081,17 @@ a {
         font-size: 24px; }
       .sec-introduce .content dt h3 {
         font-size: 20px;
-        font-weight: medium; }
+        font-weight: medium;
+        position: relative;
+        padding-left: 12px; }
         .sec-introduce .content dt h3::before {
+          position: absolute;
           content: "";
-          width: 0;
-          height: 0;
-          border-top: 0 solid transparent;
-          border-left: 3px solid #0A4CE0;
-          border-bottom: 0 solid transparent;
-          padding-left: 15px; }
+          width: 2px;
+          height: 25px;
+          background: #0A4CE0;
+          left: 0;
+          top: 0; }
       .sec-introduce .content dt h4 {
         font-weight: medium;
         font-size: 18px; }
@@ -1100,11 +1102,15 @@ a {
     .sec-introduce .content a {
       font-size: 16px;
       padding-bottom: 2px;
-      position: relative; }
+      position: relative;
+      padding-left: 10px; }
       .sec-introduce .content a::before {
         content: "";
+        position: absolute;
         width: 0;
         height: 0;
+        top: 5px;
+        left: 0;
         border-style: solid;
         border-width: 2.5px 0 2.5px 5px;
         border-color: transparent transparent transparent #0A4CE0; }
@@ -1135,15 +1141,17 @@ a {
     padding-top: 20px; }
     .sec-sampleImg .container .content h2 {
       color: #0A4CE0;
-      font-size: 20px; }
+      font-size: 20px;
+      padding-left: 12px;
+      position: relative; }
       .sec-sampleImg .container .content h2::before {
+        position: absolute;
         content: "";
-        width: 0;
-        height: 0;
-        border-top: 0 solid transparent;
-        border-left: 3px solid #0A4CE0;
-        border-bottom: 0 solid transparent;
-        padding-left: 15px; }
+        width: 2px;
+        height: 25px;
+        background: #0A4CE0;
+        left: 0;
+        top: 0; }
     .sec-sampleImg .container .content .text-full {
       text-align: left;
       font-size: 16px;
@@ -1458,15 +1466,17 @@ a {
     color: #0A4CE0;
     font-size: 18px;
     font-weight: 600;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-left: 12px;
+    position: relative; }
     .sec-price-setting .container .title::before {
+      position: absolute;
       content: "";
-      width: 0;
-      height: 0;
-      border-top: 0 solid transparent;
-      border-left: 3px solid #0A4CE0;
-      border-bottom: 0 solid transparent;
-      padding-left: 15px; }
+      width: 2px;
+      height: 25px;
+      background: #0A4CE0;
+      left: 0;
+      top: 0; }
   .sec-price-setting .container .letter {
     background: #EFF2FA;
     border-top: 1px solid #8C98C2;
@@ -1572,15 +1582,17 @@ a {
         background: url(../images/down.svg) center no-repeat; }
   .sec-connect .container .anchor-links .title {
     border: none;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-left: 12px;
+    position: relative; }
     .sec-connect .container .anchor-links .title::before {
+      position: absolute;
       content: "";
-      width: 0;
-      height: 0;
-      border-top: 0 solid transparent;
-      border-left: 3px solid #0A4CE0;
-      border-bottom: 0 solid transparent;
-      padding-left: 15px; }
+      width: 2px;
+      height: 25px;
+      background: #0A4CE0;
+      left: 0;
+      top: 0; }
   .sec-connect .container .anchor-links .list {
     width: 100%;
     display: flex;

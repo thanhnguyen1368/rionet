@@ -28,14 +28,16 @@
             h3 {
                 font-size: 20px;
                 font-weight: medium;
+                position: relative;
+                padding-left: 12px;
                 &::before {
+                    position: absolute;
                     content: "";
-                    width: 0;
-                    height: 0;
-                    border-top: 0 solid transparent;
-                    border-left: 3px solid #0A4CE0;
-                    border-bottom: 0 solid transparent;
-                    padding-left: 15px;
+                    width: 2px;
+                    height: 25px;
+                    background: #0A4CE0;
+                    left: 0;
+                    top: 0;
                 }
             }
             h4 {
@@ -52,10 +54,14 @@
             font-size: 16px;
             padding-bottom: 2px;
             position: relative;
+            padding-left: 10px;
             &::before {
                 content: "";
+                position: absolute;
                 width: 0;
                 height: 0;
+                top: 5px;
+                left: 0;
                 border-style: solid;
                 border-width: 2.5px 0 2.5px 5px;
                 border-color: transparent transparent transparent #0A4CE0;
@@ -103,14 +109,16 @@
             h2 {
                 color: #0A4CE0;
                 font-size: 20px;
+                padding-left: 12px;
+                position: relative;
                 &::before {
+                    position: absolute;
                     content: "";
-                    width: 0;
-                    height: 0;
-                    border-top: 0 solid transparent;
-                    border-left: 3px solid #0A4CE0;
-                    border-bottom: 0 solid transparent;
-                    padding-left: 15px;
+                    width: 2px;
+                    height: 25px;
+                    background: #0A4CE0;
+                    left: 0;
+                    top: 0;
                 }
             }
             .text-full {
@@ -610,14 +618,16 @@
             font-size: 18px;
             font-weight: 600;
             padding-bottom: 20px;
+            padding-left: 12px;
+            position: relative;
             &::before {
+                position: absolute;
                 content: "";
-                width: 0;
-                height: 0;
-                border-top: 0 solid transparent;
-                border-left: 3px solid #0A4CE0;
-                border-bottom: 0 solid transparent;
-                padding-left: 15px;
+                width: 2px;
+                height: 25px;
+                background: #0A4CE0;
+                left: 0;
+                top: 0;
             }
         }
         .letter {
@@ -766,14 +776,16 @@
             .title {
                 border: none;
                 margin-bottom: 10px;
+                padding-left: 12px;
+                position: relative;
                 &::before {
+                    position: absolute;
                     content: "";
-                    width: 0;
-                    height: 0;
-                    border-top: 0 solid transparent;
-                    border-left: 3px solid #0A4CE0;
-                    border-bottom: 0 solid transparent;
-                    padding-left: 15px;
+                    width: 2px;
+                    height: 25px;
+                    background: #0A4CE0;
+                    left: 0;
+                    top: 0;
                 }
             }
             .list {
