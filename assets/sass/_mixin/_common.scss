@@ -108,13 +108,15 @@ section {
 }
 
 body {
-    font-family: 'NotoSansCJKjp', sans-serif;
-    background-color: #fff;
-    color: #333333;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+=======
+  font-family: 'NotoSansCJKjp', sans-serif;
+  background-color: $color-white;
+  color: $color-theme;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
 }
 
 h1,
@@ -132,9 +134,13 @@ ul {
     list-style: none;
 }
 
-blockquote,
-q {
-    quotes: none;
+
+a, a:hover {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+blockquote, q {
+	quotes: none;
 }
 
 blockquote:before,

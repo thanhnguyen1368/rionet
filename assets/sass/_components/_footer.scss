@@ -3,11 +3,118 @@
     background-color: #0A4CE0;
     color: #fff;
     text-align: center;
+    font-size: 14px;
+
     &__logo{
         margin-bottom: 45px;
     }
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 680px;
+        margin: 0 auto 45px;
+        text-align: left;
+
+        &-item {
+            width: 33.333333%;
+            padding-left: 30px;
+
+            a {
+                position: relative;
+                display: block;
+                max-width: 170px;
+                color: $color-white;
+                font-weight: 500;
+                margin-bottom: 20px;
+
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 6px;
+                    height: 10px;
+                    transform: translateY(-50%);
+                    content: "";
+                    background: url(../images/arrow-right.svg) center no-repeat;
+                    background-size: cover;
+                    transition: all 0.3s;
+                }
+
+                &:hover {
+                    &:after {
+                        transform: translateY(-50%) translateX(5px);
+                    }
+                }
+            }
+
+            &:first-child, &:nth-child(4) {
+                padding-left: 0;
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto 50px;
+        &-item {
+            width: 25%;
+            padding: 0px 5px;
+
+            .button {
+                width: 100%;
+                font-size: 12px;
+
+                &:hover {
+                    background: rgba(255,255,255,0.6);
+                    color: $color-primary;
+                }
+            }
+        }
+    }
     &__copyright{
+        font-family: 'Montserrat', sans-serif;
         font-size: 10px;
         font-weight: 500;
+    }
+
+    @media (max-width: 992px) {
+        padding-bottom: 60px;
+        &__menu {
+            margin-bottom: 25px;
+        }
+        &__button {
+            margin-bottom: 30px;
+            &-item {
+                width: 50%;
+                padding: 0 5px 10px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        font-size: 16px;
+
+        &__menu {
+            &-item {
+                width: 100%;
+                padding-left: 0;
+                a {
+                    font-weight: 500;
+                    max-width: 100%;
+                }
+            }
+        }
+        &__button {
+            &-item {
+                width: 100%;
+                padding: 0 0px 10px;
+
+                .button {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }

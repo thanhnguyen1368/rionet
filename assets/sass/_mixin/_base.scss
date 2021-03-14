@@ -805,7 +805,7 @@
     @if($align-items){
         @include align-items($align-items);
     }
-    
+
 }
 // Ex $width: 30% ...
 @mixin flex-col($width) {
@@ -814,3 +814,18 @@
     flex: 0 0 $width;
     max-width: $width;
 }
+// color
+$color-primary: #0A4CE0;
+$color-white: #fff;
+$color-theme: #333333;
+$color-black-2: #222222;
+$color-black-3: #3B4043;
+$color-orange: #ED5714;
+$color-gray: #F4F9FF;
+$color-gray-2: #F0F3F5;
+$color-gray-3:#707070;
+$color-gray-4:#E8E8E8;
+$color-red: #FF0000;
+$color-green: #46B161;
+$color-blue: #ECF0FA;
+

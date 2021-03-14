@@ -1,3 +1,4 @@
+
 .breadcrumbs {
     .breadcrumb {}
 }
@@ -9,3 +10,57 @@
 @media ( min-width: 1024px) {
     .breadcrumbs {}
 }
+
+.breadcrumb-page {
+  background-color: $color-gray-2;
+}
+
+.breadcrumb {
+    background: transparent;
+    color: $color-black-3;
+    font-size: 12px;
+    padding: 17px 0;
+    &__item {
+        position: relative;
+        padding-right: 20px;
+        margin-right: 10px;
+        a {
+            color: $color-black-3;
+
+            img {
+                margin-right: 5px;
+            }
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 8px;
+            height: 100%;
+            content: ">";
+            color: $color-black-3;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            &:after {
+                content: none;
+            }
+        }
+
+        @media ( max-width: 479px ) {
+            padding-right: 17px;
+            margin-right: 7px;
+        }
+    }
+}
+
+
+
+

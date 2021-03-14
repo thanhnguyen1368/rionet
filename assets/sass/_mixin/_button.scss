@@ -1,0 +1,50 @@
+.button {
+    position: relative;
+    border: 1px solid $color-white;
+    outline: none;
+    color: $color-white;
+    padding: 9px 25px;
+    display: inline-block;
+    border-radius: 8px;
+    min-width: 68px;
+    text-align: center;
+
+    &:hover {
+        color: $color-white;
+    }
+
+    &.download {
+        &:before {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            width: 15px;
+            height: 12px;
+            transform: translateY(-50%);
+            content: "";
+            background: url(../images/icon-download.svg) center no-repeat;
+            background-size: cover;
+            transition: all 0.3s;
+        }
+    }
+
+    &.style-2 {
+        color: $color-gray-3;
+        border-color: $color-gray-3;
+        padding: 4px 10px 5px;
+        min-width: 130px;
+    }
+
+    &.style-3 {
+        position: relative;
+        color: $color-primary;
+        border-color: $color-primary;
+        padding: 10px 10px;
+        min-width: 160px;
+        border-radius: 30px;
+
+        &:before {
+            right: 16px;
+        }
+    }
+}
