@@ -1,31 +1,26 @@
 .header {
-    box-shadow: 4px 12px 47px 0 rgba(0,0,0,.1);
+    box-shadow: 4px 12px 47px 0 rgba(0, 0, 0, .1);
     &--login {
         padding: 10px 0px;
         .container {
             max-width: 890px;
         }
-
     }
     &__wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         .logo {
             padding-left: 30px;
         }
     }
-
     &-content {
         display: flex;
         align-items: center;
-
         .text {
             color: $color-black-2;
             padding-right: 24px;
         }
-
         .button {
             background-color: $color-orange;
             color: $color-white;
@@ -34,8 +29,10 @@
             padding: 5px 25px;
             margin-right: 20px;
             outline: none;
+            a {
+                color: $color-white;
+            }
         }
-
         .btn-menu {
             position: relative;
             background: $color-primary;
@@ -46,15 +43,16 @@
             -webkit-transition: all ease .238s;
             -moz-transition: all ease .238s;
             transition: all ease .238s;
-
-            &:before, &:after, span {
+            &:before,
+            &:after,
+            span {
                 background-color: $color-white;
                 -webkit-transition: all ease .238s;
                 -moz-transition: all ease .238s;
                 transition: all ease .238s;
             }
-
-            &:before, &:after {
+            &:before,
+            &:after {
                 content: '';
                 position: absolute;
                 top: 0;
@@ -66,7 +64,6 @@
                 -ms-transform-origin: 50% 50%;
                 transform-origin: 50% 50%;
             }
-
             span {
                 position: absolute;
                 width: 28px;
@@ -76,40 +73,36 @@
                 overflow: hidden;
                 text-indent: 200%;
             }
-
             &:before {
                 transform: translate3d(0, -10px, 0);
             }
-
             &:after {
                 transform: translate3d(0, 10px, 0);
             }
-
             &.active {
                 background-color: $color-gray-3;
                 span {
                     opacity: 0;
                 }
-
                 &:before {
                     background-color: $color-white;
                     transform: rotate3d(0, 0, 1, 45deg);
                 }
-
                 &:after {
                     background-color: $color-white;
                     transform: rotate3d(0, 0, 1, -45deg);
                 }
             }
         }
-
         @media (max-width: 992px) {
-            .text , .button {
+            .text,
+            .button {
                 display: none;
             }
         }
     }
 }
+
 .menu-nav {
     position: fixed;
     top: 58px;
@@ -123,38 +116,31 @@
     padding-top: 100px;
     z-index: 1001;
     transition: all 0.3s ease-in-out;
-
     &__link {
         display: flex;
         flex-wrap: wrap;
         max-width: 930px;
         margin: 0 auto 40px;
-
         .item {
             width: 33.333333%;
             padding-left: 55px;
-
             a {
                 position: relative;
                 display: block;
                 max-width: 190px;
                 font-weight: 500;
                 margin-bottom: 30px;
-
                 span {
                     display: block;
-
                     &.sub {
                         color: $color-primary;
                         font-size: 12px;
                         font-family: 'Montserrat', sans-serif;
                     }
-
                     &.name {
                         position: relative;
                         font-size: 18px;
                         color: $color-black-2;
-
                         &:after {
                             position: absolute;
                             top: 50%;
@@ -169,7 +155,6 @@
                         }
                     }
                 }
-
                 &:hover {
                     .name {
                         &:after {
@@ -178,8 +163,8 @@
                     }
                 }
             }
-
-            &:first-child, &:nth-child(4) {
+            &:first-child,
+            &:nth-child(4) {
                 padding-left: 30px;
             }
         }
@@ -192,17 +177,14 @@
         .item {
             width: 25%;
             padding: 0px 10px;
-
             .button {
                 width: 100%;
                 font-size: 16px;
                 color: $color-primary;
                 border-color: $color-primary;
-
                 &.download:before {
                     background-image: url(../images/login-icon1.png);
                 }
-
                 &:hover {
                     background: $color-primary;
                     color: $color-white;
@@ -210,7 +192,6 @@
             }
         }
     }
-
     .button-user {
         .button {
             background-color: $color-blue;
@@ -221,7 +202,6 @@
             min-width: 160px;
         }
     }
-
     @media (max-width: 1200px) {
         padding-top: 30px;
     }
@@ -233,17 +213,15 @@
             }
         }
     }
-
     @media (max-width: 767px) {
         &__link {
             .item {
                 width: 50%;
                 padding-left: 15px;
-
-                &:first-child, &:nth-child(4) {
+                &:first-child,
+                &:nth-child(4) {
                     padding-left: 15px;
                 }
-
                 a {
                     max-width: 215px;
                 }
@@ -255,11 +233,10 @@
             .item {
                 width: 100%;
                 padding-left: 0;
-
-                &:first-child, &:nth-child(4) {
+                &:first-child,
+                &:nth-child(4) {
                     padding-left: 0;
                 }
-
                 a {
                     max-width: 100%;
                 }
@@ -276,7 +253,6 @@
 
 .show-menu {
     overflow: hidden;
-
     .menu-nav {
         opacity: 1;
         visibility: visible;
