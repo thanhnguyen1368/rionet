@@ -1,3 +1,16 @@
+
+.breadcrumbs {
+    .breadcrumb {}
+}
+
+@media ( min-width: 768px) {
+    .breadcrumbs {}
+}
+
+@media ( min-width: 1024px) {
+    .breadcrumbs {}
+}
+
 .breadcrumb-page {
   background-color: $color-gray-2;
 }
@@ -47,6 +60,7 @@
         }
     }
 }
+
 
 
 
