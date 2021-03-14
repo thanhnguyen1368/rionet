@@ -1858,6 +1858,16 @@ a {
   .section-page .container .style1 .image-box__content .gr_btn span {
     color: #222222; }
 
+.content-top__news {
+  border-bottom: 1.5px solid #0A4CE0 !important; }
+  .content-top__news .button {
+    color: #707070 !important;
+    border: #707070 1px solid !important;
+    box-sizing: border-box; }
+    .content-top__news .button:hover {
+      color: white !important;
+      border: #0A4CE0 1px solid !important; }
+
 .wrapper-page {
   margin: 10% 0; }
   .wrapper-page .content-top__detail {
