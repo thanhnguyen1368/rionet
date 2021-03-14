@@ -11,14 +11,19 @@
 @import "_mixin/pagination";
 @import "_mixin/breadcrumb";
 // Component
+@import "_components/icomoon";
 @import "_components/base";
 @import "_components/header";
 @import "_components/footer";
 // Page
 @import "_pages/login";
 @import "_pages/home";
+
 @import "_pages/login";
 @import "_pages/about";
 @import "_pages/my-list";
 @import "_pages/my-list__detail";
 @import "_pages/product-detail.scss";
+
+@import "_pages/product-info";
+
