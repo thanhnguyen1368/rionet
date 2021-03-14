@@ -352,6 +352,15 @@
                 margin-right: 15px;
             }
         }
+        @media (max-width:576px) {
+            flex-direction: column;
+            &__label {
+                margin-bottom: 10px;
+            }
+            &__right {
+                align-self: flex-end;
+            }
+        }
     }
     .content-bottom {
         display: flex;
