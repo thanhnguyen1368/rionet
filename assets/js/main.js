@@ -186,29 +186,27 @@ $('.button-loadmore__movie').on("click", function() {
     for (var n = 0; n < 20; ++n) {
         $('.row_movie')[0].innerHTML += `
             <div class="col-md-6">
-                <a href="movie-detail.html">
-                    <div class="video-box">
-                        <div class="video-box__thumb style-2">
-                            <a href="movie-detail.html">
-                                <img src="./assets/images/video.jpg" alt="image">
-                            </a>
-                        </div>
-                        <div class="video-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <div class="meta">
-                                    <span>2017.11.29</span>
-                                </div>
-                                <input type="checkbox" class="check-input">
-                            </div>
-                            <a href="movie-detail.html">
-                                <div class="title">
-                                    補聴器販売に関わる基礎知識（初級編）
-                                </div>
-                            </a>
-                            <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p>
-                        </div>
+                <div class="video-box">
+                    <div class="video-box__thumb style-2">
+                        <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                            <img src="./assets/images/video.jpg" alt="image">
+                        </button>
                     </div>
-                </a>
+                    <div class="video-box__content">
+                        <div class="content-button d-flex justify-content-between align-items-center">
+                            <div class="meta">
+                                <span>2017.11.29</span>
+                            </div>
+                            <input type="checkbox" class="check-input">
+                        </div>
+                        <a href="movie-detail.html">
+                            <div class="title">
+                                補聴器販売に関わる基礎知識（初級編）
+                            </div>
+                        </a>
+                        <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p>
+                    </div>
+                </div>
             </div>
             `
     };
@@ -222,9 +220,9 @@ $('.button-loadmore__movie1').on("click", function() {
                 <a href="movie-detail.html">
                     <div class="video-box">
                         <div class="video-box__thumb">
-                            <a href="#">
-                                <img src="./assets/images/video.jpg" alt="image">
-                            </a>
+                        <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video1">
+                            <img src="./assets/images/video.jpg" alt="image">
+                        </button>
                         </div>
                         <div class="video-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
