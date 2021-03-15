@@ -54,7 +54,7 @@
                 margin-right: 10px;
                 //  outline: 1px solid #0A4CE0;
                 //  border-radius: 3px;
-                box-shadow: 0px 0px 0px 1px #0A4CE0;
+                // box-shadow: 0px 0px 0px 1px #0A4CE0;
             }
             span {
                 color: #0A4CE0;
@@ -73,8 +73,13 @@
 }
 
 .row_movie {
-    .title {
+    position: relative;
+    .title-seemore {
         font-size: 20px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .control_top {
         display: flex;

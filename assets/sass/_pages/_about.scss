@@ -157,7 +157,7 @@
                 }
                 .demo {
                     .btn {
-                        font-size: 1vw;
+                        font-size: 15px;
                     }
                 }
             }
@@ -175,13 +175,18 @@
                         font-size: 15px;
                     }
                 }
+                .demo {
+                    .btn {
+                        font-size: 12px;
+                    }
+                }
             }
         }
         @media(max-width:576px) {
             .content {
                 flex-direction: column;
                 .explain {
-                    padding-bottom: 30px;
+                    padding-bottom: 15px;
                     width: 90%;
                     .btn {
                         margin: 0 auto;

@@ -126,6 +126,13 @@
         }
         @media (max-width:992px) {
             .content {
+                .img {
+                    width: 50%;
+                }
+            }
+        }
+        @media (max-width:767px) {
+            .content {
                 flex-direction: column;
                 .img {
                     width: 100%;
@@ -133,13 +140,9 @@
                     margin-bottom: 20px;
                     text-align: center;
                     img {
-                        width: 35%;
+                        width: 50%;
                     }
                 }
-            }
-        }
-        @media (max-width:768px) {
-            .content {
                 .descrip {
                     .quantity {
                         p {
@@ -177,22 +180,17 @@
             }
         }
     }
-
     &.general {
         background: transparent;
         margin-bottom: 0;
-
         .wrapper-page {
             margin: 0;
         }
-
         .download {
             border: 1px solid $color-gray-5;
         }
-
         .download-detail {
             margin-bottom: 50px;
-
             @media (max-width: 767px) {
                 .thumb-detail {
                     margin-bottom: 20px;
