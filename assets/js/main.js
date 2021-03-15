@@ -307,12 +307,22 @@ $('.button-loadmore__product').on("click", function() {
     };
     $('.loadmore5').hide();
 });
+$('.button-loadmore__index1').on("click", function() {
+    for (var n = 0; n < 10; ++n) {
+        $('.loadmore6_content')[0].innerHTML += `
+        <li class="list__item">
+            <div class="list__item__date">2020.12.24</div>
+            <div class="list__item__type">カテゴリー1</div>
+            <div class="list__item__title"><a href="#">サマリーテキストサマリーテキストサマリーテキストサマリーテキストテキストサマリー…</a></div>
+        </li>
+            `
+    };
+    $('.loadmore6').hide();
+});
 // load more
 
 // select delete in my-list page 
-// $('.select-delete').on("click", function(a) {
-//     $('.select-delete').addClass("select-delete-active");
-// });
+
 $(".select-delete").each(function(index) {
     $(this).on("click", function() {
         $(this).toggleClass("select-delete-active");
