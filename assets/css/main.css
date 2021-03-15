@@ -2242,8 +2242,7 @@ a {
       .movie-detail .core__knowledge .title input {
         width: 18px;
         height: 18px;
-        margin-right: 10px;
-        box-shadow: 0px 0px 0px 1px #0A4CE0; }
+        margin-right: 10px; }
       .movie-detail .core__knowledge .title span {
         color: #0A4CE0;
         font-size: 16px;
@@ -2254,18 +2253,24 @@ a {
     .movie-detail .core__knowledge .des {
       font-size: 16px; }
 
-.row_movie .title {
-  font-size: 20px; }
-.row_movie .control_top {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-  .row_movie .control_top .button {
-    transition: .5s; }
-    .row_movie .control_top .button:hover {
-      color: white;
-      background: #0A4CE0;
-      border: #0A4CE0 1px solid; }
+.row_movie {
+  position: relative; }
+  .row_movie .title-seemore {
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .row_movie .control_top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .row_movie .control_top .button {
+      transition: .5s; }
+      .row_movie .control_top .button:hover {
+        color: white;
+        background: #0A4CE0;
+        border: #0A4CE0 1px solid; }
 
 .section {
   position: relative; }
