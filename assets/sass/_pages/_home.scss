@@ -334,6 +334,9 @@
                 tr th:nth-child(1) {
                     background: #EFF2FA;
                     width: 12.5%;
+                    @media(max-width: 576px) {
+                        width: 25%;
+                    }
                 }
                 tr:nth-child(2) {
                     border-bottom: 1px solid #8C98C2;
@@ -542,6 +545,7 @@
         .note {
             text-align: right;
             padding-top: 20px;
+            margin-bottom: 20px;
         }
         .table-responsive {
             overflow-x: auto;

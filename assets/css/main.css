@@ -1336,6 +1336,10 @@ a {
       .sec-table-design .container .design1 table tr th:nth-child(1) {
         background: #EFF2FA;
         width: 12.5%; }
+        @media (max-width: 576px) {
+          .sec-table-design .container .design1 table tr td:nth-child(1),
+          .sec-table-design .container .design1 table tr th:nth-child(1) {
+            width: 25%; } }
       .sec-table-design .container .design1 table tr:nth-child(2) {
         border-bottom: 1px solid #8C98C2; }
       .sec-table-design .container .design1 table th {
@@ -1455,7 +1459,8 @@ a {
     font-weight: 600; }
   .sec-events .container .note {
     text-align: right;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-bottom: 20px; }
   .sec-events .container .table-responsive {
     overflow-x: auto; }
     .sec-events .container .table-responsive table {
