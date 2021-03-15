@@ -2079,7 +2079,11 @@ a {
 .section-page .container .image-box .image-box__content .button:nth-child(2) {
   background: #fff;
   color: #0A4CE0;
-  border: 1px solid #0A4CE0; }
+  border: 1px solid #0A4CE0;
+  cursor: pointer; }
+.section-page .container .image-box .image-box__content .select-delete-active {
+  background: #0A4CE0 !important;
+  color: white !important; }
 @media (max-width: 992px) {
   .section-page .container .image-box .image-box__content .button {
     font-size: 11px; } }
@@ -2241,19 +2245,20 @@ a {
       .product__detail .container .download .content div {
         display: flex;
         flex-direction: column; }
-        .product__detail .container .download .content div a {
-          text-decoration: underline;
-          display: inline-block;
-          margin: 5px 0; }
-          .product__detail .container .download .content div a span {
-            color: white;
-            font-size: 10px;
-            background: red;
-            padding: 0 7px;
-            text-decoration: underline red !important;
-            margin-left: 10px; }
-          .product__detail .container .download .content div a:hover {
-            color: #0A4CE0; }
+        .product__detail .container .download .content div .link_pdf {
+          display: flex;
+          flex-direction: row;
+          padding: 0 !important;
+          align-items: center; }
+        .product__detail .container .download .content div .pdf {
+          color: white;
+          font-size: 10px;
+          background: red;
+          padding: 0 7px;
+          text-decoration: underline red !important;
+          margin-left: 10px;
+          line-height: 15px;
+          height: fit-content; }
       .product__detail .container .download .content div:last-child {
         padding-left: 5%; }
       .product__detail .container .download .content div:first-child {
