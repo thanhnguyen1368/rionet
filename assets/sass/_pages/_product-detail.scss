@@ -177,6 +177,29 @@
             }
         }
     }
+
+    &.general {
+        background: transparent;
+        margin-bottom: 0;
+
+        .wrapper-page {
+            margin: 0;
+        }
+
+        .download {
+            border: 1px solid $color-gray-5;
+        }
+
+        .download-detail {
+            margin-bottom: 50px;
+
+            @media (max-width: 767px) {
+                .thumb-detail {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
 
 .title_moreProduct {

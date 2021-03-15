@@ -1,24 +1,21 @@
 var isClicked = false;
 $(document).ready(function() {
-
-
-
-    $('.slider-login').slick({
-        centerMode: false,
-        slidesToShow: 1,
-    })
     $('.btn-menu').click(function() {
         $(this).toggleClass('active');
     });
+
     $('.btn-menu').click(function() {
         $('body').toggleClass('show-menu');
     });
+
     $('.menu-nav__link li a').click(function() {
         $('.btn-menu').removeClass('active');
     });
+
     $('.menu-nav__button li a').click(function() {
         $('body').removeClass('show-menu');
     });
+
     $('.slider-login').slick({
         centerMode: false,
         slidesToShow: 1,
@@ -27,12 +24,77 @@ $(document).ready(function() {
         autoplay: true,
         dots: true
     });
+
     $('.slider-about').slick({
         centerMode: false,
         slidesToShow: 1,
         arrows: false,
         autoplay: true,
         dots: true
+    });
+
+    $('.slider-link').slick({
+        centerMode: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        autoplay: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    // variableWidth: true,
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    $('.slider-list__view.-post').slick({
+        centerMode: false,
+        slidesPerRow: 2,
+        rows: 2,
+        arrows: true,
+        autoplay: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesPerRow: 1,
+                    rows: 4,
+                    arrows: false,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    $('.slider-list__view.-video').slick({
+        centerMode: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: true,
+        autoplay: false,
+        dots: true,
+        slidesPerRow: 1,
+        rows: 1,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    rows: 1,
+                    arrows: false,
+                    dots: false
+                }
+            }
+        ]
     });
 
 
