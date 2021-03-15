@@ -1,7 +1,7 @@
 .section-page {
     .container {
         .wrapper-page {
-            .content-top {
+            .content-top.none {
                 border-bottom: none;
             }
             .content-top__right {
@@ -20,7 +20,7 @@
             }
         }
         .title-page {
-            p:last-child {
+            .sub2:last-child {
                 font-size: 20px;
                 font-weight: 500;
                 margin: 3% 0;
