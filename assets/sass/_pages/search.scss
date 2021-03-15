@@ -1,0 +1,102 @@
+.search-found {
+    .section-header-search {
+        padding-bottom: 0;
+
+        @media (max-width: 767px) {
+            .search__form {
+                .btn-history {
+                    position: relative;
+                    top: 0;
+                    height: 40px;
+                    font-size: 15px;
+                    color: $color-primary;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 20px;
+                    background: $color-blue;
+                    border-color: $color-blue;
+                }
+                .input-group {
+                    margin-bottom: 10px!important;
+                }
+            }
+        }
+    }
+}
+.content-not-found {
+    margin-bottom: 50px;
+    .title {
+        font-size: 22px;
+        line-height: 32px;
+        color: $color-black-2;
+        margin-bottom: 50px;
+    }
+
+    .sub {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        letter-spacing: 0.4px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+        .title {
+            font-size: 26px;
+            line-height: 37px;
+            margin-bottom: 30px;
+        }
+        .sub {
+            margin-bottom: 10px;
+        }
+    }
+}
+.section--search {
+    .wrapper-page {
+        margin: 80px 0px 0px;
+        &.show-mobile {
+            display: none;
+            margin-top: 0;
+            margin-bottom: 20px;
+
+            .content-bottom {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
+    @media (max-width: 992px) {
+        .hide-mobile {
+            display: none;
+        }
+
+        .show-mobile {
+            display: block!important;
+
+            .des {
+                font-size: 16px;
+                line-height: 28px;
+                color: $color-black-2;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 479px) {
+        .show-mobile {
+            .des {
+                font-size: 14px;
+            }
+        }
+    }
+}
