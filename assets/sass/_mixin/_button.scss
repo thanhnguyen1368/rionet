@@ -47,4 +47,14 @@
             right: 16px;
         }
     }
+
+    &.style-4 {
+        background-color: $color-orange;
+        color: $color-white;
+        border: none;
+        border-radius: 8px;
+        padding: 5px 25px;
+        margin-right: 20px;
+        outline: none;
+    }
 }
