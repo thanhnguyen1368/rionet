@@ -533,6 +533,12 @@ a {
 .load-more-article {
   margin-top: 30px; }
 
+.btn_modal_video {
+  background: rgba(255, 255, 255, 0);
+  border: none; }
+  .btn_modal_video:focus {
+    outline: none; }
+
 .button {
   position: relative;
   border: 1px solid #fff;
