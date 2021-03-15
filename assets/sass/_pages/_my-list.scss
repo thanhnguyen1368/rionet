@@ -76,4 +76,9 @@
             border: #0A4CE0 1px solid !important;
         }
     }
+    @media (max-width:576px) {
+        .content-top__label {
+            font-size: 20px;
+        }
+    }
 }
