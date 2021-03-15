@@ -181,7 +181,7 @@ $('.button-loadmore__download').on("click", function() {
         `
 
     };
-    $('.button-loadmore__download').hide();
+    $('.loadmore1').hide();
 });
 
 $('.button-loadmore__movie').on("click", function() {
@@ -212,7 +212,7 @@ $('.button-loadmore__movie').on("click", function() {
             </div>
             `
     };
-    $('.button-loadmore__movie').hide();
+    $('.loadmore2').hide();
 });
 
 $('.button-loadmore__movie1').on("click", function() {
@@ -243,7 +243,7 @@ $('.button-loadmore__movie1').on("click", function() {
             </div>
             `
     };
-    $('.button-loadmore__movie1').hide();
+    $('.loadmore3').hide();
 });
 
 $('.button-loadmore__movie2').on("click", function() {
@@ -272,7 +272,7 @@ $('.button-loadmore__movie2').on("click", function() {
             </div>
             `
     };
-    $('.button-loadmore__movie2').hide();
+    $('.loadmore4').hide();
 });
 
 $('.button-loadmore__product').on("click", function() {
@@ -305,7 +305,7 @@ $('.button-loadmore__product').on("click", function() {
             </div>
             `
     };
-    $('.button-loadmore__product').hide();
+    $('.loadmore5').hide();
 });
 // load more
 
