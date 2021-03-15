@@ -1,0 +1,55 @@
+.scrollbar::-webkit-scrollbar-track,
+.scrollbar::-webkit-scrollbar-thumb,
+.scrollbar::-webkit-scrollbar,
+.scrollbar-x::-webkit-scrollbar-track,
+.scrollbar-x::-webkit-scrollbar-thumb,
+.scrollbar-x::-webkit-scrollbar {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 0px;
+}
+
+.scrollbar-x {
+    overflow-y: auto;
+    width: 100%;
+}
+
+.scrollbar::-webkit-scrollbar-track,
+.scrollbar-x::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: $color-gray-6;
+}
+
+.scrollbar::-webkit-scrollbar,
+.scrollbar-x::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: $color-gray-6;
+}
+
+.scrollbar::-webkit-scrollbar-thumb,
+.scrollbar-x::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(to left, $color-primary, $color-primary);
+    border: 1px solid $color-primary;
+}
+
+.scrollbar-x::-webkit-scrollbar {
+    height: 10px;
+}
+
+html.scrollbar {
+    min-height: 0;
+    max-height: none;
+}
+
+
