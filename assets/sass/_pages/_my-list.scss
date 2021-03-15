@@ -32,6 +32,11 @@
                     background: $color-white;
                     color: #0A4CE0;
                     border: 1px solid #0A4CE0;
+                    cursor: pointer;
+                }
+                .select-delete-active {
+                    background: #0A4CE0 !important;
+                    color: white !important;
                 }
                 @media (max-width:992px) {
                     .button {

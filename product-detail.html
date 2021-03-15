@@ -26,7 +26,7 @@
             </div>
             <div class="header-content">
                 <p class="text">リオネット セールスポートとは</p>
-                <button class="button"><a href="my-list.html">マイリスト</a></button>
+                <a href="my-list.html" class="button">マイリスト</a>
                 <a href="javascript:void(0)" class="btn-menu"><span></span></a>
             </div>
         </div>
@@ -91,14 +91,27 @@
                         <p class="text-center title">PDFダウンロード</p>
                         <div class="content">
                             <div>
-                                <a href="#">テクニカルインフォメーション <span class="pdf">PDF</span></a>
-                                <a href="#">取説 <span class="pdf">PDF</span></a>
-                                <a href="#">添付文書 <span class="pdf">PDF</span></a>
+                                <div class="link_pdf">
+                                    <a href="#">テクニカルインフォメーション </a> <a href="#" class="pdf">PDF</a>
+                                </div>
+                                <div class="link_pdf">
+                                    <a href="#">取説 </a><a href="#" class="pdf">PDF</a>
+                                </div>
+                                <div class="link_pdf">
+                                    <a href="#">添付文書</a> <a href="#" class="pdf">PDF</a>
+                                </div>
                             </div>
                             <div>
-                                <a href="#">セールスガイド <span class="pdf">PDF</span></a>
-                                <a href="#">メンテナンスガイド <span class="pdf">PDF</span></a>
-                                <a href="#">医療機器認証番号 <span class="pdf">PDF</span></a>
+                                <div class="link_pdf">
+                                    <a href="#">セールスガイド </a><a href="#" class="pdf">PDF</a>
+                                </div>
+                                <div class="link_pdf">
+                                    <a href="#">メンテナンスガイド</a><a href="#" class="pdf">PDF</a>
+                                </div>
+                                <div class="link_pdf">
+                                    <a href="#">医療機器認証番号 </a><a href="#" class="pdf">PDF</a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -106,7 +119,7 @@
             </div>
             <div class="container">
                 <div class="text-center m-4 title_moreProduct">関連記事</div>
-                <div class="row">
+                <div class="row row_product">
                     <div class="col-md-6">
                         <a href="product-detail.html">
                             <div class="image-box style-2">
@@ -628,7 +641,7 @@
                     </div>
                     <div class="col-md-12">
                         <div class="load-more-article text-center">
-                            <a href="#" class="button style-3 button-loadmore before-select">もっと見る</a>
+                            <a href="javascript:void(0)" class="button style-3 button-loadmore button-loadmore__product before-select">もっと見る</a>
                         </div>
                     </div>
                 </div>

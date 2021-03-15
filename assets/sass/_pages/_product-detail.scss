@@ -99,21 +99,21 @@
                 div {
                     display: flex;
                     flex-direction: column;
-                    a {
-                        text-decoration: underline;
-                        display: inline-block;
-                        margin: 5px 0;
-                        span {
-                            color: white;
-                            font-size: 10px;
-                            background: red;
-                            padding: 0 7px;
-                            text-decoration: underline red !important;
-                            margin-left: 10px;
-                        }
-                        &:hover {
-                            color: #0A4CE0;
-                        }
+                    .link_pdf {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0 !important;
+                        align-items: center;
+                    }
+                    .pdf {
+                        color: white;
+                        font-size: 10px;
+                        background: red;
+                        padding: 0 7px;
+                        text-decoration: underline red !important;
+                        margin-left: 10px;
+                        line-height: 15px;
+                        height: fit-content;
                     }
                 }
                 div:last-child {
