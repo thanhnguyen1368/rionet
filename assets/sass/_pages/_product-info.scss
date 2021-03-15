@@ -1,6 +1,5 @@
 .section{
     position: relative;
-    
     &-header-search{
         padding: 30px 0 110px;
         .wellcome-text{
@@ -98,7 +97,6 @@
                 } 
             }
         }
-        
     }
     &-product-search{
         background-color: #ECF0FA;
@@ -161,7 +159,6 @@
             }
         }
         .seri{
-            
             &__logo{
                 max-width: 660px;
                 margin: 0 auto 20px;
@@ -184,7 +181,6 @@
                 .row{margin-right:5px;margin-left:5px}
                 .row > [class^="col-"],.row > [class*=" col-"]{padding-right:5px;padding-left:5px}
             }
-            
         }
         .product__diff{
             @include flex-content(wrap, center, center);
@@ -217,7 +213,6 @@
             }
         }
         .various-downloads__box{
-            // @include flex-content(wrap, center, center);
             padding: 0 30px;
             .item__box{
                 position: relative;
@@ -230,16 +225,19 @@
                 min-width: 100%;
                 text-align: center;
                 cursor: pointer;
+                a{
+                    color: #222222;
+                }
                 &:hover{
                     border-color: $color_primary;
                     color:$color_primary;
+                    a{
+                        color:$color_primary;
+                    }
                 }
             }
         }
-
-
         @media (max-width: 767px) {
-           
             .nav-tabs__choose{
                 position: relative;
                 top: -80px;
@@ -311,7 +309,6 @@
                     margin-bottom: 20px;
                 }
             }
-            
             .seri__logo {
                 margin: 0 -10px;
                 &__item{
@@ -338,6 +335,17 @@
                 border: 1px solid #43B5B5;
                 background-color: #43B5B5;
             }
+            .various-downloads__box{
+                .item__box{
+                    &:hover{
+                        border-color: #43B5B5;
+                        color:#43B5B5;
+                        a{
+                            color:#43B5B5;
+                        }
+                    }
+                }
+            }
         }
     }
     .accordion-block{
@@ -353,6 +361,7 @@
             border: 0;
             background-color: transparent;
         }
+        
         .bnt__collapse{
             position: relative;
             border: 1px solid $color_primary;
@@ -383,6 +392,18 @@
                 &:after{
                     background-image: url(../images/icon-toggle-open.svg);
                 }
+            }
+        }
+        @media (min-width: 768px) {
+            .collapsing {
+                height: 100%;
+            }
+            .collapse:not(.show) {
+                display: block;
+                height: 100%;
+            }
+            .bnt__collapse.collapsed:after {
+                background-image: url(../images/icon-toggle.svg);
             }
         }
     }
