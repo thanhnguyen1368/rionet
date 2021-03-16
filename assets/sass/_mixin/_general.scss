@@ -182,6 +182,21 @@
     }
 }
 
+.modal-content {
+    .video-box {
+        &__thumb {
+            &:before {
+                content: none;
+            }
+
+            iframe {
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+}
+
 .social-fixed {
     position: fixed;
     right: 30px;

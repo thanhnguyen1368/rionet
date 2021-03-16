@@ -18,10 +18,34 @@
                 transform: scale(1.4);
             }
         }
-        &__submit{
+        &__submit {
             margin-top: 60px;
             min-width: 180px;
             margin-bottom: 20px;
+            outline: none;
+            background-color: $color-gray-7;
+            border-color: $color-gray-7;
+            color: $color-gray-3;
+            cursor: not-allowed!important;
+
+            &:hover, &:focus {
+                background-color: $color-gray-7;
+                border-color: $color-gray-7;
+                color: $color-gray-3;
+            }
+
+            &.active {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                color: $color-white;
+                cursor: pointer!important;
+
+                &:hover, &:focus {
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                    color: $color-primary;
+                }
+            }
         }
     }
 }
