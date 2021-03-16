@@ -467,14 +467,14 @@
     </footer>
     <ul class="social-fixed">
         <li class="social-fixed__item message">
-            <a href="#">
+            <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/message.svg" alt="message">
                 <p>サポート 窓口
                 </p>
             </a>
         </li>
         <li class="social-fixed__item cart">
-            <a href="#">
+            <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/cart.svg" alt="cart">
                 <p>オンライン 注文
                 </p>
@@ -550,6 +550,447 @@
     </div>
     <div class="pagetop">
         <a href="#"><img src="./assets/images/arrow-right.svg" alt="top"></a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="title-modal">
+                        サポート窓口
+                    </div>
+                    <div class="box-item">
+                        <p class="text">カスタマーリンクサポート</p>
+                        <a href="#" class="button">詳しくはこちら</a>
+                    </div>
+                    <div class="box-item">
+                        <p class="text">メールフォームでのお問い合わせ</p>
+                        <a href="#" class="button">お問い合わせ</a>
+                    </div>
+                    <div class="box-item">
+                        <p class="text">お電話でのお問い合わせ</p>
+                        <div class="modal-contact">
+                            <p class="phone">
+                                <a href="#"><img src="./assets/images/phone-modal.svg" alt="">0000-0000-00</a>
+                            </p>
+                            <p>受付時間：9:00～21:00（年末年始を除く）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog width-1090" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="title-modal">
+                        閲覧履歴
+                    </div>
+                    <p class="modal-sub">登録数 00（最大登録数30）</p>
+                    <div class="modal-history scrollbar">
+                        <div class="modal-history__top">
+                            <p>チェックした項目を</p>
+                            <a href="#" class="button">マイリスト登録</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="image-box style-2">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">製品情報</span>
+                                            <input type="checkbox" class="check-input">
+                                        </div>
+                                        <div class="title">
+                                            リオネットシリーズ
+                                        </div>
+                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="bottom d-flex">
+                                            <p>発売時期</p>
+                                            <div class="meta">
+                                                <span>2017.11.29</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box style-2">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">製品情報</span>
+                                            <input type="checkbox" class="check-input">
+                                        </div>
+                                        <div class="title">
+                                            リオネットシリーズ
+                                        </div>
+                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="bottom d-flex">
+                                            <p>発売時期</p>
+                                            <div class="meta">
+                                                <span>2017.11.29</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box style-2">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">製品情報</span>
+                                            <input type="checkbox" class="check-input">
+                                        </div>
+                                        <div class="title">
+                                            リオネットシリーズ
+                                        </div>
+                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="bottom d-flex">
+                                            <p>発売時期</p>
+                                            <div class="meta">
+                                                <span>2017.11.29</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box style-2">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">製品情報</span>
+                                            <input type="checkbox" class="check-input">
+                                        </div>
+                                        <div class="title">
+                                            リオネットシリーズ
+                                        </div>
+                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="bottom d-flex">
+                                            <p>発売時期</p>
+                                            <div class="meta">
+                                                <span>2017.11.29</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">動画</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                        </div>
+                                        <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">動画</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                        </div>
+                                        <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">動画</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                        </div>
+                                        <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">動画</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                        </div>
+                                        <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-box">
+                                    <div class="image-box__thumb">
+                                        <img src="./assets/images/image-box.jpg" alt="image">
+                                    </div>
+                                    <div class="image-box__content">
+                                        <div class="content-button d-flex justify-content-between align-items-center">
+                                            <span class="button">営業ニュース</span>
+                                            <input type="checkbox" class="check-input" id="">
+                                        </div>
+                                        <div class="meta">
+                                            <span>2017.11.29</span>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">営業ニュースNO.553</a>
+                                        </div>
+                                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                                            <span class="pdf">PDF</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- end Footer -->
     <script src="./assets/libs/jquery-3.5.1.slim/jquery-3.5.1.slim.min.js"></script>
