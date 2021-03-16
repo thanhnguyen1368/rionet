@@ -4,6 +4,10 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
+    $('.menu-nav__button .button').click(function() {
+        $('.btn-menu').removeClass('active');
+    });
+
     $('.btn-menu').click(function() {
         $('body').toggleClass('show-menu');
     });
@@ -14,6 +18,15 @@ $(document).ready(function() {
 
     $('.menu-nav__button li a').click(function() {
         $('body').removeClass('show-menu');
+    });
+
+    $('.login-form .form-control').blur(function()
+    {
+        if( !$(this).val() ) {
+            $(".login-form__submit").removeClass('active');
+        } else {
+            $(".login-form__submit").addClass('active');
+        }
     });
 
     $('.slider-login').slick({
@@ -150,8 +163,6 @@ $('.js-ckeck-all').on("click", function() {
         $(this).parents('section').find('.check-input').prop('checked', false);
     }
 });
-
-
 
 // load more
 $('.button-loadmore__download').on("click", function() {
@@ -321,7 +332,7 @@ $('.button-loadmore__index1').on("click", function() {
 });
 // load more
 
-// select delete in my-list page 
+// select delete in my-list page
 
 $(".select-delete").each(function(index) {
     $(this).on("click", function() {
