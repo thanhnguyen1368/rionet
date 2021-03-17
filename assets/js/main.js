@@ -343,19 +343,26 @@ $('.button-loadmore__index1').on("click", function() {
 
 // select delete in my-list page
 
-$(".select-delete").each(function(index) {
-    $(this).on("click", function() {
-        $(this).toggleClass("select-delete-active");
-    });
+$(".select-delete").on("click", function() {
+    $(this).toggleClass("select-delete-active");
+    if ($(".select-delete").hasClass('select-delete-active')) {
+        $('.button-deselect-all').addClass("button-active");
+    } else {
+        $('.button-deselect-all').removeClass("button-active");
+    }
+
 });
+
 $(".button-select-all").on("click", function() {
     $(".select-delete").each(function(index) {
         if (!$(this).hasClass('select-delete-active')) {
             $(this).toggleClass("select-delete-active");
+            $('.button-deselect-all').addClass("button-active");
         }
     });
 });
 $(".button-deselect-all").on("click", function() {
+    $('.button-deselect-all').removeClass("button-active");
     $(".select-delete").each(function(index) {
         if ($(this).hasClass('select-delete-active')) {
             $(this).closest('.col-md-6').remove();
