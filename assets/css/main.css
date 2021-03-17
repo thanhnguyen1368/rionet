@@ -2364,7 +2364,7 @@ html.scrollbar {
     margin-left: 10px; }
   .section-page .container .wrapper-page .content-top__right a:hover, .section-page .container .wrapper-page .content-top__right a.button-active {
     background: #0A4CE0;
-    color: #fff; }
+    color: #fff !important; }
 .section-page .container .title-page .sub2:last-child {
   font-size: 20px;
   font-weight: 500;
