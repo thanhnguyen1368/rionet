@@ -12,7 +12,7 @@
                     &:last-child {
                         margin-left: 10px;
                     }
-                    &:hover {
+                    &:hover, &.button-active {
                         background: #0A4CE0;
                         color: $color-white;
                     }
