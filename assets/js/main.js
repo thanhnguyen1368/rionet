@@ -147,22 +147,31 @@ function choose_item(elm) {
     })
 }
 $('.nav-tabs .nav-link').on("click", function(e) {
-        $('.nav-tabs__choose').text($(this).text())
-        $('.nav-tabs').removeClass('show');
-    })
-    //Choose Item
+    $('.nav-tabs__choose').text($(this).text())
+    $('.nav-tabs').removeClass('show');
+})
+//Choose Item
 choose_item('.nav-tabs__choose');
 
-/**/
-$('.js-ckeck-all').on("click", function() {
-    $(this).toggleClass('is-click');
 
-    if ($(this).hasClass('is-click')) {
-        $(this).parents('section').find('.check-input').prop('checked', true);
+$('.row_product .check-input,.row_movie .check-input,.row_download .check-input').on("click", function() {
+    var $checked = $( ".check-input:checked" ).length;
+    if ($checked > 0) {
+        $('.js-ckeck-all').addClass('button-active');
     } else {
-        $(this).parents('section').find('.check-input').prop('checked', false);
+        $('.js-ckeck-all').removeClass('button-active');
     }
 });
+
+$('.js-ckeck-all').on("click", function() {
+    var $html = '<span>マイリスト登録済み</span>';
+    if ($(this).hasClass('button-active')) {
+        $(this).removeClass('button-active');
+        $('.row_product .check-input:checked,.row_movie .check-input:checked,.row_download .check-input:checked').after($html).remove();
+    }
+});
+
+
 
 // load more
 $('.button-loadmore__download').on("click", function() {
@@ -349,7 +358,7 @@ $(".button-select-all").on("click", function() {
 $(".button-deselect-all").on("click", function() {
     $(".select-delete").each(function(index) {
         if ($(this).hasClass('select-delete-active')) {
-            $(this).removeClass("select-delete-active");
+            $(this).closest('.col-md-6').remove();
         }
     });
 });

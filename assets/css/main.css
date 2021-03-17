@@ -2362,7 +2362,7 @@ html.scrollbar {
   transition: .5s; }
   .section-page .container .wrapper-page .content-top__right a:last-child {
     margin-left: 10px; }
-  .section-page .container .wrapper-page .content-top__right a:hover {
+  .section-page .container .wrapper-page .content-top__right a:hover, .section-page .container .wrapper-page .content-top__right a.button-active {
     background: #0A4CE0;
     color: #fff; }
 .section-page .container .title-page .sub2:last-child {
