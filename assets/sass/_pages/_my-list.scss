@@ -14,7 +14,7 @@
                     }
                     &:hover, &.button-active {
                         background: #0A4CE0;
-                        color: $color-white;
+                        color: $color-white!important;
                     }
                 }
             }
