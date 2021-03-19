@@ -29,6 +29,31 @@ $(document).ready(function() {
         }
     });
 
+    $('.focus-placeholder').mouseover(function(){
+        let attr = $(this).attr('placeholder')
+        let data_attr = $(this).data('placeholder')
+        $(this).data('placeholder', attr); 
+        $(this).attr('placeholder', data_attr); 
+    }).mouseout(function(){
+        let attr = $(this).attr('placeholder')
+        let data_attr = $(this).data('placeholder')
+        $(this).data('placeholder', attr); 
+        $(this).attr('placeholder', data_attr); 
+    });
+
+    $('.js-focus-text').mouseover(function(){
+        let attr = $(this).text()
+        let data_attr = $(this).data('hover')
+        $(this).data('hover', attr); 
+        $(this).text(data_attr); 
+    }).mouseout(function(){
+        let attr = $(this).text()
+        let data_attr = $(this).data('hover')
+        $(this).data('hover', attr); 
+        $(this).text(data_attr); 
+    });
+
+
     $('.slider-login').slick({
         centerMode: false,
         slidesToShow: 1,

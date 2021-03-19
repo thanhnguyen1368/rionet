@@ -8,6 +8,9 @@ $color_primary: #0A4CE0;
 .row.no-gutters20{margin-right:-10px;margin-left:-10px}
 .row.no-gutters20 > [class^="col-"],.row.no-gutters20 > [class*=" col-"]{padding-right:10px;padding-left:10px}
 
+.text-underline{
+    text-decoration: underline;
+}
 
 .form-control {
     height: calc(1.5em + 0.75rem + 9px);

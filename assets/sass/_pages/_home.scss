@@ -765,27 +765,33 @@
             flex-wrap: wrap;
             padding-bottom: 30px;
             .btn {
-                display: flex;
-                align-items: center;
+                position: relative;
+                @include flex-content(wrap, center, center);
                 border: 1px solid #0A4CE0;
                 border-radius: 6px;
-                color: #0A4CE0;
+                color: $color_primary;
                 transition: .5s;
-                padding: 0 50px;
+                padding: 0 30px;
                 margin-bottom: 15px;
                 margin-right: 15px;
-                position: relative;
+                min-width: 160px;
+                height: 30px;
+                background-color: #F4F9FF;
                 &:hover {
                     background: #0A4CE0;
                     color: white;
+                    &::after {
+                        color: white;
+                    }
                 }
                 &::after {
+                    content: "\e908";
+                    font-family: 'icomoon';
                     position: absolute;
+                    top: -2px;
                     right: 5px;
-                    width: 13px;
-                    height: 30px;
-                    content: "";
-                    background: url(../images/down.svg) center no-repeat;
+                    font-size: 20px;
+                    color: #2760E5;
                 }
             }
         }
@@ -809,18 +815,20 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                margin-left: 13px;
                 a {
                     display: flex;
-                    padding-right: 80px;
                     position: relative;
+                    width: 12.5%;
+                    text-decoration: underline;
+                    padding-left: 20px;
                     &::before {
+                        content: "\e908";
+                        font-family: 'icomoon';
                         position: absolute;
-                        left: -15px;
-                        width: 13px;
-                        height: 30px;
-                        content: "";
-                        background: url(../images/down.svg) center no-repeat;
+                        top: 0;
+                        left: 0;
+                        font-size: 20px;
+                        color: #2760E5;
                     }
                 }
             }
@@ -828,9 +836,9 @@
         @media (max-width:992px) {
             .anchor-links {
                 .list {
-                    flex-wrap: nowrap;
-                    overflow-x: scroll;
-                    margin-left: 0;
+                    a {
+                        width: 25%;
+                    }
                 }
             }
         }
@@ -843,6 +851,22 @@
                     width: 45%;
                     margin-right: 0;
                     justify-content: center;
+                }
+            }
+            .anchor-links {
+                .list {
+                    a {
+                        width: 33.333333%;
+                    }
+                }
+            }
+        }
+        @media (max-width:480px) {
+            .anchor-links {
+                .list {
+                    a {
+                        width: 50%;
+                    }
                 }
             }
         }

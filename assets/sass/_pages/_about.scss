@@ -119,6 +119,7 @@
                     font-weight: 600;
                 }
                 .btn {
+                    position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -129,11 +130,20 @@
                     transition: .5s;
                     width: 60%;
                     margin-top: 10%;
+                    &:after{
+                        content: "\e901";
+                        font-family: 'icomoon';
+                        position: absolute;
+                        top: 20%;
+                        right: 15px;
+                        font-size: 18px;
+                        color: $color_primary;
+                    }
                     &:hover {
                         background: #0A4CE0;
                         color: white;
-                        img {
-                            filter: grayscale(100%) brightness(110%) contrast(3) invert(100%);
+                        &:after{
+                            color: white;
                         }
                     }
                     img {
@@ -143,6 +153,7 @@
             }
             .demo {
                 width: 40%;
+                text-align: center;
             }
         }
         @media(max-width:992px) {
@@ -283,6 +294,7 @@
         .content {
             .demo {
                 width: 40%;
+                text-align: center;
             }
             .explain {
                 .btn {
@@ -308,8 +320,7 @@
             padding: 4% 0 3%;
             .demo {
                 width: 40%;
-                display: flex;
-                flex-direction: column;
+                @include flex-content(wrap, center, null);
                 .btn {
                     background: #244FD8;
                     border-radius: 4px;

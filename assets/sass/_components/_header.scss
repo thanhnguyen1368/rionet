@@ -18,8 +18,9 @@
         display: flex;
         align-items: center;
         .text {
-            color: $color-black-2;
+            // color: $color-black-2;
             padding-right: 24px;
+            line-height: 0;
         }
         .button {
             background-color: $color-orange;
@@ -31,6 +32,9 @@
             outline: none;
             a {
                 color: $color-white;
+            }
+            &:hover{
+                background-color: $color_primary;
             }
         }
         .btn-menu {
@@ -83,6 +87,10 @@
                 background-color: $color-gray-3;
                 span {
                     opacity: 0;
+                }
+                &:before,&:after{
+                    width: 18px;
+                    left: 25px;
                 }
                 &:before {
                     background-color: $color-white;
@@ -200,6 +208,10 @@
             border-radius: 20px;
             padding: 7px 10px;
             min-width: 160px;
+            border: 1px solid transparent;
+            &:hover{
+                border-color: $color_primary;
+            }
         }
     }
     @media (max-width: 1200px) {
