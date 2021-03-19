@@ -92,7 +92,9 @@
             justify-content: space-between;
             align-items: center;
             border-radius: 5px;
-
+            &:last-child{
+                margin-bottom: 0;
+            }
             .text {
                 font-size: 16px;
                 font-weight: 500;
@@ -188,15 +190,41 @@
         &-header {
             .close {
                 position: absolute;
-                right: 5px;
-                top: 5px;
-                width: 40px;
-                height: 40px;
-
+                right: -5px;
+                top: -18px;
+                width: 38px;
+                height: 38px;
+                font-size: 18px;
                 &:hover {
                     opacity: 1!important;
                 }
             }
+        }
+        .modal-body{
+            .title-modal {
+                font-size: 20px;
+            }
+            .box-item {
+                padding: 20px;
+                .text {
+                    width: 100%;
+                    text-align: center;
+                }
+                .modal-contact {
+                    border-top: 1px solid #ccc;
+                    padding-top: 10px;
+                }
+                .button{
+                    min-width: 200px;
+                    height: 40px;
+                    padding: 5px 20px;
+                    font-size: 12px;
+                    &:after {
+                        top: 6px;
+                    }
+                }
+            }
+            
         }
     }
 
@@ -208,10 +236,6 @@
 
                 .text {
                     margin-bottom: 10px;
-                }
-
-                .button {
-                    width: 100%;
                 }
 
                 .modal-contact {
