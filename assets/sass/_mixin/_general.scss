@@ -153,7 +153,7 @@
     margin-bottom: 30px;
     &__thumb {
         position: relative;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         img {
             width: 100%;
         }
@@ -165,6 +165,7 @@
             content: "";
             width: 50px;
             height: 50px;
+            z-index: 1;
             background: url(../images/play.svg) center no-repeat;
             background-size: cover;
             cursor: pointer;
@@ -196,7 +197,8 @@
         }
     }
     @media (max-width: 767px) {
-        padding: 15px 15px 20px;
+        padding: 20px 15px;
+        margin-bottom: 20px;
         &__content {
             .title {
                 margin-bottom: 8px;
@@ -245,10 +247,16 @@
                 font-weight: 500;
                 line-height: 16px;
             }
-        }
+            &:hover{
+                background-color: $color-orange;
+            }
+        } 
         &.cart {
             a {
                 background-color: $color-primary;
+                &:hover{
+                    background-color: $color-orange;
+                }
             }
         }
     }
@@ -270,7 +278,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                img {}
                 p {
                     font-size: 15px;
                     font-weight: 400;
@@ -432,10 +439,12 @@
             flex-direction: column;
             border: 0!important;
             &__label {
-                margin-bottom: 10px;
-                width: 100%;
-                border-bottom: 1px solid $color_primary;
-                padding-bottom: 5px;
+                &:not(.-mb-border-0){
+                    margin-bottom: 10px;
+                    width: 100%;
+                    border-bottom: 1px solid $color_primary;
+                    padding-bottom: 5px;
+                }
             }
             &__right {
                 align-self: flex-end;
@@ -490,7 +499,7 @@
         content: "\e908";
         font-family: 'icomoon';
         position: absolute;
-        top: 10%;
+        top: 5px;
         right: 10px;
         font-size: 20px;
         color: $color_primary;
@@ -515,8 +524,17 @@
     background: rgba(255, 255, 255, 0);
     padding: 0;
     border: none;
+    position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:48%;
+
     &:focus {
         outline: none;
+    }
+    >img{
+        margin:0px auto;position:absolute;width:100%;height:100%;top:0;left:0;object-fit:cover
+    }
+    @media(max-width:767px) {
+        padding-top: 64%;
+        min-height: 200px;
     }
 }
 

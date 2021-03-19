@@ -25,7 +25,7 @@
                 <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
             </div>
             <div class="header-content">
-                <div class="text"><img src="./assets/images/header-text.png" alt=""></div>
+                <a class="text" href="#"><img src="./assets/images/header-text.png" alt=""></a>
                 <a href="mylist.html" class="button">マイリスト</a>
                 <a href="javascript:void(0)" class="btn-menu"><span></span></a>
             </div>
@@ -71,18 +71,38 @@
                             <img src="./assets/images/product__detail.png" alt="product image">
                         </div>
                         <div class="descrip ">
-                            <img src="./assets/images/logo_product.png" alt="logo_product">
+                            <div class="product__detail__brand">
+                                <img src="./assets/images/logo_product.png" alt="logo_product">
+                            </div>
                             <p class="brand"> リオネットシリーズ </br>マキシエンス</p>
                             <p class="name"> HB-A3AA <span class="status"> NEW!</span></p>
-                            <p class="detail">サマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキスト</p>
-                            <div class="quantity">
+
+                            <div class="quantity d-md-none border-0 p-0 text-right">
+                                <div class="ml-auto mb-2">耳かけ型</div>
+                            </div>
+
+                            <p class="detail clearfix">サマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキスト</p>
+                            <div class="quantity d-none d-md-block">
                                 <p>製品色は全9カラー、豊富なカラーバリエーションをご用意しています。</p>
                                 <div class="">耳かけ型</div>
                             </div>
-                            <div class="price">
-                                <p>希望小売価格 </p>
-                                <p>両耳（2台） <span>612,000</span>円　 片耳（1台） <span>360,000</span>円</p>
-                                <p>※補聴器は非課税です。</p>
+                            <div class="d-md-none">
+                                <ul class="product__detail__list">
+                                    <li>軽度</li>
+                                    <li>中等度</li>
+                                    <li>高度</li>
+                                    <li>重度</li>
+                                </ul>
+                            </div>
+                            <div class="price clearfix">
+                                <div class="details_price__left">
+                                    <p>希望小売価格 </p>
+                                </div>
+                                <div class="details_price__right">
+                                    <div class="d-md-inline">両耳（2台） <span>612,000</span></div>
+                                    <div class="d-md-inline">円　 片耳（1台） <span>360,000</span>円</div>
+                                    <p>※補聴器は非課税です。</p>
+                                </div>
                             </div>
                             <div class="see_more__wrap">
                                 <a href="#" class="see_more">スペック詳細を見る <img src="./assets/images/login-icon1.png" alt="see_more"></a>
@@ -119,8 +139,17 @@
                     </div>
                 </div>
             </div>
+
             <div class="container">
-                <div class="text-center m-4 title_moreProduct">関連記事</div>
+                
+                <div class="text-center mt-5 m-4 title_moreProduct">関連記事</div>
+                <div class="wrapper-page show-mobile">
+                    <div class="content-top">
+                        <div class="content-top__right">
+                            <a href="#" class="button style-2">マイリスト登録</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="row row_product">
                     <div class="col-md-6">
                         <a href="product-detail.html">

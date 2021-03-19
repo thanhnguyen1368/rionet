@@ -353,7 +353,7 @@ $('.button-loadmore__product').on("click", function() {
     $('.loadmore5').hide();
 });
 $('.button-loadmore__index1').on("click", function() {
-    for (var n = 0; n < 10; ++n) {
+    for (var n = 0; n < 20; ++n) {
         $('.loadmore6_content')[0].innerHTML += `
         <li class="list__item">
             <div class="list__item__date">2020.12.24</div>
@@ -364,6 +364,37 @@ $('.button-loadmore__index1').on("click", function() {
     };
     $('.loadmore6').hide();
 });
+
+
+$('.js-loadmore-mylist .button-loadmore').on("click", function() {
+    for (var n = 0; n < 20; ++n) {
+        $('.js-loadmore-mylist')[0].innerHTML += `
+                <div class="col-md-6">
+                <div class="image-box">
+                    <div class="image-box__thumb">
+                        <img src="./assets/images/image-box.jpg" alt="image">
+                    </div>
+                    <div class="image-box__content">
+                        <div class="content-button d-flex justify-content-between align-items-center">
+                            <span class="button"><a href="my-list-detail.html">製品情報</a></span>
+                            <span class="button select-delete ">削除選択</span>
+                        </div>
+                        <div class="meta">
+                            <span>2017.11.29</span>
+                        </div>
+                        <div class="title">
+                            <a href="#">営業ニュースNO.553</a>
+                        </div>
+                        <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                            <span class="pdf">PDF</span></p>
+                    </div>
+                </div>
+            </div>
+            `
+    };
+    $('.btn__loadmore__wrap').hide();
+});
+
 // load more
 
 // select delete in my-list page

@@ -82,7 +82,10 @@
 
         .show-mobile {
             display: block!important;
-
+            .content-bottom{
+                position: relative;
+                bottom: 0;
+            }
             .des {
                 font-size: 16px;
                 line-height: 28px;
