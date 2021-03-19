@@ -232,12 +232,21 @@
                         width: 169px;
                         background: #E5E5E5;
                     }
+                    
                     p {
                         font-size: 16px;
                         font-weight: 500;
                         padding: 5px 0;
                         width: 169px;
                     }
+                }
+            }
+        }
+        .vertical_ex {
+            &__item{
+                .item__thumb{
+                    padding-top: 145%;
+                    margin-bottom: 15px;
                 }
             }
         }

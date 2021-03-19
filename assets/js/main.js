@@ -395,6 +395,35 @@ $('.js-loadmore-mylist .button-loadmore').on("click", function() {
     $('.btn__loadmore__wrap').hide();
 });
 
+$('.js-loadmore-news-details .button-loadmore').on("click", function() {
+    for (var n = 0; n < 20; ++n) {
+        $('.js-loadmore-news-details')[0].innerHTML += `
+            <div class="col-md-6">
+            <div class="image-box">
+                <div class="image-box__thumb">
+                    <img src="./assets/images/image-box.jpg" alt="image">
+                </div>
+                <div class="image-box__content">
+                    <div class="content-button d-flex justify-content-between align-items-center">
+                        <span class="button">営業ニュース</span>
+                        <input type="checkbox" class="check-input" id="">
+                    </div>
+                    <div class="meta">
+                        <span>2017.11.29</span>
+                    </div>
+                    <div class="title">
+                        <a href="#">営業ニュースNO.553</a>
+                    </div>
+                    <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…
+                        <span class="pdf">PDF</span></p>
+                </div>
+            </div>
+        </div>
+            `
+    };
+    $('.btn__loadmore__wrap').hide();
+});
+
 // load more
 
 // select delete in my-list page
