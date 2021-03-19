@@ -46,6 +46,10 @@
         &:before {
             right: 16px;
         }
+        &:hover{
+            background-color: $color_primary;
+            color: #fff;
+        }
     }
 
     &.style-4 {

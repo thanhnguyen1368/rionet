@@ -70,6 +70,7 @@
                     right: 0;
                     background: white;
                     color: #0A4CE0;
+                    border: 1px solid $color_primary;
                     border-radius: 6px;
                     padding: 10px 20px;
                     transition: .5s;
@@ -104,6 +105,9 @@
                         flex-direction: row;
                         padding: 0 !important;
                         align-items: center;
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                        text-decoration: underline;
                     }
                     .pdf {
                         color: white;
@@ -135,12 +139,12 @@
             .content {
                 flex-direction: column;
                 .img {
-                    width: 100%;
+                    width: 50%;
                     margin-right: 0;
                     margin-bottom: 20px;
                     text-align: center;
                     img {
-                        width: 50%;
+                        width: 100%;
                     }
                 }
                 .descrip {
@@ -166,9 +170,19 @@
             }
             .content {
                 .descrip {
+                    .see_more__wrap{
+                        text-align: center;
+                    }
                     .see_more {
+                        display: inline-block;
                         font-size: 10px;
-                        padding: 5px 10px;
+                        padding: 5px 5px 5px 10px;
+                        position: relative;
+                        font-size: 14px;
+                        min-width: 210px;
+                        border: 1px solid $color_primary;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
                     }
                     .name {
                         padding-top: 10px;
@@ -189,6 +203,7 @@
         .download {
             border: 1px solid $color-gray-5;
         }
+        
         .download-detail {
             margin-bottom: 50px;
             @media (max-width: 767px) {

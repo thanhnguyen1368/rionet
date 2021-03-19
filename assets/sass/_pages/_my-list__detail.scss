@@ -1,5 +1,5 @@
 .wrapper-page_list {
-    margin: 3% 0;
+    // margin: 3% 0;
 }
 
 .search-top__detail {
@@ -20,9 +20,10 @@
         margin: 0;
         color: #0A4CE0;
         border: 1px solid #0A4CE0;
-        padding: 2px 30px;
+        padding: 2px 25px 2px 15px;
         appearance: none;
         border-radius: 5px;
+        text-align-last:center;
         outline: none;
         box-shadow: none;
         background: $color-gray;

@@ -1,6 +1,5 @@
 .paginations {
     display: flex;
-
     &__item {
         padding-right: 5px;
         a {
@@ -28,9 +27,10 @@
             }
         }
     }
+    @media ( max-width: 767px ) {
+        justify-content: center;
+    }
 }
 
-@media ( min-width: 768px ) {
 
-}
 

@@ -1,6 +1,6 @@
 .movie-detail {
     width: 100%;
-    padding-bottom: 15%;
+    padding-bottom: 70px;
     .video-box {
         max-width: 70%;
         margin: 0 auto;
@@ -70,10 +70,24 @@
             font-size: 16px;
         }
     }
+    @media (max-width: 767px) {
+        .video-box {
+            max-width: 100%;
+        }
+        .search__keyword{
+            max-width: 100%;
+        }
+        .core__knowledge{
+            max-width: 100%;
+        }
+    }
 }
 
 .row_movie {
     position: relative;
+    &.movie2{
+        margin-top: 80px;
+    }
     .title-seemore {
         font-size: 20px;
         position: absolute;
@@ -92,6 +106,19 @@
                 background: #0A4CE0;
                 border: #0A4CE0 1px solid;
             }
+        }
+    }
+    @media (max-width: 767px) {
+        .control_top{
+            p.style-2{
+                display: none;
+            }
+        }
+        .title-seemore {
+            transform: translate(0, 0);
+            position: relative;
+            left: 0;
+            margin-bottom: 20px;
         }
     }
 }
