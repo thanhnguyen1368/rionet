@@ -34,3 +34,6 @@ $color_primary: #0A4CE0;
         border-color: #005dbf;
     }
 }
+@media (min-width:992px){
+	.col-lg-20{-ms-flex:0 0 20%;flex:0 0 20%;max-width:20%;}
+}
