@@ -21,12 +21,15 @@
     <!-- Header -->
     <header class="header">
         <div class="header__wrap">
-            <div class="logo">
-                <a href="/"><img src="./assets/images/logo.png" alt=""></a>
+            <div class="logo d-flex align-items-center">
+                <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+                <a href="#" class="header__user__name d-none d-lg-inline-block">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
             </div>
             <div class="header-content">
-                <a class="text" href="#"><img src="./assets/images/header-text.png" alt=""></a>
-                <a href="mylist.html" class="button">マイリスト</a>
+                <a class="text" href="#">リオネット　セールスポートとは</a>
+                <a href="mylist.html" class="button d-none d-md-inline-block">マイリスト</a>
+                <a href="mylist.html" class="header__mylist__icon d-md-none"><span class="icon-heart"></span></a>
+
                 <a href="javascript:void(0)" class="btn-menu"><span></span></a>
             </div>
         </div>
@@ -71,7 +74,7 @@
                 <div class="nav-tabs__choose d-md-none">製品情報</div>
                 <ul class="nav nav-tabs justify-content-between" id="productSearchTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">製品情報</a>
+                        <a class="nav-link active no-hover" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">製品情報</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="number-tab" data-toggle="tab" href="#number" role="tab" aria-controls="number" aria-selected="false">動画</a>
@@ -83,12 +86,12 @@
                         <a class="nav-link" id="number3-tab" data-toggle="tab" href="#number3" role="tab" aria-controls="number3" aria-selected="false">各種ダウンロード</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link actives2" id="number4-tab" data-toggle="tab" href="#number4" role="tab" aria-controls="number4" aria-selected="false">よく使う資料</a>
+                        <a class="nav-link actives2 no-hover" id="number4-tab" data-toggle="tab" href="#number4" role="tab" aria-controls="number4" aria-selected="false">よく使う資料</a>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="productSearchTabContent">
-                    <div class="tab-pane fade  show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <p class="tab-content__title1">シリーズ</p>
                         <div class="seri__logo">
                             <div class="row">
@@ -156,25 +159,25 @@
                                 <p>軟骨伝導補聴器</p>
                             </div>
                             <div class="item__cat">
-                                <p>軟骨伝導補聴器</p>
+                                <p>障害者総合支援法対応補聴器</p>
                             </div>
                             <div class="item__cat">
-                                <p>軟骨伝導補聴器</p>
+                                <p>その他</p>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="number" role="tabpanel" aria-labelledby="number-tab">
+                    <div class="tab-pane fade jd-accordionz" id="number" role="tabpanel" aria-labelledby="number-tab">
                         <div class="accordion-block" id="accordion-s1">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="bnt__collapse" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                販促系
-                              </button>
+                                            販促系 <div class="ic--collapse"></div>
+                                        </button>
                                     </h2>
                                 </div>
 
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-s1">
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
                                     <div class="card-body">
                                         <div class="various-downloads__box p-0">
                                             <div class="row no-gutters20">
@@ -231,12 +234,12 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0">
-                                        <button class="bnt__collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                教育系
-                              </button>
+                                        <button class="bnt__collapse" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            教育系  <div class="ic--collapse"></div>
+                                        </button>
                                     </h2>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-s1">
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="">
                                     <div class="card-body">
                                         <div class="various-downloads__box p-0">
                                             <div class="row no-gutters20">
@@ -293,12 +296,12 @@
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
-                                        <button class="bnt__collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                啓蒙系
-                              </button>
+                                        <button class="bnt__collapse" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            啓蒙系 <div class="ic--collapse"></div>
+                                        </button>
                                     </h2>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-s1">
+                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="">
                                     <div class="card-body">
                                         <div class="various-downloads__box p-0">
                                             <div class="row no-gutters20">
@@ -370,12 +373,12 @@
                             <div class="card">
                                 <div class="card-header" id="headingFour">
                                     <h2 class="mb-0">
-                                        <button class="bnt__collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                その他
-                              </button>
+                                        <button class="bnt__collapse" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            その他 <div class="ic--collapse"></div>
+                                        </button>
                                     </h2>
                                 </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-s1">
+                                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="">
                                     <div class="card-body">
                                         <div class="various-downloads__box p-0">
                                             <div class="row no-gutters20">
@@ -514,7 +517,7 @@
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="bnt__collapse" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                マニュアル・メンテナンス
+                                マニュアル・メンテナンス <div class="ic--collapse"></div>
                               </button>
                                     </h2>
                                 </div>
@@ -567,7 +570,7 @@
                                 <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0">
                                         <button class="bnt__collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                依頼・お問い合わせ用資料
+                                依頼・お問い合わせ用資料 <div class="ic--collapse"></div>
                               </button>
                                     </h2>
                                 </div>
@@ -639,7 +642,7 @@
                                 <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
                                         <button class="bnt__collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                情報資料
+                                情報資料 <div class="ic--collapse"></div>
                               </button>
                                     </h2>
                                 </div>
@@ -706,7 +709,7 @@
                                 <div class="card-header" id="headingFour">
                                     <h2 class="mb-0">
                                         <button class="bnt__collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                その他
+                                その他 <div class="ic--collapse"></div>
                               </button>
                                     </h2>
                                 </div>
@@ -804,7 +807,7 @@
         <section class="section section-news1">
             <div class="container">
                 <div class="section-news1__header">
-                    <div class="section-news1__title">TOPICS</div>
+                    <div class="section-news1__title">ピックアップ</div>
                 </div>
                 <ul class="section-news1__list loadmore6_content list-unstyled">
                     <li class="list__item">
@@ -838,7 +841,7 @@
 
         <section class="section section-list-view">
             <div class="container">
-                <div class="section-list-view__header d-sm-flex align-items-center">
+                <div class="section-list-view__header d-flex align-items-center">
                     <div class="section-list-view__title">見て欲しい一覧</div>
                     <div class="ml-auto">
                         <span class="mr-3 d-none d-md-inline-block">チェックした項目を</span> <button class="btn btn__list-tick js-ckeck-all">マイリスト登録</button>
@@ -1020,7 +1023,7 @@
 
         <section class="section section-list-view">
             <div class="container">
-                <div class="section-list-view__header d-sm-flex align-items-center">
+                <div class="section-list-view__header d-flex align-items-center">
                     <div class="section-list-view__title">見て欲しい動画</div>
                     <div class="ml-auto">
                         <span class="mr-3 d-none d-md-inline-block">チェックした項目を</span> <button class="btn btn__list-tick js-ckeck-all">マイリスト登録</button>
@@ -1191,21 +1194,26 @@
                 </div>
             </div>
             <div class="footer__copyright">Copyright © RION Co.,Ltd. All rights reserved.</div>
+            <div class="pagetop"><span class="icon-pagetop"></span></div>
         </div>
     </footer>
     <ul class="social-fixed">
         <li class="social-fixed__item message">
             <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/message.svg" alt="message">
-                <p>サポート 窓口
-                </p>
+                <p>サポート 窓口</p>
             </a>
         </li>
-        <li class="social-fixed__item cart">
+        <li class="social-fixed__item cart d-none d-md-block">
             <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/cart.svg" alt="cart">
-                <p>オンライン 注文
-                </p>
+                <p>オンライン 注文</p>
+            </a>
+        </li>
+        <li class="social-fixed__item cart d-md-none">
+            <a href="#"  data-toggle="modal" data-target="#modalContact">
+                <span class="icon-file-text"></span>
+                <p>営業ニュース</p>
             </a>
         </li>
     </ul>
@@ -1275,9 +1283,6 @@
                 <a href="#" class="button"><img src="./assets/images/user.svg" alt=""> お客様情報 <img src="./assets/images/login-icon1.png" alt=""></a>
             </p>
         </div>
-    </div>
-    <div class="pagetop">
-        <a href="#"><img src="./assets/images/arrow-right.svg" alt="top"></a>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

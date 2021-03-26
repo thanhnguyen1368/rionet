@@ -952,40 +952,9 @@
 }
 
 .sec-list {
-    .container {
-        padding: 40px 0;
-        .row:nth-child(2) {
-            .image-box__content {
-                .button {
-                    margin-right: 10px !important;
-                }
-                span {
-                    color: #0A4CE0;
-                }
-                .gr_btn {
-                    margin-top: 30px;
-                    span {
-                        color: #222222;
-                    }
-                }
-            }
-        }
-        .row:last-child {
-            .image-box {
-                display: flex;
-                flex-direction: column;
-                .video-box__thumb {
-                    display: flex;
-                    justify-content: center;
-                    img {
-                        width: 90%;
-                        border-radius: 10px;
-                    }
-                }
-            }
-        }
-    }
+    padding: 20px 0;
+
     @media (max-width:768px) {
-        display: none;
+     
     }
 }

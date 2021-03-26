@@ -4,7 +4,10 @@
     color: #fff;
     text-align: center;
     font-size: 14px;
-
+    position: relative;
+    >.container{
+        position: relative;
+    }
     &__logo{
         margin-bottom: 45px;
     }
@@ -67,7 +70,7 @@
                 font-size: 12px;
 
                 &:hover {
-                    background: rgba(255,255,255,0.6);
+                    background: #fff;
                     color: $color-primary;
                 }
             }
@@ -118,3 +121,4 @@
         }
     }
 }
+

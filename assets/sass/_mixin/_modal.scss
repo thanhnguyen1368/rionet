@@ -112,16 +112,27 @@
 
                 &:after {
                     position: absolute;
-                    top: 10px;
+                    top: 50%;
                     right: 10px;
-                    content: "\e903";
-                    font-family: 'icomoon';
-                    font-size: 20px;
-                    color: #fff;
+                    width: 15px;
+                    height: 12px;
+                    transform: translateY(-50%);
+                    content: "";
+                    background: url(../images/icon-download.svg) center no-repeat;
+                    background-size: cover;
+                    transition: all 0.3s;
                 }
                 &:hover{
-                    background-color: $color_primary;
-                    border-color: $color_primary;
+                    background-color: #fff;
+                    color: #000;
+                    &:after {
+                        top: 15px;
+                        right: 15px;
+                        content: "\e903";
+                        font-family: 'icomoon';
+                        font-size: 20px;
+                        color: #000;
+                    }
                 }
             }
 

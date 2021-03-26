@@ -1,6 +1,7 @@
 .header {
     box-shadow: 4px 12px 47px 0 rgba(0, 0, 0, .1);
     &--login {
+        box-shadow: none;
         padding: 10px 0px;
         .container {
             max-width: 890px;
@@ -14,6 +15,29 @@
             padding-left: 30px;
         }
     }
+    &__user__name{
+        color: #222222;
+    }
+    &__mylist__icon{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        font-size: 16px;
+        background-color: #ED5714;
+        line-height: 35px;
+        text-align: center;
+        color: #fff;
+        margin-right: 15px;
+        display: inline-block;
+        span{
+            position: relative;
+            top: 1px;
+        }
+        &:hover{
+            background-color: #0a4ce0;
+            color: #fff;
+        }
+    }
     &-content {
         display: flex;
         align-items: center;
@@ -21,7 +45,11 @@
             // color: $color-black-2;
             padding-right: 24px;
             line-height: 0;
-        }
+            color: #000;
+            &:hover{
+                color: #0A4CE0;
+            }
+        } 
         .button {
             background-color: $color-orange;
             color: $color-white;
@@ -34,7 +62,7 @@
                 color: $color-white;
             }
             &:hover{
-                background-color: $color_primary;
+                background-color: #FC7438;
             }
         }
         .btn-menu {
@@ -102,12 +130,32 @@
                 }
             }
         }
-        @media (max-width: 992px) {
-            .text,
-            .button {
+        @media (max-width: 1200px) {
+            .text {
                 display: none;
             }
         }
+    }
+}
+.ic-logout{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #E8E8E8;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+    &:after{
+        content: "";
+        width: 13px;
+        height: 13px;
+        background-image: url(../images/logout.svg);
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 

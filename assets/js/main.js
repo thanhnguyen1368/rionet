@@ -20,12 +20,14 @@ $(document).ready(function() {
         $('body').removeClass('show-menu');
     });
 
-    $('.login-form .form-control').blur(function()
+    $('.login-form .form-control').on("keydown change",function()
     {
-        if( !$(this).val() ) {
-            $(".login-form__submit").removeClass('active');
-        } else {
+        let id = $('.js-input-id').val()
+        let pwd = $('.js-input-pwd').val()
+        if( id || pwd) {
             $(".login-form__submit").addClass('active');
+        } else {
+            $(".login-form__submit").removeClass('active');
         }
     });
 
@@ -131,15 +133,7 @@ $(document).ready(function() {
 
 
     /*----Back to Top----*/
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.pagetop').addClass('active');
-        } else {
-            $('.pagetop').removeClass('active');
-        }
-    });
-
-    $(".pagetop a").click(function() {
+    $(".pagetop").click(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
@@ -455,3 +449,43 @@ $(".button-deselect-all").on("click", function() {
     });
 });
 // select delete in my-list page
+
+// Start Accordion
+var t
+window.onresize = () => {
+    resizing(this, this.innerWidth, this.innerHeight) //1
+    if (typeof t == 'undefined') resStarted() //2
+    clearTimeout(t); t = setTimeout(() => { t = undefined; resEnded(this.innerWidth) }, 500) //3
+}
+
+function resizing(target, w, h) {
+    // console.log(`Youre resizing: width ${w} height ${h}`)
+}    
+function resStarted() { 
+    // console.log('Resize Started') 
+}
+function resEnded(innerWidth) { 
+    // console.log('Resize Ended') 
+    dn_accordion(innerWidth)
+}
+dn_accordion()
+function dn_accordion(){
+    // console.log('innerWidth' + innerWidth);
+    let $element = $('.jd-accordionz');
+    let $accordion_parent = '#accordion-s1';
+
+    let button = $element.find('.bnt__collapse')
+    let content = $element.find('.collapse')
+
+    if(innerWidth<768){
+        button.addClass('collapsed').attr('aria-expanded',false)
+        content.removeClass('show').attr('data-parent',$accordion_parent)
+
+        $element.find('.card:first-child .bnt__collapse').removeClass('collapsed').attr('aria-expanded',true)
+        $element.find('.card:first-child .collapse').addClass('show')
+    }else{
+        button.removeClass('collapsed').attr('aria-expanded',true)
+        content.addClass('show').attr('data-parent','')
+    }
+}
+// End Accordion

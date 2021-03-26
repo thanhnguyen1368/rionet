@@ -21,12 +21,15 @@
     <!-- Header -->
     <header class="header">
         <div class="header__wrap">
-            <div class="logo">
-                <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+            <div class="logo d-flex align-items-center">
+                <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+                <a href="#" class="header__user__name d-none d-lg-inline-block">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
             </div>
             <div class="header-content">
-                <a class="text" href="#"><img src="./assets/images/header-text.png" alt=""></a>
-                <a href="mylist.html" class="button">マイリスト</a>
+                <a class="text" href="#">リオネット　セールスポートとは</a>
+                <a href="mylist.html" class="button d-none d-md-inline-block">マイリスト</a>
+                <a href="mylist.html" class="header__mylist__icon d-md-none"><span class="icon-heart"></span></a>
+
                 <a href="javascript:void(0)" class="btn-menu"><span></span></a>
             </div>
         </div>
@@ -58,7 +61,7 @@
                 <div class="form-page">
                     <form action="#" class="search-page">
                         <div class="form-text">
-                            <input type="text" class="form-control focus-placeholder" placeholder="動画内で絞り込み" data-placeholder="品名・品番・キーワードで検索">
+                            <input type="text" class="form-control" placeholder="動画内で絞り込み" data-placeholder="品名・品番・キーワードで検索">
                         </div>
                         <div class="form-button">
                             <button type="submit" class="btn btn-primary">検索 <img src="./assets/images/icon-search.svg" alt="search"></button>
@@ -405,6 +408,7 @@
                 </div>
             </div>
             <div class="footer__copyright">Copyright © RION Co.,Ltd. All rights reserved.</div>
+            <div class="pagetop"><span class="icon-pagetop"></span></div>
         </div>
     </footer>
     <ul class="social-fixed">
@@ -489,9 +493,6 @@
                 <a href="#" class="button"><img src="./assets/images/user.svg" alt=""> お客様情報 <img src="./assets/images/login-icon1.png" alt=""></a>
             </p>
         </div>
-    </div>
-    <div class="pagetop">
-        <a href="#"><img src="./assets/images/arrow-right.svg" alt="top"></a>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
