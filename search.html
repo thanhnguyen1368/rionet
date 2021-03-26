@@ -21,12 +21,15 @@
 <!-- Header -->
 <header class="header">
     <div class="header__wrap">
-        <div class="logo">
-            <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+        <div class="logo d-flex align-items-center">
+            <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+            <a href="#" class="header__user__name d-none d-lg-inline-block">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
         </div>
         <div class="header-content">
-            <a class="text" href="#"><img src="./assets/images/header-text.png" alt=""></a>
-            <button class="button"><a href="mylist.html">マイリスト</a></button>
+            <a class="text" href="#">リオネット　セールスポートとは</a>
+            <a href="mylist.html" class="button d-none d-md-inline-block">マイリスト</a>
+            <a href="mylist.html" class="header__mylist__icon d-md-none"><span class="icon-heart"></span></a>
+
             <a href="javascript:void(0)" class="btn-menu"><span></span></a>
         </div>
     </div>
@@ -52,17 +55,18 @@
                 <h2 class="title">検索結果</h2>
                 <p class="sub">Search</p>
             </div>
-            <div class="form-page hide-mobile">
+            <div class="form-page">
                 <form action="search.html" class="search-page">
                     <div class="form-text">
-                        <input type="text" name="s" class="form-control" placeholder="各種ダウンロード内で絞込み">
+                        <input type="text" name="s" class="form-control" placeholder="品名・品番・キーワードで検索">
                     </div>
                     <div class="form-button">
                         <button type="submit" class="btn btn-primary">検索 <img src="./assets/images/icon-search.svg" alt="search"></button>
                     </div>
                 </form>
             </div>
-            <div class="search-top__detail hide-mobile">
+
+            <div class="search-top__detail">
                 <div class="before-select">
                     <select name="select" class="select-btn">
                         <option value="最新">製品情報</option>
@@ -91,56 +95,49 @@
                         <option value="最新">各種ダウンロード</option>
                         <option value="最新">各種ダウンロード</option>
                     </select>
-                </div>
-            </div>
-            <div class="show-mobile text-center">
-                <p class="des">
-                    “補聴器” の検索結果 878 件中 1 - 10件を表示
-                </p>
-            </div>
-            <div class="wrapper-page show-mobile">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="content-bottom">
-                        <div class="wrap-select before-select">
-                            <select name="select">
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#" class="button style-2">お気に入り登録</a>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="container hide-mobile">
+        <div class="container">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">製品情報</div>
-                    <div class="content-top__right">
-                        <p>チェックした項目を</p>
+                    <div class="content-top__right d-none d-md-flex">
+                        <p class="">チェックした項目を</p>
                         <a href="#" class="button style-2">マイリスト登録</a>
                     </div>
+                    <div class="d-md-none w-100">
+                        <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
+                        <div class="content-bottom style-2 -mb-style1">
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                </select>
+                            </div>
+                            <div class="content-top__right">
+                                <a href="#" class="button style-2">マイリスト登録</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content-bottom style-2">
+                <div class="content-bottom style-2 d-none d-md-flex">
                     <div class="left">
                         <p>“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <p>絞り込み条件</p>
+                        <p class="d-none d-md-block">並び替え</p>
                         <div class="wrap-select before-select">
                             <select name="select">
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
+                                <option value="">新しい順</option>
+                                <option value="">古い順</option>
                             </select>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -389,31 +386,46 @@
                 </div>
             </div>
         </div>
-        <div class="container hide-mobile">
+        <div class="container">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">動画</div>
-                    <div class="content-top__right">
-                        <p>チェックした項目を</p>
+                    <div class="content-top__right d-none d-md-flex">
+                        <p class="">チェックした項目を</p>
                         <a href="#" class="button style-2">マイリスト登録</a>
                     </div>
+                    <div class="d-md-none w-100">
+                        <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
+                        <div class="content-bottom style-2 -mb-style1">
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                </select>
+                            </div>
+                            <div class="content-top__right">
+                                <a href="#" class="button style-2">マイリスト登録</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content-bottom style-2">
+                <div class="content-bottom style-2 d-none d-md-flex">
                     <div class="left">
                         <p>“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <p>絞り込み条件</p>
+                        <p class="d-none d-md-block">並び替え</p>
                         <div class="wrap-select before-select">
                             <select name="select">
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
+                                <option value="">新しい順</option>
+                                <option value="">古い順</option>
                             </select>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -621,32 +633,48 @@
                 </div>
             </div>
         </div>
-        <div class="container hide-mobile">
+        <div class="container">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">営業ニュース</div>
-                    <div class="content-top__right">
-                        <p>チェックした項目を</p>
+                    <div class="content-top__right d-none d-md-flex">
+                        <p class="">チェックした項目を</p>
                         <a href="#" class="button style-2">マイリスト登録</a>
                     </div>
+                    <div class="d-md-none w-100">
+                        <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
+                        <div class="content-bottom style-2 -mb-style1">
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                </select>
+                            </div>
+                            <div class="content-top__right">
+                                <a href="#" class="button style-2">マイリスト登録</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content-bottom style-2">
+                <div class="content-bottom style-2 d-none d-md-flex">
                     <div class="left">
                         <p>“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <p>絞り込み条件</p>
+                        <p class="d-none d-md-block">並び替え</p>
                         <div class="wrap-select before-select">
                             <select name="select">
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
+                                <option value="">新しい順</option>
+                                <option value="">古い順</option>
                             </select>
                         </div>
                     </div>
                 </div>
+                
             </div>
+            
             <div class="row">
                 <div class="col-md-6">
                     <div class="image-box">
@@ -863,32 +891,48 @@
                 </div>
             </div>
         </div>
-        <div class="container hide-mobile">
+        <div class="container">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">各種ダウンロード</div>
-                    <div class="content-top__right">
-                        <p>チェックした項目を</p>
+                    <div class="content-top__right d-none d-md-flex">
+                        <p class="">チェックした項目を</p>
                         <a href="#" class="button style-2">マイリスト登録</a>
                     </div>
+                    <div class="d-md-none w-100">
+                        <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
+                        <div class="content-bottom style-2 -mb-style1">
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                    <option value="最新">最新</option>
+                                </select>
+                            </div>
+                            <div class="content-top__right">
+                                <a href="#" class="button style-2">マイリスト登録</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content-bottom style-2">
+                <div class="content-bottom style-2 d-none d-md-flex">
                     <div class="left">
                         <p>“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <p>絞り込み条件</p>
+                        <p class="d-none d-md-block">並び替え</p>
                         <div class="wrap-select before-select">
                             <select name="select">
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
-                                <option value="最新">最新</option>
+                                <option value="">新しい順</option>
+                                <option value="">古い順</option>
                             </select>
                         </div>
                     </div>
                 </div>
+                
             </div>
+            
             <div class="row">
                 <div class="col-md-6">
                     <div class="image-box">
@@ -1105,234 +1149,7 @@
                 </div>
             </div>
         </div>
-        <div class="container show-mobile">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image-box">
-                        <div class="image-box__thumb">
-                            <img src="./assets/images/image-box.jpg" alt="image">
-                        </div>
-                        <div class="image-box__content">
-                            <div class="content-button d-flex justify-content-between align-items-center">
-                                <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
-                            </div>
-                            <div class="meta">
-                                <span>2017.11.29</span>
-                            </div>
-                            <div class="title">
-                                <a href="#">営業ニュースNO.553</a>
-                            </div>
-                            <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
-                                リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="paginations">
-                <li class="paginations__item active">
-                    <a href="#">1</a>
-                </li>
-                <li class="paginations__item">
-                    <a href="#">2</a>
-                </li>
-                <li class="paginations__item">
-                    <a href="#">3</a>
-                </li>
-                <li class="paginations__item next">
-                    <a href="#"><img src="./assets/images/next.svg" alt=""></a>
-                </li>
-            </ul>
-        </div>
+      
     </section>
 
 </main>
@@ -1397,6 +1214,7 @@
             </div>
         </div>
         <div class="footer__copyright">Copyright © RION Co.,Ltd. All rights reserved.</div>
+        <div class="pagetop"><span class="icon-pagetop"></span></div>
     </div>
 </footer>
 <ul class="social-fixed">
@@ -1481,9 +1299,6 @@
             <a href="#" class="button"><img src="./assets/images/user.svg" alt=""> お客様情報 <img src="./assets/images/login-icon1.png" alt=""></a>
         </p>
     </div>
-</div>
-<div class="pagetop">
-    <a href="#"><img src="./assets/images/arrow-right.svg" alt="top"></a>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

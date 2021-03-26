@@ -21,12 +21,15 @@
     <!-- Header -->
     <header class="header">
         <div class="header__wrap">
-            <div class="logo">
-                <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+            <div class="logo d-flex align-items-center">
+                <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+                <a href="#" class="header__user__name d-none d-lg-inline-block">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
             </div>
             <div class="header-content">
-                <a class="text" href="#"><img src="./assets/images/header-text.png" alt=""></a>
-                <a href="mylist.html" class="button">マイリスト</a>
+                <a class="text" href="#">リオネット　セールスポートとは</a>
+                <a href="mylist.html" class="button d-none d-md-inline-block">マイリスト</a>
+                <a href="mylist.html" class="header__mylist__icon d-md-none"><span class="icon-heart"></span></a>
+
                 <a href="javascript:void(0)" class="btn-menu"><span></span></a>
             </div>
         </div>
@@ -59,7 +62,7 @@
                     <div class="section-header-search pt-0 pb-3 pb-md-5">
                         <form role="search" method="get" action="search.html" class="search__form search-page">
                             <div class="input-group mb-4 mb-md-3 pb-2 pb-md-0">
-                                <input type="text" name="s" class="form-control search-field focus-placeholder" placeholder="製品情報内で絞り込み" data-placeholder="品名・品番・キーワードで検索">
+                                <input type="text" name="s" class="form-control search-field" placeholder="製品情報内で絞り込み" data-placeholder="品名・品番・キーワードで検索">
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-primary search-submit"> 検索 <img src="./assets/images/icon-search.png" alt=""></button>
                                 </div>
@@ -78,14 +81,12 @@
                         </div>
                     </div>
                     <div class="content-bottom">
-                        <p>絞り込み条件</p>
+                        <p>並び替え</p>
                         <div class="wrap-select before-select">
                             <select name="select">
-                            <option value="最新">最新</option>
-                            <option value="最新">最新</option>
-                            <option value="最新">最新</option>
-                            <option value="最新">最新</option>
-                        </select>
+                                <option value="">新しい順</option>
+                                <option value="">古い順</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -677,6 +678,7 @@
                 </div>
             </div>
             <div class="footer__copyright">Copyright © RION Co.,Ltd. All rights reserved.</div>
+            <div class="pagetop"><span class="icon-pagetop"></span></div>
         </div>
     </footer>
     <ul class="social-fixed">
@@ -761,9 +763,6 @@
                 <a href="#" class="button"><img src="./assets/images/user.svg" alt=""> お客様情報 <img src="./assets/images/login-icon1.png" alt=""></a>
             </p>
         </div>
-    </div>
-    <div class="pagetop">
-        <a href="#"><img src="./assets/images/arrow-right.svg" alt="top"></a>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

@@ -4,8 +4,7 @@
             .content-top.none {
                 border-bottom: none;
             }
-            .content-top__right {
-                a {
+            .button.-primary {
                     border: 1px solid #0A4CE0;
                     color: #0A4CE0;
                     transition: .5s;
@@ -16,8 +15,7 @@
                         background: #0A4CE0;
                         color: $color-white!important;
                     }
-                }
-            }
+            } 
         }
         .title-page {
             .sub2:last-child {
@@ -30,8 +28,8 @@
             .image-box__content {
                 .button:nth-child(2) {
                     background: $color-white;
-                    color: #0A4CE0;
-                    border: 1px solid #0A4CE0;
+                    color: #DE2424;
+                    border: 1px solid #DE2424;
                     border-radius: 6px;
                     cursor: pointer;
                 }

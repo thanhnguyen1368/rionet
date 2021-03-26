@@ -58,6 +58,7 @@
                     span {
                         font-size: 24px;
                         font-weight: 600;
+                        font-family: 'Montserrat', sans-serif;
                     }
                     p:last-child {
                         font-size: 14px;
@@ -137,13 +138,15 @@
                         text-decoration: underline;
                     }
                     .pdf {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
                         color: white;
                         font-size: 10px;
                         background: red;
-                        padding: 0 7px;
+                        padding: 0 5px;
                         text-decoration: underline red !important;
                         margin-left: 10px;
-                        line-height: 15px;
+                        line-height: 13px;
                         height: fit-content;
                     }
                 }

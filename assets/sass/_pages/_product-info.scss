@@ -27,6 +27,10 @@
                     img{
                         margin-left: 10px;
                     }
+                    &:hover{
+                        background-color: #1376FC;
+                        border-color:#1376FC;
+                    }
                 }
                 .btn-history{
                     margin-left: 20px;
@@ -105,7 +109,7 @@
         background-color: #ECF0FA;
         padding: 0 0 30px;
         &>.container{
-            max-width: 850px;
+            max-width: 880px;
         }
         .nav-tabs {
             position: relative;
@@ -114,8 +118,9 @@
             .nav-item {
                 flex-grow: 1;
                 text-align: center;
+                @include flex-col(166px);
                 &:not(:last-child){
-                    margin-right: 6px;
+                    margin-right: 5px;
                 }
                 .nav-link{
                     border: 1px solid $color_primary;
@@ -132,10 +137,10 @@
                             color: #fff;
                         }
                     }
-                    &:hover, &.actives2{
+                    &:hover:not(.no-hover), &.actives2{
                         color: #43B5B5;
                         border-color: #43B5B5;
-                        background-color: rgba(67, 181, 181, .1);;
+                        background-color: rgba(67, 181, 181, .1);
                     }
                 }
             }
@@ -189,14 +194,17 @@
             @include flex-content(wrap, center, center);
             .item__cat{
                 position: relative;
+                @include flex-content(wrap, null, center);
                 border: 1px solid #B7B7B7;
                 border-radius: 6px;
                 margin: 0 7.5px 10px;
-                padding: 18px 38px 18px 18px;
+                padding: 7px 50px 7px 18px;
                 font-size: 14px;
                 color: #222222;
-                min-width: 190px;
+                width: 190px;
                 cursor: pointer;
+                line-height: normal;
+                min-height: 56px;
                 &:after{
                     content: "\e901";
                     font-family: 'icomoon';
@@ -238,6 +246,13 @@
                         color:$color_primary;
                     }
                 }
+            }
+        }
+        @media (min-width:768px) and (max-width:879px){
+            .nav-tabs .nav-item {
+                -ms-flex: 0 0 100%;
+                flex: 1 1 auto;
+                max-width: 100%;
             }
         }
         @media (max-width: 767px) {
@@ -349,6 +364,19 @@
                     }
                 }
             }
+            .ic--collapse{
+                &:before{
+                    background-color: #43B5B5;
+                }
+            }
+            .collapsed{
+                .ic--collapse{
+                    &:after{
+                        background-color: #43B5B5;;
+                    }
+                }
+            }
+
         }
     }
     .accordion-block{
@@ -378,36 +406,52 @@
             width: 100%;
             text-align: left;
             outline: 0;
+        }
+
+        .ic--collapse{
+            position: absolute;
+            top: calc(50% - 10px);
+            right: 20px;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background-color: #fff;
+            &:before{
+                content: "";
+                width: 12px;
+                height: 1px;
+                background-color: #0a4ce0;
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                right: 0;
+                margin: auto;
+            }
             &:after{
                 content: "";
+                width: 1px;
+                height: 12px;
+                background-color: transparent;
                 position: absolute;
-                top: calc(50% - 10px);
-                right: 20px;
-                width: 20px;
-                height: 20px;
-                background-image: url(../images/icon-toggle.svg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
+                top: 4px;
+                left: 0px;
+                right: 0;
+                margin: auto;
                 transition: all .5s;
             }
-            &.collapsed{
+        }
+        .collapsed{
+            .ic--collapse{
                 &:after{
-                    background-image: url(../images/icon-toggle-open.svg);
+                    background-color: #0a4ce0;;
                 }
             }
         }
+
+        
+
         @media (min-width: 768px) {
-            .collapsing {
-                height: 100%;
-            }
-            .collapse:not(.show) {
-                display: block;
-                height: 100%;
-            }
-            .bnt__collapse.collapsed:after {
-                background-image: url(../images/icon-toggle.svg);
-            }
+           
         }
     }
     &-slider-link{
@@ -434,8 +478,8 @@
                 background-color: #EFEFEF;
                 color: #222222;
                 transition: all .5s;
+                border-radius: 6px;
                 &:hover, &:focus, &:active{
-                    border-radius: 6px;
                     border-color: $color_primary;
                 }
             }
@@ -573,6 +617,7 @@
             }
             &__date{
                 margin-right: 20px;
+                font-family: 'Montserrat';
             }
             &__type{
                 font-size: 11px;
@@ -598,6 +643,9 @@
                 display: inline-block;
                 font-size: 13px;
                 color: #FF0219;
+                font-family: 'Montserrat';
+                position: relative;
+                top: -2px;
             }
         }
         
@@ -620,6 +668,7 @@
             font-size: 24px;
             font-weight: 500;
             padding-bottom: 10px;
+            color: $color_primary;
         }
         .btn__list-tick{
             border: 1px solid #B7B7B7;
@@ -683,6 +732,8 @@
                     font-size: 30px;
                     line-height: 16px;
                     color: $color_primary;
+                    position: relative;
+                    left: -1px;
                 }
                 &:hover{
                     background-color: $color_primary;
@@ -702,6 +753,7 @@
                 right: 0;
                 &:before {
                     content: "\e901";
+                    left: 1px;
                 }
             }
 
@@ -720,6 +772,11 @@
         }
         @media (max-width: 767px) {
                 margin-bottom: 50px;
+        }
+        @media (max-width: 340px) {
+            .btn__list-tick {
+                padding: 0px 8px;
+            }
         }
     }
 }

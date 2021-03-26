@@ -79,7 +79,10 @@
         .hide-mobile {
             display: none;
         }
-
+        .wrapper-page .content-top{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
         .show-mobile {
             display: block!important;
             .content-bottom{
