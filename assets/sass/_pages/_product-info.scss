@@ -104,6 +104,28 @@
                 } 
             }
         }
+        @media (max-width: 390px) {
+            .search{
+                &__form{
+                    .search-field{
+                        font-size: 14px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 360px) {
+            .search{
+                &__form{
+                    .search-field{
+                        font-size: 13px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
     }
     &-product-search{
         background-color: #ECF0FA;
@@ -163,13 +185,13 @@
                 color: #222222;
                 border-bottom: 1px dotted $color_primary;
                 padding-bottom: 5px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
         }
         .seri{
             &__logo{
                 max-width: 660px;
-                margin: 0 auto 20px;
+                margin: 0 auto 30px;
                 &__item {
                     @include flex-content(wrap, center, center);
                     border: 1px solid #B7B7B7;
@@ -179,11 +201,14 @@
                     background: #fff;
                     text-align: center;
                     margin-bottom: 10px;
-                    &:hover{
-                        border-color: $color_primary;
-                    }
                     img{
                         height: auto;
+                        -webkit-transform:scale(1);transform:scale(1);-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out
+                    }
+                    &:hover{
+                        img{
+                            -webkit-transform:scale(1.1);transform:scale(1.1)
+                        }
                     }
                 }
                 .row{margin-right:5px;margin-left:5px}
@@ -286,25 +311,29 @@
                     }
                 }
             }
+
             .nav-tabs{
-                position: absolute;
-                top: -20px;
-                left: 0;
-                width: 100%;
-                background: #fff;
-                padding: 10px 15px;
-                z-index: 1;
-                opacity: 0;
-                visibility: hidden;
-                transition: all .5s;
-                &.show{
-                    visibility: visible;
-                    transform: rotateY(0);
-                    -webkit-transform: rotateY(0);
-                    opacity: 1;
-                }
+                display: none;
+                // position: absolute;
+                // top: -20px;
+                // left: 0;
+                // width: 100%;
+                // background: #fff;
+                // padding: 10px 15px;
+                // z-index: 1;
+                // opacity: 0;
+                // visibility: hidden;
+                // transition: all .5s;
+                // &.show{
+                //     visibility: visible;
+                //     transform: rotateY(0);
+                //     -webkit-transform: rotateY(0);
+                //     opacity: 1;
+                // }
                 .nav-item{
                     width: 100%;
+                    @include flex-col(100%);
+                    background: #fff;
                     &:not(:last-child){
                         margin-right: 0;
                     }
@@ -678,6 +707,11 @@
             height: 36px;
             padding: 0px 15px;
             margin-bottom: 10px;
+            &:hover, &.button-active{
+                background-color: $color_primary;
+                border-color: $color_primary;
+                color: #fff;
+            }
         }
         .slider-list__view{
             padding-bottom: 15px;
@@ -794,12 +828,12 @@
         color: $color_primary;
         background: #fff;
         &::after{
-            content: "\e908";
+            content: "\e912";
             font-family: 'icomoon';
             position: absolute;
             top: 20%;
             right: 20px;
-            font-size: 20px;
+            font-size: 4px; 
         }
         &:hover{
             background-color: $color_primary;

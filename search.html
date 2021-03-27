@@ -23,7 +23,7 @@
     <div class="header__wrap">
         <div class="logo d-flex align-items-center">
             <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
-            <a href="#" class="header__user__name d-none d-lg-inline-block">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
+            <a href="#" class="header__user__name d-none d-lg-inline-block" data-toggle="modal" data-target="#modal_logout">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
         </div>
         <div class="header-content">
             <a class="text" href="#">リオネット　セールスポートとは</a>
@@ -67,44 +67,61 @@
             </div>
 
             <div class="search-top__detail">
-                <div class="before-select">
-                    <select name="select" class="select-btn">
-                        <option value="最新">製品情報</option>
-                        <option value="最新">製品情報</option>
-                        <option value="最新">製品情報</option>
-                        <option value="最新">製品情報</option>
-                    </select>
-                </div>
-                <div class="before-select">
-                    <select name="select" class="select-btn">
-                        <option value="最新">動画</option>
-                        <option value="最新">動画</option>
-                        <option value="最新">動画</option>
-                    </select>
-                </div>
-                <div class="before-select">
-                    <select name="select" class="select-btn">
-                        <option value="最新">営業ニュース</option>
-                        <option value="最新">営業ニュース</option>
-                        <option value="最新">営業ニュース</option>
-                    </select>
-                </div>
-                <div class="before-select">
-                    <select name="select" class="select-btn">
-                        <option value="最新">各種ダウンロード</option>
-                        <option value="最新">各種ダウンロード</option>
-                        <option value="最新">各種ダウンロード</option>
-                    </select>
+                <div class="row no-gutters10">
+                    <div class="col-6 col-md-3">
+                        <div class="show-more-action">
+                            <a href="#" class="fake-select -s1">製品情報</a>
+                            <ul class="list-more list-unstyled">
+                            <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="show-more-action">
+                            <a href="#" class="fake-select -s1">動画</a>
+                            <ul class="list-more list-unstyled">
+                            <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="show-more-action">
+                            <a href="#" class="fake-select -s1">営業ニュース</a>
+                            <ul class="list-more list-unstyled">
+                            <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="show-more-action">
+                            <a href="#" class="fake-select -s1">各種ダウンロード</a>
+                            <ul class="list-more list-unstyled">
+                            <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                <li class="list-item"><a href="">製品情報</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container js-sc__content">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">製品情報</div>
                     <div class="content-top__right d-none d-md-flex">
                         <p class="">チェックした項目を</p>
-                        <a href="#" class="button style-2">マイリスト登録</a>
+                        <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                     </div>
                     <div class="d-md-none w-100">
                         <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
@@ -118,7 +135,7 @@
                                 </select>
                             </div>
                             <div class="content-top__right">
-                                <a href="#" class="button style-2">マイリスト登録</a>
+                                <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +156,7 @@
                 </div>
                 
             </div>
-            <div class="row">
+            <div class="row row_product">
                 <div class="col-md-6">
                     <div class="image-box style-2">
                         <div class="image-box__thumb">
@@ -148,7 +165,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -172,7 +189,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -196,7 +213,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -220,7 +237,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -244,7 +261,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -268,7 +285,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -292,7 +309,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -316,7 +333,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -340,7 +357,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -364,7 +381,7 @@
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">製品情報</span>
-                                <input type="checkbox" class="check-input">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="title">
                                 リオネットシリーズ
@@ -381,18 +398,18 @@
                     </div>
                 </div>
                 
-                <div class="col-md-12 text-center btn__loadmore__wrap ">
-                    <div class="btn__readmore -s1 button-loadmore button-loadmore__product">もっと見る</div>
+                <div class="col-md-12 text-center btn__loadmore__wrap loadmore5">
+                    <div class="btn__readmore -s1 button-loadmore button-loadmore__product" data-show="10">もっと見る</div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container js-sc__content">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">動画</div>
                     <div class="content-top__right d-none d-md-flex">
                         <p class="">チェックした項目を</p>
-                        <a href="#" class="button style-2">マイリスト登録</a>
+                        <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                     </div>
                     <div class="d-md-none w-100">
                         <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
@@ -406,7 +423,7 @@
                                 </select>
                             </div>
                             <div class="content-top__right">
-                                <a href="#" class="button style-2">マイリスト登録</a>
+                                <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                             </div>
                         </div>
                     </div>
@@ -427,16 +444,16 @@
                 </div>
                 
             </div>
-            <div class="row">
+            <div class="row js-loadmore-video">
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -449,14 +466,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -469,14 +486,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -489,14 +506,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -509,14 +526,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -529,14 +546,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -549,14 +566,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -569,14 +586,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -589,14 +606,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -609,14 +626,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">動画</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -628,18 +645,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 text-center btn__loadmore__wrap ">
-                    <div class="btn__readmore -s1 button-loadmore button-loadmore__product">もっと見る</div>
+                <div class="col-md-12 text-center btn__loadmore__wrap">
+                    <div class="btn__readmore -s1 button-loadmore" data-show="10">もっと見る</div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container js-sc__content">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">営業ニュース</div>
                     <div class="content-top__right d-none d-md-flex">
                         <p class="">チェックした項目を</p>
-                        <a href="#" class="button style-2">マイリスト登録</a>
+                        <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                     </div>
                     <div class="d-md-none w-100">
                         <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
@@ -653,7 +670,7 @@
                                 </select>
                             </div>
                             <div class="content-top__right">
-                                <a href="#" class="button style-2">マイリスト登録</a>
+                                <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                             </div>
                         </div>
                     </div>
@@ -674,17 +691,16 @@
                 </div>
                 
             </div>
-            
-            <div class="row">
+            <div class="row row_download">
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -698,14 +714,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -719,14 +735,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -740,14 +756,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -761,14 +777,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -782,14 +798,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -803,14 +819,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -824,14 +840,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -845,14 +861,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -866,14 +882,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -886,18 +902,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 text-center btn__loadmore__wrap ">
-                    <div class="btn__readmore -s1 button-loadmore button-loadmore__product">もっと見る</div>
+                <div class="col-md-12 text-center btn__loadmore__wrap">
+                    <div class="btn__readmore -s1 button-loadmore button-loadmore__download" data-show="10">もっと見る</div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container movie2 js-sc__content">
             <div class="wrapper-page">
                 <div class="content-top">
                     <div class="content-top__label">各種ダウンロード</div>
                     <div class="content-top__right d-none d-md-flex">
                         <p class="">チェックした項目を</p>
-                        <a href="#" class="button style-2">マイリスト登録</a>
+                        <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                     </div>
                     <div class="d-md-none w-100">
                         <p class="mt-3 mb-3 h6">“補聴器” の検索結果 178 件中 1 - 20件を表示</p>
@@ -911,7 +927,7 @@
                                 </select>
                             </div>
                             <div class="content-top__right">
-                                <a href="#" class="button style-2">マイリスト登録</a>
+                                <a href="#" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                             </div>
                         </div>
                     </div>
@@ -933,16 +949,16 @@
                 
             </div>
             
-            <div class="row">
+            <div class="row js-loadmore-movie2">
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -956,14 +972,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -977,14 +993,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -998,14 +1014,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -1019,14 +1035,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -1040,14 +1056,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -1061,14 +1077,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -1082,14 +1098,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -1103,14 +1119,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -1124,14 +1140,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="image-box">
+                    <div class="image-box -mb-sm">
                         <div class="image-box__thumb">
                             <img src="./assets/images/image-box.jpg" alt="image">
                         </div>
                         <div class="image-box__content">
                             <div class="content-button d-flex justify-content-between align-items-center">
                                 <span class="button">営業ニュース</span>
-                                <input type="checkbox" class="check-input" id="">
+                                <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                             </div>
                             <div class="meta">
                                 <span>2017.11.29</span>
@@ -1145,7 +1161,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-center btn__loadmore__wrap ">
-                    <div class="btn__readmore -s1 button-loadmore button-loadmore__product">もっと見る</div>
+                    <div class="btn__readmore -s1 button-loadmore button-loadmore__movie2" data-show="10">もっと見る</div>
                 </div>
             </div>
         </div>
@@ -1221,15 +1237,19 @@
     <li class="social-fixed__item message">
         <a href="#"  data-toggle="modal" data-target="#modalContact">
             <img src="./assets/images/message.svg" alt="message">
-            <p>サポート 窓口
-            </p>
+            <p>サポート 窓口</p>
         </a>
     </li>
-    <li class="social-fixed__item cart">
+    <li class="social-fixed__item cart d-none d-md-block">
         <a href="#"  data-toggle="modal" data-target="#modalContact">
             <img src="./assets/images/cart.svg" alt="cart">
-            <p>オンライン 注文
-            </p>
+            <p>オンライン 注文</p>
+        </a>
+    </li>
+    <li class="social-fixed__item cart d-md-none">
+        <a href="#"  data-toggle="modal" data-target="#modalContact">
+            <span class="icon-file-text"></span>
+            <p>営業ニュース</p>
         </a>
     </li>
 </ul>
@@ -1276,27 +1296,28 @@
         <ul class="menu-nav__button">
             <li class="item">
                 <a href="mylist.html" class="button">
-                    マイリスト
-                </a>
+                マイリスト
+            </a>
             </li>
             <li class="item">
                 <a href="#" class="button" data-toggle="modal" data-target="#modalContact">
-                    サポート窓口
-                </a>
+                サポート窓口
+            </a>
             </li>
             <li class="item">
                 <a href="#" class="button download">
-                    リオネットフォーラム
-                </a>
+                リオネットフォーラム
+            </a>
             </li>
             <li class="item">
                 <a href="#" class="button download" data-toggle="modal" data-target="#modalContact">
-                    オンライン注文
-                </a>
+                オンライン注文
+            </a>
             </li>
         </ul>
         <p class="d-flex justify-content-end button-user">
-            <a href="#" class="button"><img src="./assets/images/user.svg" alt=""> お客様情報 <img src="./assets/images/login-icon1.png" alt=""></a>
+            <a href="#" class="btn btn-infoz mr-3"><img src="./assets/images/user.svg" alt=""> <span>お客様情報</span> <img src="./assets/images/login-icon1.png" alt=""></a>
+            <a href="#" class="btn btn-logout" data-toggle="modal" data-target="#modal_logout">お客様情報 <span class="ic-logout"></span></a>
         </p>
     </div>
 </div>
@@ -1361,7 +1382,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         リオネットシリーズ
@@ -1384,7 +1405,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         リオネットシリーズ
@@ -1407,7 +1428,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         リオネットシリーズ
@@ -1430,7 +1451,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         リオネットシリーズ
@@ -1453,7 +1474,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">動画</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1473,7 +1494,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">動画</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1493,7 +1514,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">動画</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1513,7 +1534,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">動画</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1533,7 +1554,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1554,7 +1575,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1575,7 +1596,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1596,7 +1617,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1617,7 +1638,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1638,7 +1659,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1659,7 +1680,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1680,7 +1701,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1701,7 +1722,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1722,7 +1743,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">営業ニュース</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -1736,6 +1757,22 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal--logout" id="modal_logout" tabindex="-1" role="dialog" aria-labelledby="modal_video" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLongTitle">ログアウトしてよろしいでしょうか？</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close"></span></button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <a href="#" class="button btn-cancel">キャンセル</a>
+                    <a href="#" class="button btn-ok">ログアウト</a>
                 </div>
             </div>
         </div>

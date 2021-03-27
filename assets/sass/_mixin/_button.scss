@@ -33,7 +33,7 @@
         border-color: $color-gray-3;
         padding: 4px 10px 5px;
         min-width: 130px;
-        &:hover{
+        &:hover, &.button-active{
             background-color: $color_primary;
             border-color: $color_primary;
             color: #fff;

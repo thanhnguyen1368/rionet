@@ -3,48 +3,8 @@
 }
 
 .search-top__detail {
-    display: flex;
-    justify-content: center !important;
-    flex-wrap: wrap;
     max-width: 670px;
     margin: auto;
-    .before-select {
-        width: 25%;
-        padding: 0 5px;
-        &:before {
-            right: 12px;
-        }
-    }
-    .select-btn {
-        width: 100%;
-        margin: 0;
-        color: #0A4CE0;
-        border: 1px solid #0A4CE0;
-        padding: 2px 25px 2px 15px;
-        appearance: none;
-        border-radius: 5px;
-        text-align-last:center;
-        outline: none;
-        box-shadow: none;
-        background: $color-gray;
-    }
-    @media (max-width:768px) {
-        flex-wrap: wrap;
-        justify-content: flex-start !important;
-        .before-select {
-            width: 50%;
-            padding-bottom: 10px;
-            &:before {
-                top: 38%;
-                transform: translateY(-38%);
-            }
-        }
-    }
-    @media (max-width:576px) {
-        .before-select {
-            width: 100%;
-        }
-    }
 }
 
 .list-detail {
