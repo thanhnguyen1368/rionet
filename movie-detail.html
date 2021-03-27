@@ -23,7 +23,7 @@
         <div class="header__wrap">
             <div class="logo d-flex align-items-center">
                 <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
-                <a href="#" class="header__user__name d-none d-lg-inline-block">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
+                <a href="#" class="header__user__name d-none d-lg-inline-block" data-toggle="modal" data-target="#modal_logout">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
             </div>
             <div class="header-content">
                 <a class="text" href="#">リオネット　セールスポートとは</a>
@@ -100,21 +100,19 @@
                         <p class="des">動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概要テキスト動画に関する概</p>
                     </div>
                 </div>
-                <div class="row_movie movie1 mb-4">
+                <div class="row_movie movie1 mb-4 js-sc__content">
                     <div class="title-seemore text-center">関連動画</div>
                     <div class="control_top mb-4">
                         <p class=" style-2 ">チェックした項目を</p>
                         <a href="javascript:voi(0)" class="ml-2 button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                     </div>
                     <!-- modal video -->
-                    <div class="modal fade modal--video" id="modal_video1" tabindex="-1" role="dialog" aria-labelledby="modal_video1" aria-hidden="true">
+                    <div class="modal fade modal--video" id="modal_video" tabindex="-1" role="dialog" aria-labelledby="modal_video" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLongTitle">補聴器販売に関わる基礎知識（初級編）</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close"></span></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="video-box__thumb style-2">
@@ -138,7 +136,7 @@
                                         <div class="meta">
                                             <span>2017.11.29</span>
                                         </div>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         補聴器販売に関わる基礎知識（初級編）
@@ -159,7 +157,7 @@
                                         <div class="meta">
                                             <span>2017.11.29</span>
                                         </div>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         補聴器販売に関わる基礎知識（初級編）
@@ -180,7 +178,7 @@
                                         <div class="meta">
                                             <span>2017.11.29</span>
                                         </div>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         補聴器販売に関わる基礎知識（初級編）
@@ -201,7 +199,7 @@
                                         <div class="meta">
                                             <span>2017.11.29</span>
                                         </div>
-                                        <input type="checkbox" class="check-input">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="title">
                                         補聴器販売に関わる基礎知識（初級編）
@@ -210,20 +208,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 loadmore3">
-                            <div class="load-more-article text-center mt-0">
-                                <a href="javascript:voi(0)" class="button style-3 button-loadmore button-loadmore__movie1 before-select">もっと見る</a>
-                            </div>
+                        <div class="col-md-12 text-center btn__loadmore__wrap mb-5">
+                            <div class="btn__readmore -s1 button-loadmore button-loadmore__movie1" data-show="4">もっと見る</div>
                         </div>
                     </div>
                 </div>
-                <div class="row_movie movie2">
+                <div class="row_movie movie2 js-sc__content">
                     <div class="title-seemore text-center">関連コンテンツ</div>
                     <div class="control_top mb-4">
                         <p class=" style-2 ">チェックした項目を</p>
                         <a href="javascript:voi(0)" class="ml-2 button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row js-loadmore-movie2">
                         <div class="col-md-6">
                             <div class="image-box -mb-sm">
                                 <div class="image-box__thumb">
@@ -232,7 +228,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">各種ダウンロード</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -253,7 +249,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">各種ダウンロード</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -274,7 +270,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">各種ダウンロード</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -295,7 +291,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">各種ダウンロード</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -316,7 +312,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">各種ダウンロード</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -337,7 +333,7 @@
                                 <div class="image-box__content">
                                     <div class="content-button d-flex justify-content-between align-items-center">
                                         <span class="button">各種ダウンロード</span>
-                                        <input type="checkbox" class="check-input" id="">
+                                        <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                     </div>
                                     <div class="meta">
                                         <span>2017.11.29</span>
@@ -350,8 +346,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 text-center loadmore4">
-                            <div class="btn__readmore -s1 button-loadmore__movie2">もっと見る</div>
+                        <div class="col-md-12 text-center btn__loadmore__wrap mb-5">
+                            <div class="btn__readmore -s1 button-loadmore__movie2" data-show="6">もっと見る</div>
                         </div>
                     </div>
                 </div>
@@ -424,17 +420,21 @@
     </footer>
     <ul class="social-fixed">
         <li class="social-fixed__item message">
-            <a href="#" data-toggle="modal" data-target="#modalContact">
+            <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/message.svg" alt="message">
-                <p>サポート 窓口
-                </p>
+                <p>サポート 窓口</p>
             </a>
         </li>
-        <li class="social-fixed__item cart">
+        <li class="social-fixed__item cart d-none d-md-block">
             <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/cart.svg" alt="cart">
-                <p>オンライン 注文
-                </p>
+                <p>オンライン 注文</p>
+            </a>
+        </li>
+        <li class="social-fixed__item cart d-md-none">
+            <a href="#"  data-toggle="modal" data-target="#modalContact">
+                <span class="icon-file-text"></span>
+                <p>営業ニュース</p>
             </a>
         </li>
     </ul>
@@ -501,7 +501,8 @@
                 </li>
             </ul>
             <p class="d-flex justify-content-end button-user">
-                <a href="#" class="button"><img src="./assets/images/user.svg" alt=""> お客様情報 <img src="./assets/images/login-icon1.png" alt=""></a>
+                <a href="#" class="btn btn-infoz mr-3"><img src="./assets/images/user.svg" alt=""> <span>お客様情報</span> <img src="./assets/images/login-icon1.png" alt=""></a>
+                <a href="#" class="btn btn-logout" data-toggle="modal" data-target="#modal_logout">お客様情報 <span class="ic-logout"></span></a>
             </p>
         </div>
     </div>
@@ -566,7 +567,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -589,7 +590,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -612,7 +613,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -635,7 +636,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -658,7 +659,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -678,7 +679,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -698,7 +699,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -718,7 +719,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -738,7 +739,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -759,7 +760,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -780,7 +781,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -801,7 +802,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -822,7 +823,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -843,7 +844,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -864,7 +865,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -885,7 +886,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -906,7 +907,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -927,7 +928,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -941,6 +942,22 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal--logout" id="modal_logout" tabindex="-1" role="dialog" aria-labelledby="modal_video" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ログアウトしてよろしいでしょうか？</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close"></span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <a href="#" class="button btn-cancel">キャンセル</a>
+                        <a href="#" class="button btn-ok">ログアウト</a>
                     </div>
                 </div>
             </div>

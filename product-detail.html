@@ -23,7 +23,7 @@
         <div class="header__wrap">
             <div class="logo d-flex align-items-center">
                 <a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
-                <a href="#" class="header__user__name d-none d-lg-inline-block">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
+                <a href="#" class="header__user__name d-none d-lg-inline-block" data-toggle="modal" data-target="#modal_logout">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
             </div>
             <div class="header-content">
                 <a class="text" href="#">リオネット　セールスポートとは</a>
@@ -85,7 +85,7 @@
                             </div>
 
                             <p class="detail clearfix">サマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキスト</p>
-                            <div class="quantity d-none d-md-block">
+                            <div class="quantity d-none d-md-flex">
                                 <p>製品色は全9カラー、豊富なカラーバリエーションをご用意しています。</p>
                                 <div class="">耳かけ型</div>
                             </div>
@@ -117,567 +117,772 @@
                         <div class="content">
                             <div>
                                 <div class="link_pdf">
-                                    <a href="#">テクニカルインフォメーション </a> <a href="#" class="pdf">PDF</a>
+                                    <a href="#"><u>テクニカルインフォメーション</u> <span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">取説 </a><a href="#" class="pdf">PDF</a>
+                                    <a href="#"><u>取説</u> <span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">添付文書</a> <a href="#" class="pdf">PDF</a>
+                                    <a href="#"><u>添付文書</u> <span class="pdf">PDF</span></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="link_pdf">
-                                    <a href="#">セールスガイド </a><a href="#" class="pdf">PDF</a>
+                                    <a href="#"><u>セールスガイド</u> <span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">メンテナンスガイド</a><a href="#" class="pdf">PDF</a>
+                                    <a href="#"><u>メンテナンスガイド</u> <span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">医療機器認証番号 </a><a href="#" class="pdf">PDF</a>
+                                    <a href="#"><u>医療機器認証番号</u> <span class="pdf">PDF</span></a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="container">
-                
+            <div class="container mb-5  js-sc__content">
+
                 <div class="text-center mt-5 m-4 title_moreProduct">関連記事</div>
-                <div class="wrapper-page show-mobile">
+                <div class="search-top__detail pt-2 mb-4">
+                    <div class="row no-gutters10">
+                        <div class="col-6 col-md-3">
+                            <div class="show-more-action">
+                                <a href="#" class="fake-select -s1">製品情報</a>
+                                <ul class="list-more list-unstyled">
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="show-more-action">
+                                <a href="#" class="fake-select -s1">動画</a>
+                                <ul class="list-more list-unstyled">
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="show-more-action">
+                                <a href="#" class="fake-select -s1">営業ニュース</a>
+                                <ul class="list-more list-unstyled">
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="show-more-action">
+                                <a href="#" class="fake-select -s1">各種ダウンロード</a>
+                                <ul class="list-more list-unstyled">
+                                <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                    <li class="list-item"><a href="">製品情報</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="wrapper-page">
                     <div class="content-top">
-                        <div class="content-top__right">
-                            <a href="#" class="button style-2">マイリスト登録</a>
+                        <div class="content-top__label">製品情報</div>
+                        <div class="content-top__right d-none d-md-flex">
+                            <p class="">チェックした項目を</p>
+                            <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                        </div>
+                        <div class="d-md-none w-100">
+                            <div class="content-bottom style-2 -mb-style1">
+                                <div class="wrap-select before-select">
+                                    <select name="select">
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                    </select>
+                                </div>
+                                <div class="content-top__right">
+                                    <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="content-bottom style-2 d-none d-md-flex">
+                        <div class="d-flex align-items-center ml-auto">
+                            <p class="d-none d-md-block">並び替え</p>
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="">新しい順</option>
+                                    <option value="">古い順</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="row row_product">
                     <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
+                        <div class="image-box style-2">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">製品情報</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                 </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
+                                <div class="title">
+                                    リオネットシリーズ
+                                </div>
+                                <p class="des">マキシエンス<br>
+                                    HB-A3AA </p>
+                                <div class="bottom d-flex">
+                                    <p>発売時期</p>
+                                    <div class="meta">
+                                        <span>2017.11.29</span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
+                        <div class="image-box style-2">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">製品情報</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                 </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
+                                <div class="title">
+                                    リオネットシリーズ
+                                </div>
+                                <p class="des">マキシエンス<br>
+                                    HB-A3AA </p>
+                                <div class="bottom d-flex">
+                                    <p>発売時期</p>
+                                    <div class="meta">
+                                        <span>2017.11.29</span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
+                        <div class="image-box style-2">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">製品情報</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                 </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
+                                <div class="title">
+                                    リオネットシリーズ
+                                </div>
+                                <p class="des">マキシエンス<br>
+                                    HB-A3AA </p>
+                                <div class="bottom d-flex">
+                                    <p>発売時期</p>
+                                    <div class="meta">
+                                        <span>2017.11.29</span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
+                        <div class="image-box style-2">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">製品情報</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                 </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
+                                <div class="title">
+                                    リオネットシリーズ
+                                </div>
+                                <p class="des">マキシエンス<br>
+                                    HB-A3AA </p>
+                                <div class="bottom d-flex">
+                                    <p>発売時期</p>
+                                    <div class="meta">
+                                        <span>2017.11.29</span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
+                        <div class="image-box style-2">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">製品情報</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                 </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
+                                <div class="title">
+                                    リオネットシリーズ
+                                </div>
+                                <p class="des">マキシエンス<br>
+                                    HB-A3AA </p>
+                                <div class="bottom d-flex">
+                                    <p>発売時期</p>
+                                    <div class="meta">
+                                        <span>2017.11.29</span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
+                        <div class="image-box style-2">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">製品情報</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                 </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
+                                <div class="title">
+                                    リオネットシリーズ
+                                </div>
+                                <p class="des">マキシエンス<br>
+                                    HB-A3AA </p>
+                                <div class="bottom d-flex">
+                                    <p>発売時期</p>
+                                    <div class="meta">
+                                        <span>2017.11.29</span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-6">
-                        <a href="product-detail.html">
-                            <div class="image-box style-2">
-                                <div class="image-box__thumb">
-                                    <img src="./assets/images/image-box.jpg" alt="image">
-                                </div>
-                                <div class="image-box__content">
-                                    <div class="content-button d-flex justify-content-between align-items-center">
-                                        <span class="button">製品情報</span>
-                                        <input type="checkbox" class="check-input">
-                                    </div>
-                                    <div class="title">
-                                        リオネットシリーズ
-                                    </div>
-                                    <p class="des">マキシエンス<br> HB-A3AA </p>
-                                    <div class="bottom d-flex">
-                                        <p>発売時期</p>
-                                        <div class="meta">
-                                            <span>2017.11.29</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-md-12 text-center btn__loadmore__wrap loadmore5">
-                        <div class="btn__readmore -s1 button-loadmore button-loadmore__product">もっと見る</div>
+                    <div class="col-md-12 text-center btn__loadmore__wrap">
+                        <div class="btn__readmore -s1 button-loadmore button-loadmore__product" data-show="6">もっと見る</div>
                     </div>
                 </div>
             </div>
+            <div class="container mb-5 js-sc__content">
+                <div class="wrapper-page">
+                    <div class="content-top">
+                        <div class="content-top__label">動画</div>
+                        <div class="content-top__right d-none d-md-flex">
+                            <p class="">チェックした項目を</p>
+                            <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                        </div>
+                        <div class="d-md-none w-100">
+                            <div class="content-bottom style-2 -mb-style1">
+                                <div class="wrap-select before-select">
+                                    <select name="select">
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                    </select>
+                                </div>
+                                <div class="content-top__right">
+                                    <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-bottom style-2 d-none d-md-flex">
+                        <div class="d-flex align-items-center ml-auto">
+                            <p class="d-none d-md-block">並び替え</p>
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="">新しい順</option>
+                                    <option value="">古い順</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row js-loadmore-video">
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">動画</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                </div>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">動画</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                </div>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">動画</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                </div>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">動画</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                </div>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">動画</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                </div>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">動画</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">補聴器販売に関わる基礎知識（初級編）</a>
+                                </div>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center btn__loadmore__wrap">
+                        <div class="btn__readmore -s1 button-loadmore" data-show="6">もっと見る</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5  js-sc__content">
+                <div class="wrapper-page">
+                    <div class="content-top">
+                        <div class="content-top__label">営業ニュース</div>
+                        <div class="content-top__right d-none d-md-flex">
+                            <p class="">チェックした項目を</p>
+                            <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                        </div>
+                        <div class="d-md-none w-100">
+                            <div class="content-bottom style-2 -mb-style1">
+                                <div class="wrap-select before-select">
+                                    <select name="select">
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                    </select>
+                                </div>
+                                <div class="content-top__right">
+                                    <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-bottom style-2 d-none d-md-flex">
+                        <div class="d-flex align-items-center ml-auto">
+                            <p class="d-none d-md-block">並び替え</p>
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="">新しい順</option>
+                                    <option value="">古い順</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row row_download">
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">営業ニュースNO.553</a>
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">営業ニュースNO.553</a>
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">営業ニュースNO.553</a>
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">営業ニュースNO.553</a>
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">営業ニュースNO.553</a>
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    <a href="#">営業ニュースNO.553</a>
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center btn__loadmore__wrap">
+                        <div class="btn__readmore -s1 button-loadmore button-loadmore__download" data-show="6">もっと見る</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5 movie2 js-sc__content">
+                <div class="wrapper-page">
+                    <div class="content-top">
+                        <div class="content-top__label">各種ダウンロード</div>
+                        <div class="content-top__right d-none d-md-flex">
+                            <p class="">チェックした項目を</p>
+                            <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                        </div>
+                        <div class="d-md-none w-100">
+                            <div class="content-bottom style-2 -mb-style1">
+                                <div class="wrap-select before-select">
+                                    <select name="select">
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                        <option value="最新">最新</option>
+                                    </select>
+                                </div>
+                                <div class="content-top__right">
+                                    <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-bottom style-2 d-none d-md-flex">
+                        <div class="d-flex align-items-center ml-auto">
+                            <p class="d-none d-md-block">並び替え</p>
+                            <div class="wrap-select before-select">
+                                <select name="select">
+                                    <option value="">新しい順</option>
+                                    <option value="">古い順</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row js-loadmore-movie2">
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    Version.1.13.1(S)
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    Version.1.13.1(S)
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    Version.1.13.1(S)
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    Version.1.13.1(S)
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    Version.1.13.1(S)
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box -mb-sm">
+                            <div class="image-box__thumb">
+                                <img src="./assets/images/image-box.jpg" alt="image">
+                            </div>
+                            <div class="image-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <span class="button">営業ニュース</span>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <div class="meta">
+                                    <span>2017.11.29</span>
+                                </div>
+                                <div class="title">
+                                    Version.1.13.1(S)
+                                </div>
+                                <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br>
+                                    リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center btn__loadmore__wrap ">
+                        <div class="btn__readmore -s1 button-loadmore button-loadmore__movie2" data-show="6">もっと見る</div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <!-- end Content -->
@@ -748,15 +953,19 @@
         <li class="social-fixed__item message">
             <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/message.svg" alt="message">
-                <p>サポート 窓口
-                </p>
+                <p>サポート 窓口</p>
             </a>
         </li>
-        <li class="social-fixed__item cart">
+        <li class="social-fixed__item cart d-none d-md-block">
             <a href="#"  data-toggle="modal" data-target="#modalContact">
                 <img src="./assets/images/cart.svg" alt="cart">
-                <p>オンライン 注文
-                </p>
+                <p>オンライン 注文</p>
+            </a>
+        </li>
+        <li class="social-fixed__item cart d-md-none">
+            <a href="#"  data-toggle="modal" data-target="#modalContact">
+                <span class="icon-file-text"></span>
+                <p>営業ニュース</p>
             </a>
         </li>
     </ul>
@@ -823,7 +1032,8 @@
                 </li>
             </ul>
             <p class="d-flex justify-content-end button-user">
-                <a href="#" class="button"><img src="./assets/images/user.svg" alt=""> お客様情報 <img src="./assets/images/login-icon1.png" alt=""></a>
+                <a href="#" class="btn btn-infoz mr-3"><img src="./assets/images/user.svg" alt=""> <span>お客様情報</span> <img src="./assets/images/login-icon1.png" alt=""></a>
+                <a href="#" class="btn btn-logout" data-toggle="modal" data-target="#modal_logout">お客様情報 <span class="ic-logout"></span></a>
             </p>
         </div>
     </div>
@@ -888,7 +1098,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -911,7 +1121,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -934,7 +1144,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -957,7 +1167,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">製品情報</span>
-                                            <input type="checkbox" class="check-input">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="title">
                                             リオネットシリーズ
@@ -980,7 +1190,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1000,7 +1210,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1020,7 +1230,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1040,7 +1250,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">動画</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1060,7 +1270,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1081,7 +1291,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1102,7 +1312,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1123,7 +1333,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1144,7 +1354,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1165,7 +1375,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1186,7 +1396,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1207,7 +1417,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1228,7 +1438,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1249,7 +1459,7 @@
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
                                             <span class="button">営業ニュース</span>
-                                            <input type="checkbox" class="check-input" id="">
+                                            <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
                                         </div>
                                         <div class="meta">
                                             <span>2017.11.29</span>
@@ -1263,6 +1473,22 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal--logout" id="modal_logout" tabindex="-1" role="dialog" aria-labelledby="modal_video" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ログアウトしてよろしいでしょうか？</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close"></span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <a href="#" class="button btn-cancel">キャンセル</a>
+                        <a href="#" class="button btn-ok">ログアウト</a>
                     </div>
                 </div>
             </div>

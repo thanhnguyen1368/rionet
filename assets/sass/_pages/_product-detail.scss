@@ -50,6 +50,8 @@
                         color: #0A4CE0;
                         padding: 3px 10px;
                         background: white;
+                        white-space: nowrap;
+                        height: 32px;
                     }
                 }
                 .price {
@@ -135,7 +137,6 @@
                         align-items: center;
                         margin-bottom: 10px;
                         font-size: 16px;
-                        text-decoration: underline;
                     }
                     .pdf {
                         font-family: 'Montserrat', sans-serif;
@@ -144,10 +145,10 @@
                         font-size: 10px;
                         background: red;
                         padding: 0 5px;
-                        text-decoration: underline red !important;
                         margin-left: 10px;
                         line-height: 13px;
                         height: fit-content;
+                        text-decoration: none;
                     }
                 }
                 div:last-child {
@@ -200,6 +201,18 @@
                         float: left;
                         padding-top: 0;
                     }
+                    .see_more__wrap{
+                        text-align: center;
+                    }
+                    .see_more {
+                        display: inline-block;
+                        position: relative;
+                        font-size: 14px;
+                        min-width: 210px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    
                 }
                 .details_price__left{
                     float: left;
@@ -223,17 +236,6 @@
             }
             .content {
                 .descrip {
-                    .see_more__wrap{
-                        text-align: center;
-                    }
-                    .see_more {
-                        display: inline-block;
-                        position: relative;
-                        font-size: 14px;
-                        min-width: 210px;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                    }
                     .name {
                         padding-top: 10px;
                         font-size: 24px;
