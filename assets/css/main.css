@@ -321,23 +321,25 @@ a {
   .video-box__thumb {
     position: relative;
     margin-bottom: 10px; }
-    .video-box__thumb img {
-      width: 100%; }
-    .video-box__thumb:before {
+    .video-box__thumb .icon-play {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
-      content: "";
       width: 50px;
       height: 50px;
-      z-index: 1;
-      background: url(../images/play.svg) center no-repeat;
-      background-size: cover;
-      cursor: pointer;
-      pointer-events: none; }
-    .video-box__thumb.style-2:before {
-      background: url(../images/play-active.svg) center no-repeat; }
+      background: #EFEFEF;
+      display: block;
+      line-height: 50px;
+      text-align: center;
+      font-size: 22px;
+      color: #fff;
+      border-radius: 50%; }
+      .video-box__thumb .icon-play:before {
+        position: relative;
+        left: 3px; }
+    .video-box__thumb.style-2 .icon-play {
+      background-color: #0A4CE0; }
   .video-box__content .meta {
     font-size: 13px;
     font-weight: 500;
@@ -1151,6 +1153,9 @@ html.scrollbar {
 
 .icon-close:before {
   content: "\e914"; }
+
+.icon-play:before {
+  content: "\e915"; }
 
 /**/
 .dnfix__thumb {
