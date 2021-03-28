@@ -220,7 +220,7 @@ $('.button-loadmore__download').on("click", function() {
     let pshow = $(this).attr('data-show')
     $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.row_download')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <img src="./assets/images/image-box.jpg" alt="image"> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">営業ニュース</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">営業ニュースNO.553</a> </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
+        $('.row_download')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">営業ニュース</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">営業ニュースNO.553</a> </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
     };
 });
 
@@ -228,7 +228,7 @@ $('.button-loadmore__movie').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.row_movie')[0].innerHTML += '<div class="col-md-6"> <div class="video-box"> <div class="video-box__thumb style-2"> <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video"> <img src="./assets/images/video.jpg" alt="image"> </button> </div> <div class="video-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <div class="meta"> <span>2017.11.29</span> </div> <input type="checkbox" class="check-input"> </div> <a href="movie-detail.html"> <div class="title"> 補聴器販売に関わる基礎知識（初級編） </div> </a> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p> </div> </div> </div>'
+        $('.row_movie')[0].innerHTML += '<div class="col-md-6"> <div class="video-box"> <div class="video-box__thumb style-2"> <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video"> <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span> </button> </div> <div class="video-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <div class="meta"> <span>2017.11.29</span> </div> <input type="checkbox" class="check-input"> </div> <a href="movie-detail.html"> <div class="title"> 補聴器販売に関わる基礎知識（初級編） </div> </a> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p> </div> </div> </div>'
     };
 });
 
@@ -236,7 +236,7 @@ $('.button-loadmore__movie1').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.movie1 .row')[0].innerHTML += '<div class="col-md-6"> <a href="movie-detail.html"> <div class="video-box"> <div class="video-box__thumb"> <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video1"> <img src="./assets/images/video.jpg" alt="image"> </button> </div> <div class="video-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <div class="meta"> <span>2017.11.29</span> </div> <input type="checkbox" class="check-input"> </div> <div class="title"> 補聴器販売に関わる基礎知識（初級編） </div> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p> </div> </div> </a> </div>'
+        $('.movie1 .row')[0].innerHTML += '<div class="col-md-6"> <a href="movie-detail.html"> <div class="video-box"> <div class="video-box__thumb"> <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video1"> <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span> </button> </div> <div class="video-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <div class="meta"> <span>2017.11.29</span> </div> <input type="checkbox" class="check-input"> </div> <div class="title"> 補聴器販売に関わる基礎知識（初級編） </div> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p> </div> </div> </a> </div>'
     };
 });
 
@@ -244,7 +244,7 @@ $('.button-loadmore__movie2').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.js-loadmore-movie2')[0].innerHTML += '<div class="col-md-6"> <div class="image-box -mb-sm"> <div class="image-box__thumb"> <img src="./assets/images/image-box.jpg" alt="image"> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">各種ダウンロード</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> Version.1.13.1(S) </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
+        $('.js-loadmore-movie2')[0].innerHTML += '<div class="col-md-6"> <div class="image-box -mb-sm"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">各種ダウンロード</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> Version.1.13.1(S) </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
     };
 });
 
@@ -252,14 +252,14 @@ $('.button-loadmore__product').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.row_product')[0].innerHTML += '<div class="col-md-6"> <a href="product-detail.html"> <div class="image-box style-2"> <div class="image-box__thumb"> <img src="./assets/images/image-box.jpg" alt="image"> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">製品情報</span> <input type="checkbox" class="check-input"> </div> <div class="title"> リオネットシリーズ </div> <p class="des">マキシエンス<br> HB-A3AA </p> <div class="bottom d-flex"> <p>発売時期</p> <div class="meta"> <span>2017.11.29</span> </div> </div> </div> </div> </a> </div>'
+        $('.row_product')[0].innerHTML += '<div class="col-md-6"> <a href="product-detail.html"> <div class="image-box style-2"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">製品情報</span> <input type="checkbox" class="check-input"> </div> <div class="title"> リオネットシリーズ </div> <p class="des">マキシエンス<br> HB-A3AA </p> <div class="bottom d-flex"> <p>発売時期</p> <div class="meta"> <span>2017.11.29</span> </div> </div> </div> </div> </a> </div>'
     };
 });
 $('.button-loadmore__product2').on("click", function() {
     let pshow = $(this).attr('data-show')
     $(this).closest('.btn__loadmore__wrap').hide()
      for (var n = 0; n < pshow; ++n) {
-         $('.row_product2')[0].innerHTML += '<div class="col-md-6 style1"> <div class="image-box"> <div class="image-box__thumb"> <img src="./assets/images/image-box.jpg" alt="image"> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button"><a href="my-list-detail.html">製品情報</a></span> <span class="button select-delete ">削除選択</span> </div> <div class="title"> <a href="#">リオネットシリーズ</a> </div> <p class="des">マキシエンス<br> HB-A3AA <div class="gr_btn"> <a href="#" class="">発売時期</a><span>2020.12.24</span> </div> </div> </div> </div>'
+         $('.row_product2')[0].innerHTML += '<div class="col-md-6 style1"> <div class="image-box"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button"><a href="my-list-detail.html">製品情報</a></span> <span class="button select-delete ">削除選択</span> </div> <div class="title"> <a href="#">リオネットシリーズ</a> </div> <p class="des">マキシエンス<br> HB-A3AA <div class="gr_btn"> <a href="#" class="">発売時期</a><span>2020.12.24</span> </div> </div> </div> </div>'
      };
  });
 
@@ -286,7 +286,7 @@ $('.js-loadmore-mylist .button-loadmore').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.js-loadmore-mylist')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <img src="./assets/images/image-box.jpg" alt="image"> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button"><a href="my-list-detail.html">製品情報</a></span> <span class="button select-delete ">削除選択</span> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">営業ニュースNO.553</a> </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
+        $('.js-loadmore-mylist')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button"><a href="my-list-detail.html">製品情報</a></span> <span class="button select-delete ">削除選択</span> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">営業ニュースNO.553</a> </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
     };
 });
 
@@ -294,7 +294,7 @@ $('.js-loadmore-news-details .button-loadmore').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.js-loadmore-news-details')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <img src="./assets/images/image-box.jpg" alt="image"> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">営業ニュース</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">営業ニュースNO.553</a> </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
+        $('.js-loadmore-news-details')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">営業ニュース</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">営業ニュースNO.553</a> </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
     };
 });
 
@@ -303,7 +303,7 @@ $('.js-loadmore-video .button-loadmore').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.js-loadmore-video')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <img src="./assets/images/image-box.jpg" alt="image"> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">動画</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">補聴器販売に関わる基礎知識（初級編）</a> </div> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p> </div> </div> </div>'
+        $('.js-loadmore-video')[0].innerHTML += '<div class="col-md-6"> <div class="image-box"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">動画</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> <a href="#">補聴器販売に関わる基礎知識（初級編）</a> </div> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に関わる基礎知識（初心者向け）の動画です。補聴器販売に… </p> </div> </div> </div>'
     };
 });
 // load more

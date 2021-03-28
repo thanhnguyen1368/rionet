@@ -7,15 +7,17 @@
             display: flex;
             flex-direction: row;
             padding: 5% 0;
-            .img {
-                margin-right: 20px;
-                width: 32%;
+            .item__thumb{
+                @include flex-col(250px);
+                margin-right: 60px;
+                .dnfix__thumb{
+                    padding-top: 100%;
+                }
                 img {
                     border-radius: 10px;
                 }
             }
             .descrip {
-                margin-left: 20px;
                 position: relative;
                 .brand {
                     font-size: 14px;
@@ -159,27 +161,17 @@
                 }
             }
         }
-        @media (max-width:992px) {
-            .content {
-                .img {
-                    width: 50%;
-                }
-            }
-        }
         @media (max-width:767px) {
             .content {
                 // flex-direction: column;
                 display: block;
                 padding: 30px 0;
-                .img {
+                .item__thumb{
                     float: left;
-                    width: 50%;
-                    margin-right: 0;
-                    margin-bottom: 0;
-                    text-align: center;
-                    padding-right: 10px;
+                    width: 180px;
+                    margin-right: 10px;
                     img {
-                        width: 100%;
+                        border-radius: 20px;
                     }
                 }
                 .descrip {
@@ -241,8 +233,18 @@
                         font-size: 24px;
                     }
                     .quantity {
-                        padding-top: 15px;
+                        padding-top: 15px!important;
                     }
+                }
+            }
+        }
+
+        @media (max-width:380px) {
+            .content {
+                .item__thumb{
+                    float: left;
+                    width: 125px;
+                    margin-right: 10px;
                 }
             }
         }

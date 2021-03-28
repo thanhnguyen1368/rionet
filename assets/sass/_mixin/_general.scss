@@ -9,12 +9,17 @@
     margin-bottom: 30px;
     border: 1px solid transparent;
     transition: all .5s;
+    
     &:hover{
         border-color: $color-primary;
     }
     &__thumb {
         float: left;
         margin-right: 10px;
+        width: 135px;
+        .dnfix__thumb{
+            padding-top: 100%;
+        }
     }
     &__content {
         overflow: hidden;
@@ -169,28 +174,31 @@
     &__thumb {
         position: relative;
         margin-bottom: 10px;
-        img {
-            width: 100%;
-        }
-        &:before {
+        .icon-play {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translateX(-50%) translateY(-50%);
-            content: "";
             width: 50px;
             height: 50px;
-            z-index: 1;
-            background: url(../images/play.svg) center no-repeat;
-            background-size: cover;
-            cursor: pointer;
-            pointer-events: none;
-        }
-        &.style-2 {
-            &:before {
-                background: url(../images/play-active.svg) center no-repeat;
+            background: #EFEFEF;
+            display: block;
+            line-height: 50px;
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+            border-radius: 50%;
+            &:before{
+                position: relative;
+                left: 3px;
             }
         }
+        &.style-2 {
+            .icon-play{
+                background-color: $color_primary;
+            }
+        }
+        
     }
     &__content {
         .meta {
