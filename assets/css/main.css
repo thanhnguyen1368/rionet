@@ -2193,7 +2193,7 @@ html.scrollbar {
         width: 80px;
         font-size: 14px; }
     .sec-table-design .design4.-mb table .first .titl {
-      width: 80px; }
+      width: 84px; }
   .sec-table-design .design5 table {
     width: 100%; }
     .sec-table-design .design5 table th {
@@ -2203,7 +2203,8 @@ html.scrollbar {
       color: white;
       font-weight: 500; }
       .sec-table-design .design5 table th:first-child {
-        width: 15%; }
+        width: 15%;
+        border-right: 1px solid #8C98C2; }
     .sec-table-design .design5 table tr {
       border-bottom: 1px solid #8C98C2; }
       .sec-table-design .design5 table tr td:first-child {
@@ -2220,24 +2221,18 @@ html.scrollbar {
       .sec-table-design .design2 table tr th:nth-child(1) {
         width: 15%;
         min-width: 120px;
-        padding: 17px 12px;
-        background: #D9DFF2; }
-      .sec-table-design .design2 table tr th:nth-child(2) {
-        background: #EFF2FA; }
+        padding: 17px 12px; }
     .sec-table-design .design3 table {
       width: 100%; } }
   @media (max-width: 767px) {
     .sec-table-design {
       padding: 25px 0; }
-      .sec-table-design .design2 table tr:last-child {
-        display: none; }
       .sec-table-design .design2 table tr th:nth-child(1) {
         width: 30%; }
       .sec-table-design .design5 table tr th:first-child {
-        width: 25%;
+        width: 70px;
         padding-right: 0;
-        padding: 10px 10px 10px 12px;
-        border-right: 1px solid #8C98C2; }
+        padding: 10px 10px 10px 12px; }
       .sec-table-design .design5 table tr td:first-child {
         background: #D9DFF2;
         padding-left: 10px; }
@@ -2248,9 +2243,9 @@ html.scrollbar {
 .sec-events {
   padding: 50px 0; }
   .sec-events .title {
-    color: #0A4CE0;
+    color: #345FD1;
     font-size: 18px;
-    font-weight: 600; }
+    font-weight: 500; }
   .sec-events .note {
     text-align: right;
     padding-top: 20px;
@@ -2260,11 +2255,13 @@ html.scrollbar {
     .sec-events .table-responsive table {
       width: 100%; }
       .sec-events .table-responsive table tr {
-        border-bottom: 1px solid #616986; }
-        .sec-events .table-responsive table tr td:first-child {
-          background: #D9DFF2;
-          padding-left: 20px;
-          vertical-align: middle; }
+        border-bottom: 1px solid #8C98C2; }
+        .sec-events .table-responsive table tr td {
+          border-top: 1px solid #8C98C2; }
+          .sec-events .table-responsive table tr td:first-child {
+            background: #D9DFF2;
+            padding-left: 20px;
+            vertical-align: middle; }
         .sec-events .table-responsive table tr .row8 {
           text-align: center;
           vertical-align: middle;
@@ -2283,7 +2280,10 @@ html.scrollbar {
         padding-right: 0;
         font-size: 15px;
         color: white;
-        font-weight: 500; }
+        font-weight: 500;
+        border-top: 1px solid #8C98C2; }
+        .sec-events .table-responsive table th:not(:last-child) {
+          border-right: 1px solid #8C98C2; }
         .sec-events .table-responsive table th:first-child {
           width: 20%; }
         .sec-events .table-responsive table th:nth-child(2) {
@@ -2305,12 +2305,10 @@ html.scrollbar {
       padding: 25px 0; }
       .sec-events .table-responsive table th {
         padding: 10px 12px; }
-        .sec-events .table-responsive table th:not(:last-child) {
-          border-right: 1px solid #8C98C2; }
-      .sec-events .table-responsive table th, .sec-events .table-responsive table td {
-        border-top: 1px solid #8C98C2; }
-        .sec-events .table-responsive table th:first-child, .sec-events .table-responsive table td:first-child {
-          width: 135px; }
+        .sec-events .table-responsive table th:nth-child(2) {
+          width: 65%; }
+      .sec-events .table-responsive table th:first-child, .sec-events .table-responsive table td:first-child {
+        width: 135px; }
       .sec-events .table-responsive table td {
         padding: 20px 12px !important; } }
 
@@ -2416,9 +2414,12 @@ html.scrollbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    margin-right: -5px;
+    margin-left: -5px; }
     .sec-connect .list-connect .show-more-action {
-      margin-right: 10px; }
+      margin-left: 5px;
+      margin-right: 5px; }
   .sec-connect .anchor-links .title {
     border: none;
     margin-bottom: 10px;
@@ -2455,8 +2456,10 @@ html.scrollbar {
   @media (max-width: 767px) {
     .sec-connect {
       padding: 25px 0; }
-      .sec-connect .list-connect {
-        justify-content: space-between; }
+      .sec-connect .list-connect .show-more-action {
+        -ms-flex: 0 0 calc(50% - 10px);
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px); }
       .sec-connect .anchor-links .list a {
         width: 33.333333%; } }
   @media (max-width: 480px) {
