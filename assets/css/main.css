@@ -2203,7 +2203,8 @@ html.scrollbar {
       color: white;
       font-weight: 500; }
       .sec-table-design .design5 table th:first-child {
-        width: 15%; }
+        width: 15%;
+        border-right: 1px solid #8C98C2; }
     .sec-table-design .design5 table tr {
       border-bottom: 1px solid #8C98C2; }
       .sec-table-design .design5 table tr td:first-child {
@@ -2236,8 +2237,7 @@ html.scrollbar {
       .sec-table-design .design5 table tr th:first-child {
         width: 25%;
         padding-right: 0;
-        padding: 10px 10px 10px 12px;
-        border-right: 1px solid #8C98C2; }
+        padding: 10px 10px 10px 12px; }
       .sec-table-design .design5 table tr td:first-child {
         background: #D9DFF2;
         padding-left: 10px; }
@@ -2260,11 +2260,13 @@ html.scrollbar {
     .sec-events .table-responsive table {
       width: 100%; }
       .sec-events .table-responsive table tr {
-        border-bottom: 1px solid #616986; }
-        .sec-events .table-responsive table tr td:first-child {
-          background: #D9DFF2;
-          padding-left: 20px;
-          vertical-align: middle; }
+        border-bottom: 1px solid #8C98C2; }
+        .sec-events .table-responsive table tr td {
+          border-top: 1px solid #8C98C2; }
+          .sec-events .table-responsive table tr td:first-child {
+            background: #D9DFF2;
+            padding-left: 20px;
+            vertical-align: middle; }
         .sec-events .table-responsive table tr .row8 {
           text-align: center;
           vertical-align: middle;
@@ -2283,7 +2285,10 @@ html.scrollbar {
         padding-right: 0;
         font-size: 15px;
         color: white;
-        font-weight: 500; }
+        font-weight: 500;
+        border-top: 1px solid #8C98C2; }
+        .sec-events .table-responsive table th:not(:last-child) {
+          border-right: 1px solid #8C98C2; }
         .sec-events .table-responsive table th:first-child {
           width: 20%; }
         .sec-events .table-responsive table th:nth-child(2) {
@@ -2305,12 +2310,8 @@ html.scrollbar {
       padding: 25px 0; }
       .sec-events .table-responsive table th {
         padding: 10px 12px; }
-        .sec-events .table-responsive table th:not(:last-child) {
-          border-right: 1px solid #8C98C2; }
-      .sec-events .table-responsive table th, .sec-events .table-responsive table td {
-        border-top: 1px solid #8C98C2; }
-        .sec-events .table-responsive table th:first-child, .sec-events .table-responsive table td:first-child {
-          width: 135px; }
+      .sec-events .table-responsive table th:first-child, .sec-events .table-responsive table td:first-child {
+        width: 135px; }
       .sec-events .table-responsive table td {
         padding: 20px 12px !important; } }
 
