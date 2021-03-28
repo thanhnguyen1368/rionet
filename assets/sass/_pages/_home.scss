@@ -806,8 +806,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding-bottom: 30px;
+        margin-right: -5px;
+        margin-left: -5px;
         .show-more-action {
-            margin-right: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
         
     }
@@ -859,8 +862,12 @@
     }
     @media (max-width:767px) {
         padding: 25px 0;
-        .list-connect {
-            justify-content: space-between;
+        .list-connect{
+            .show-more-action {
+                -ms-flex: 0 0 calc(50% - 10px);
+                flex: 0 0 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+            }
         }
         .anchor-links {
             .list {
