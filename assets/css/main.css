@@ -2211,7 +2211,7 @@ html.scrollbar {
         vertical-align: middle;
         padding-left: 20px; }
       .sec-table-design .design5 table tr td:last-child {
-        padding: 20px; }
+        padding: 15px 20px; }
   @media (max-width: 992px) {
     .sec-table-design .design1 table td:last-child .img {
       width: 100%; }
