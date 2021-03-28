@@ -103,31 +103,40 @@
                 height: 50px;
                 font-size: 14px;
                 font-weight: 500;
-
+                &:hover{
+                    background-color: #52D373;
+                    color: #fff;
+                    border-color: #52D373;
+                }
                 &:after {
+                    content: "\e903";
+                    font-family: 'icomoon';
                     position: absolute;
                     top: 50%;
                     right: 10px;
-                    width: 15px;
-                    height: 12px;
                     transform: translateY(-50%);
-                    content: "";
-                    background: url(../images/icon-download.svg) center no-repeat;
-                    background-size: cover;
                     transition: all 0.3s;
                 }
-                &:hover{
-                    background-color: #fff;
-                    color: #000;
+                &.-st2{
                     &:after {
-                        top: 15px;
-                        right: 15px;
-                        content: "\e903";
+                        content: "\e916";
                         font-family: 'icomoon';
-                        font-size: 20px;
-                        color: #000;
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        &:after {
+                            content: "\e903";
+                            font-family: 'icomoon';
+                            font-size: 20px;
+                            color: #fff;
+                        }
                     }
                 }
+                
             }
 
             .modal-contact {
