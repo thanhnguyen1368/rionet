@@ -64,7 +64,7 @@
                         <div class="content-top__label -mb-border-0"></div>
                         <div class="content-top__right">
                             <a href="javascript:void(0)" class="button style-2 -primary button-select-all">一括選択</a>
-                            <a href="javascript:void(0)" class="button style-2 -primary button-deselect-all">選択した項目を削除</a>
+                            <a href="javascript:void(0)" class="button style-2 -primary button-deselect-all" data-toggle="modal" data-target="#modal_alert">選択した項目を削除</a>
                         </div>
                     </div>
                 </div>
@@ -1017,6 +1017,23 @@
             </div>
         </div>
     </div>
+    <div class="modal fade modal--logout" id="modal_alert" tabindex="-1" role="dialog" aria-labelledby="modal_video" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLongTitle">削除してよろしいでしょうか？</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close"></span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <a href="#" class="button btn-cancel">キャンセル</a>
+                        <a href="#" class="button btn-del">削除</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- end Footer -->
     <script src="./assets/libs/jquery-3.5.1.slim/jquery-3.5.1.slim.min.js"></script>
     <script src="./assets/libs/bootstrap/js/bootstrap.bundle.js"></script>

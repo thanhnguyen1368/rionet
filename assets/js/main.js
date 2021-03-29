@@ -328,7 +328,9 @@ $(".button-select-all").on("click", function() {
         }
     });
 });
-$(".button-deselect-all").on("click", function() {
+$("#modal_alert .btn-del").on("click", function(e) {
+    e.preventDefault();
+    $("#modal_alert").modal('hide');
     $('.button-deselect-all').removeClass("button-active");
     $(".select-delete").each(function(index) {
         if ($(this).hasClass('select-delete-active')) {
@@ -336,6 +338,15 @@ $(".button-deselect-all").on("click", function() {
         }
     });
 });
+
+$('.btn-cancel').on("click",function(e){
+    e.preventDefault();
+    $("#modal_alert").modal('hide');
+    $('.button-deselect-all').removeClass("button-active");
+    $(".select-delete").each(function(index) {
+        ($(this).removeClass('select-delete-active')) 
+    });
+})
 // select delete in my-list page
 
 // Start Accordion
