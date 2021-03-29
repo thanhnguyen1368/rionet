@@ -339,7 +339,7 @@ $("#modal_alert .btn-del").on("click", function(e) {
     });
 });
 
-$('.btn-cancel').on("click",function(e){
+$('#modal_alert .btn-cancel').on("click",function(e){
     e.preventDefault();
     $("#modal_alert").modal('hide');
     $('.button-deselect-all').removeClass("button-active");
