@@ -201,14 +201,14 @@
                     background: #fff;
                     text-align: center;
                     margin-bottom: 10px;
+                    a{
+                        display: inherit;
+                    }
                     img{
                         height: auto;
-                        -webkit-transform:scale(1);transform:scale(1);-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out
                     }
                     &:hover{
-                        img{
-                            -webkit-transform:scale(1.1);transform:scale(1.1)
-                        }
+                       border-color: $color_primary;
                     }
                 }
                 .row{margin-right:5px;margin-left:5px}
@@ -540,8 +540,9 @@
                 color: $color_primary;
             }
             &:hover{
-                background-color: $color_primary;
-                
+                background-color: #0035BD;
+                border-color: #0035BD;
+
                 &:before{
                     color: #fff;
                 }
@@ -638,7 +639,7 @@
             font-size: 13px;
             font-weight: 500;
             color: #222222;
-            border-bottom: 1px dotted $color_primary;
+            border-bottom: 1px dotted #1B33CB;
             &:hover{
                 .list__item__title{
                     color: $color_primary;
@@ -760,18 +761,16 @@
                 outline: none;
                 background: transparent;
                 z-index: 1;
+                font-size: 10px;
                 &:before {
                     font-family: 'icomoon';
                     display: block;
-                    font-size: 30px;
-                    line-height: 16px;
                     color: $color_primary;
                     position: relative;
                     left: -1px;
                 }
                 &:hover{
-                    background-color: $color_primary;
-                    
+                    background-color: #244FD8;
                     &:before{
                         color: #fff;
                     }
@@ -780,13 +779,13 @@
             .slick-prev {
                 right: 40px;
                 &:before{
-                    content: "\e900";
+                    content: "\e917";
                 }
             }
             .slick-next {
                 right: 0;
                 &:before {
-                    content: "\e901";
+                    content: "\e918";
                     left: 1px;
                 }
             }

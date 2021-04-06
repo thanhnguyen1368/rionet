@@ -727,13 +727,11 @@ html.scrollbar {
     position: absolute;
     top: 50%;
     right: 10px;
-    width: 15px;
-    height: 12px;
     transform: translateY(-50%);
-    content: "";
-    background: url(../images/icon-download.svg) center no-repeat;
     background-size: cover;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    content: "\e916";
+    font-family: 'icomoon'; }
   .button.style-2 {
     color: #707070;
     border-color: #707070;
@@ -1160,6 +1158,12 @@ html.scrollbar {
 
 .icon-play:before {
   content: "\e915"; }
+
+.icon-chevron-left:before {
+  content: "\e917"; }
+
+.icon-chevron-right:before {
+  content: "\e918"; }
 
 /**/
 .dnfix__thumb {
@@ -3429,15 +3433,12 @@ html.scrollbar {
         background: #fff;
         text-align: center;
         margin-bottom: 10px; }
+        .section-product-search .seri__logo__item a {
+          display: inherit; }
         .section-product-search .seri__logo__item img {
-          height: auto;
-          -webkit-transform: scale(1);
-          transform: scale(1);
-          -webkit-transition: .5s ease-in-out;
-          transition: 0.5s ease-in-out; }
-        .section-product-search .seri__logo__item:hover img {
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1); }
+          height: auto; }
+        .section-product-search .seri__logo__item:hover {
+          border-color: #0A4CE0; }
       .section-product-search .seri__logo .row {
         margin-right: 5px;
         margin-left: 5px; }
@@ -3698,7 +3699,8 @@ html.scrollbar {
         line-height: 16px;
         color: #0A4CE0; }
       .section-slider-link .slick-arrow:hover {
-        background-color: #0A4CE0; }
+        background-color: #0035BD;
+        border-color: #0035BD; }
         .section-slider-link .slick-arrow:hover:before {
           color: #fff; }
     .section-slider-link .slick-prev {
@@ -3774,7 +3776,7 @@ html.scrollbar {
       font-size: 13px;
       font-weight: 500;
       color: #222222;
-      border-bottom: 1px dotted #0A4CE0; }
+      border-bottom: 1px dotted #1B33CB; }
       .section-news1 .list__item:hover .list__item__title {
         color: #0A4CE0; }
       .section-news1 .list__item__date {
@@ -3867,27 +3869,26 @@ html.scrollbar {
         border-radius: 50%;
         outline: none;
         background: transparent;
-        z-index: 1; }
+        z-index: 1;
+        font-size: 10px; }
         .section-list-view .slider-list__view .slick-arrow:before {
           font-family: 'icomoon';
           display: block;
-          font-size: 30px;
-          line-height: 16px;
           color: #0A4CE0;
           position: relative;
           left: -1px; }
         .section-list-view .slider-list__view .slick-arrow:hover {
-          background-color: #0A4CE0; }
+          background-color: #244FD8; }
           .section-list-view .slider-list__view .slick-arrow:hover:before {
             color: #fff; }
       .section-list-view .slider-list__view .slick-prev {
         right: 40px; }
         .section-list-view .slider-list__view .slick-prev:before {
-          content: "\e900"; }
+          content: "\e917"; }
       .section-list-view .slider-list__view .slick-next {
         right: 0; }
         .section-list-view .slider-list__view .slick-next:before {
-          content: "\e901";
+          content: "\e918";
           left: 1px; }
       .section-list-view .slider-list__view .image-box {
         overflow: hidden;

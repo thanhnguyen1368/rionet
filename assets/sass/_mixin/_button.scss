@@ -18,13 +18,11 @@
             position: absolute;
             top: 50%;
             right: 10px;
-            width: 15px;
-            height: 12px;
             transform: translateY(-50%);
-            content: "";
-            background: url(../images/icon-download.svg) center no-repeat;
             background-size: cover;
             transition: all 0.3s;
+            content: "\e916";
+            font-family: 'icomoon';
         }
     }
 
