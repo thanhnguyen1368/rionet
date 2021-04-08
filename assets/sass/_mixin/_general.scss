@@ -257,33 +257,44 @@
     position: fixed;
     right: 30px;
     top: 20vh;
+
     &__item {
+        background-color: $color-green;
+        width: 73px;
+        height: 73px;
+        border-radius: 6px;
+        padding: 6px 0px;
+        margin-bottom: 20px;
+        text-align: center;
         a {
-            background-color: $color-green;
-            width: 73px;
-            height: 73px;
             display: block;
-            text-align: center;
-            padding: 6px 0px;
-            margin-bottom: 20px;
-            border-radius: 6px;
             color: $color-white;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 100%;
             p {
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 16px;
             }
-            &:hover{
-                background-color: #52D373;
-            }
+           
         } 
+        &:hover{
+            background-color: #52D373;
+        }
         &.cart {
-            a {
-                background-color: $color-primary;
-                &:hover{
-                    background-color: #276AFF;
-                }
+            background-color: $color-primary;
+            &:hover{
+                background-color: #276AFF;
             }
+        }
+        .item__s1{display: block;}
+        .item__s2{display: none;}
+        &:hover{
+            .item__s1{display: none;}
+            .item__s2{display: block}
         }
     }
     @media (max-width: 767px) {

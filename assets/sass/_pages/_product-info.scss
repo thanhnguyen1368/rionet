@@ -67,6 +67,8 @@
                         }
                         &::before{
                             content: "";
+                            position: relative;
+                            top: 2px;
                             display: inline-block;
                             width: 12px;
                             height: 12px;
@@ -80,6 +82,7 @@
             }
         }
         @media (max-width: 767px) {
+            padding: 55px 0 110px;
             .wellcome-text{
                 padding-right: 88px;
             }
@@ -226,7 +229,7 @@
         .product__diff{
             @include flex-content(wrap, center, center);
             .item__cat{
-                position: relative;
+                position: relative; 
                 @include flex-content(wrap, null, center);
                 border: 1px solid #B7B7B7;
                 border-radius: 6px;
@@ -238,6 +241,7 @@
                 cursor: pointer;
                 line-height: normal;
                 min-height: 56px;
+           
                 &:after{
                     content: "\e901";
                     font-family: 'icomoon';
@@ -657,16 +661,18 @@
                 }
             }
             &__date{
+                @include flex-col(60px);
                 margin-right: 20px;
                 font-family: 'Montserrat';
             }
             &__type{
+                @include flex-col(150px);
                 font-size: 11px;
-                padding: 0 20px;
                 border-radius: 14px;
                 margin-right: 20px;
                 border: 1px solid $color_primary;
                 color: $color_primary;
+                text-align: center;
                 &:hover{
                     background-color: $color_primary;
                     color: #fff;
@@ -675,6 +681,11 @@
             &__title{
                 font-size: 16px;
                 margin-right: 10px;
+                &:hover{
+                    a{
+                        color: $color_primary;
+                    }
+                }
                 a{
                     color: #333333;
                     margin-right: 5px;
