@@ -3267,7 +3267,7 @@ html.scrollbar {
 .section {
   position: relative; }
   .section-header-search {
-    padding: 30px 0 110px; }
+    padding: 75px 0 110px; }
     .section-header-search .wellcome-text {
       font-size: 14px;
       line-height: 20px;
@@ -3287,13 +3287,16 @@ html.scrollbar {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
         -ms-flex-align: center;
         align-items: center;
         border-top-right-radius: 0.35rem !important;
         border-bottom-right-radius: 0.35rem !important;
-        padding: 0 34px; }
+        padding: 0 23px;
+        min-width: 130px; }
         .section-header-search .search__form .search-submit img {
-          margin-left: 10px; }
+          margin-left: 14px; }
         .section-header-search .search__form .search-submit:hover {
           background-color: #1376FC;
           border-color: #1376FC; }
@@ -3321,7 +3324,8 @@ html.scrollbar {
           margin-bottom: 8px;
           padding: 0 15px 0 10px;
           cursor: pointer;
-          background-color: #fff; }
+          background-color: #fff;
+          color: #0A4CE0; }
           .section-header-search .search__keyword ul li:active, .section-header-search .search__keyword ul li:hover {
             border-color: #0A4CE0; }
           .section-header-search .search__keyword ul li::before {
@@ -3388,13 +3392,18 @@ html.scrollbar {
           .section-product-search .nav-tabs .nav-item .nav-link.active {
             color: #fff;
             background-color: #0A4CE0; }
-            .section-product-search .nav-tabs .nav-item .nav-link.active.actives2 {
-              background-color: #43b5b5;
-              color: #fff; }
-          .section-product-search .nav-tabs .nav-item .nav-link:hover:not(.no-hover), .section-product-search .nav-tabs .nav-item .nav-link.actives2 {
+          .section-product-search .nav-tabs .nav-item .nav-link.actives2 {
             color: #43B5B5;
             border-color: #43B5B5;
             background-color: rgba(67, 181, 181, 0.1); }
+          .section-product-search .nav-tabs .nav-item .nav-link:hover {
+            color: #fff;
+            border-color: #0A4CE0;
+            background-color: #0A4CE0; }
+          .section-product-search .nav-tabs .nav-item .nav-link.actives2:hover {
+            background-color: #43b5b5;
+            border-color: #43b5b5;
+            color: #fff; }
     .section-product-search .tab-content {
       background: #fff;
       padding: 30px;
@@ -3490,18 +3499,29 @@ html.scrollbar {
     .section-product-search .various-downloads__box {
       padding: 0 30px; }
       .section-product-search .various-downloads__box .item__box {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
         position: relative;
         border: 1px solid #B7B7B7;
         border-radius: 6px;
         margin-bottom: 20px;
-        padding: 16px 10px;
+        padding: 10px 10px;
         font-size: 14px;
         color: #222222;
         min-width: 100%;
         text-align: center;
-        cursor: pointer; }
+        cursor: pointer;
+        line-height: 19px;
+        min-height: 60px; }
         .section-product-search .various-downloads__box .item__box a {
-          color: #222222; }
+          color: #707070; }
         .section-product-search .various-downloads__box .item__box:hover {
           border-color: #0A4CE0;
           color: #0A4CE0; }
