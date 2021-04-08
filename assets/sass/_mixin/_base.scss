@@ -263,19 +263,23 @@
 //
 // http://w3.org/tr/css3-flexbox/#align-items-property
 @mixin align-items($value: stretch) {
-    @if $value==flex-start {
-        -ms-flex-align: start;
+    @if $value == flex-start {
+      -webkit-box-align: start;
+         -moz-box-align: start;
+         -ms-flex-align: start;
+    } @else if $value == flex-end {
+      -webkit-box-align: end;
+         -moz-box-align: end;
+         -ms-flex-align: end;
+    } @else {
+      -webkit-box-align: $value;
+         -moz-box-align: $value;
+         -ms-flex-align: $value;
     }
-
-    @else if $value==flex-end {
-        -ms-flex-align: end;
-    }
-
-    @else {
-        -ms-flex-align: $value;
-    }
-    align-items: $value;
-}
+    -webkit-align-items: $value;
+            align-items: $value;
+  }
+  
 
 //----------------------------------
 // Flexbox Align Self
