@@ -1,5 +1,72 @@
 var isClicked = false;
+
+function header_fixed() {
+    lastScroll = 0;
+    $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $("header").addClass("fixed-header");
+            $("main").addClass("scroll-header");
+            if (lastScroll - scroll > 0) {
+                $("header").addClass("full-header").slideDown();
+            } else {
+                $("header").removeClass("full-header");
+            }
+        } else {
+            $("header").removeClass("full-header").slideDown();
+            $("header").removeClass("fixed-header");
+            $("main").removeClass("scroll-header");
+        }
+        lastScroll = scroll;
+    });
+}
+
+function open_under(elem) {
+    $(elem).click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('-no-dropdown')){
+            $(this).toggleClass('has_under_open');
+            $(this).next().toggleClass('show');
+        }
+       
+    });
+}
+
+function choose_item(elm) {
+    $(elm).click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('has_under_open');
+        $(this).next().toggleClass('show');
+
+    })
+}
+function dn_accordion(){
+    // console.log('innerWidth' + innerWidth);
+    let $element = $('.jd-accordionz');
+    let $accordion_parent = '#accordion-s1';
+
+    let button = $element.find('.bnt__collapse')
+    let content = $element.find('.collapse')
+
+    if(innerWidth<768){
+        button.addClass('collapsed').attr('aria-expanded',false)
+        content.removeClass('show').attr('data-parent',$accordion_parent)
+
+        $element.find('.card:first-child .bnt__collapse').removeClass('collapsed').attr('aria-expanded',true)
+        $element.find('.card:first-child .collapse').addClass('show')
+    }else{
+        button.removeClass('collapsed').attr('aria-expanded',true)
+        content.addClass('show').attr('data-parent','')
+    }
+}
+
 $(document).ready(function() {
+
+    // header_fixed();
+    open_under('.show-more-action>a');
+    choose_item('.nav-tabs__choose');
+    dn_accordion();
+
     $('.btn-menu').click(function() {
         $(this).toggleClass('active');
     });
@@ -19,7 +86,25 @@ $(document).ready(function() {
     $('.menu-nav__button li a').click(function() {
         $('body').removeClass('show-menu');
     });
+    /**/
+     //smoothscroll
+     $('.search-top__detail a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
 
+        // $('a').each(function () {
+            // $(this).removeClass('active');
+        // })
+        // $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-80
+        });
+    });
+    /**/
     $('.login-form .form-control').on("keydown change",function()
     {
         let id = $('.js-input-id').val()
@@ -157,41 +242,10 @@ var wow = new WOW({
 });
 wow.init();
 
-function choose_item(elm) {
-    $(elm).click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass('has_under_open');
-        $(this).next().toggleClass('show');
-
-    })
-}
 $('.nav-tabs .nav-link').on("click", function(e) {
     $('.nav-tabs__choose').text($(this).text())
     $('.nav-tabs').removeClass('show');
 })
-//Choose Item
-choose_item('.nav-tabs__choose');
-
-
-// $('.row_product .check-input,.row_movie .check-input,.row_download .check-input').on("click", function() {
-//     var $checked = $( ".check-input:checked" ).length;
-//     if ($checked > 0) {
-//         $('.js-ckeck-all').addClass('button-active');
-//     } else {
-//         $('.js-ckeck-all').removeClass('button-active');
-//     }
-// });
-
-// $('.js-ckeck-all').on("click", function() {
-//     var $html = '<span>マイリスト登録済み</span>';
-//     if ($(this).hasClass('button-active')) {
-//         $(this).removeClass('button-active');
-//         $('.row_product .check-input:checked,.row_movie .check-input:checked,.row_download .check-input:checked').after($html).remove();
-//     }
-// });
-
-/**/
-
 
 $('.js-sc__content').on("click",".check-input", function() {
     let $checked = $( ".check-input:checked" ).length;
@@ -321,13 +375,19 @@ $(".select-delete").on("click", function() {
 });
 
 $(".button-select-all").on("click", function() {
+    // $(this).toggleClass("button-active");
+
     $(".select-delete").each(function(index) {
         if (!$(this).hasClass('select-delete-active')) {
-            $(this).toggleClass("select-delete-active");
+            $(this).addClass("select-delete-active");
             $('.button-deselect-all').addClass("button-active");
+        }else{
+            $(this).removeClass("select-delete-active");
+            $('.button-deselect-all').removeClass("button-active");
         }
     });
 });
+
 $("#modal_alert .btn-del").on("click", function(e) {
     e.preventDefault();
     $("#modal_alert").modal('hide');
@@ -347,6 +407,16 @@ $('#modal_alert .btn-cancel').on("click",function(e){
         ($(this).removeClass('select-delete-active')) 
     });
 })
+
+
+$('.button-deselect-all').on("click",function(e){
+    e.preventDefault()
+    if($(this).hasClass('button-active')){
+        $('#modal_alert').modal('toggle')
+    }
+})
+
+
 // select delete in my-list page
 
 // Start Accordion
@@ -367,38 +437,11 @@ function resEnded(innerWidth) {
     // console.log('Resize Ended') 
     dn_accordion(innerWidth)
 }
-dn_accordion()
-function dn_accordion(){
-    // console.log('innerWidth' + innerWidth);
-    let $element = $('.jd-accordionz');
-    let $accordion_parent = '#accordion-s1';
 
-    let button = $element.find('.bnt__collapse')
-    let content = $element.find('.collapse')
-
-    if(innerWidth<768){
-        button.addClass('collapsed').attr('aria-expanded',false)
-        content.removeClass('show').attr('data-parent',$accordion_parent)
-
-        $element.find('.card:first-child .bnt__collapse').removeClass('collapsed').attr('aria-expanded',true)
-        $element.find('.card:first-child .collapse').addClass('show')
-    }else{
-        button.removeClass('collapsed').attr('aria-expanded',true)
-        content.addClass('show').attr('data-parent','')
-    }
-}
 $('.nav-tabs__choose').on("click",function(){
     $('#productSearchTab').slideToggle();
 })
 // End Accordion
 
-function open_under(elem) {
-    $(elem).click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass('has_under_open');
-        $(this).next().toggleClass('show');
-    });
-}
-open_under('.show-more-action>a')
 
-
+   

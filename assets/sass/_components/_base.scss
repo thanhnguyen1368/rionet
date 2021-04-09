@@ -1,4 +1,11 @@
 $color_primary: #0A4CE0;
+.color-dark{
+  color: #222222!important;
+}
+.font-en{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
 /**/
 .dnfix__thumb{position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:68.075%;}
 .dnfix__thumb img{margin:0px auto;position:absolute;width:100%;height:100%;top:0;left:0;object-fit:cover}
@@ -7,6 +14,10 @@ $color_primary: #0A4CE0;
 /* fix col */
 .row.no-gutters10{margin-right:-5px;margin-left:-5px}
 .row.no-gutters10 > [class^="col-"],.row.no-gutters10 > [class*=" col-"]{padding-right:5px;padding-left:5px}
+
+.row.no-gutters15{margin-right:-7.5px;margin-left:-7.5px}
+.row.no-gutters15 > [class^="col-"],.row.no-gutters15 > [class*=" col-"]{padding-right:7.5px;padding-left:7.5px}
+
 
 .row.no-gutters20{margin-right:-10px;margin-left:-10px}
 .row.no-gutters20 > [class^="col-"],.row.no-gutters20 > [class*=" col-"]{padding-right:10px;padding-left:10px}
@@ -33,11 +44,11 @@ $color_primary: #0A4CE0;
         content: "\e906";
         color: #fff;
         position: absolute;
-        top: -4px;
+        top: 0;
         left: 0px;
         height: 18px;
         font-size: 16px;
-        line-height: 25px;
+        line-height: 16px;
       }
     }
   }

@@ -15,30 +15,35 @@
     overflow-x: hidden;
     overflow-y: auto;
     border-radius: 0px;
+    &-x {
+        overflow-y: auto;
+        width: 100%;
+    }
+
 }
 
-.scrollbar-x {
-    overflow-y: auto;
-    width: 100%;
-}
 
 .scrollbar::-webkit-scrollbar-track,
 .scrollbar-x::-webkit-scrollbar-track {
-    border-radius: 5px;
+    border-radius: 7px;
     background: $color-gray-6;
 }
 
 .scrollbar::-webkit-scrollbar,
 .scrollbar-x::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     border-radius: 5px;
     background-color: $color-gray-6;
+    @media (max-width: 767px) {
+        width: 7px;
+        height: 7px;
+    }
 }
 
 .scrollbar::-webkit-scrollbar-thumb,
 .scrollbar-x::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 7px;
     background: linear-gradient(to left, $color-primary, $color-primary);
     border: 1px solid $color-primary;
 }
@@ -51,5 +56,6 @@ html.scrollbar {
     min-height: 0;
     max-height: none;
 }
+
 
 

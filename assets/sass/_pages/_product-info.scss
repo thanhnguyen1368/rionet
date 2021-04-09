@@ -29,8 +29,8 @@
                         margin-left: 14px;
                     }
                     &:hover{
-                        background-color: #1376FC;
-                        border-color:#1376FC;
+                        background-color: #276AFF;
+                        border-color:#276AFF;
                     }
                 }
                 .btn-history{
@@ -62,7 +62,7 @@
                         cursor: pointer;
                         background-color: #fff;
                         color: $color_primary;
-                        &:active, &:hover{
+                        &.active, &:hover{
                             border-color: $color_primary;
                         }
                         &::before{
@@ -91,6 +91,7 @@
                     width: 100%;
                     .search-submit{
                         padding: 0 12px;
+                        min-width: 85px;
                     }
                     .btn-history{
                         position: absolute;
@@ -101,13 +102,19 @@
                         font-size: 12px;
                     }
                 }
+                &__keyword{
+                    padding: 10px;
+                    &__title{
+                        font-size: 12px;
+                    }
+                    ul{
+                        li{
+                            padding: 0 10px;
+                        }
+                    }
+                }
             }
-            &_keyword{
-                padding: 10px;
-                &__title{
-                    font-size: 13px;
-                } 
-            }
+            
         }
         @media (max-width: 390px) {
             .search{

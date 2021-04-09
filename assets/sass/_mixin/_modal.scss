@@ -36,6 +36,11 @@
 }
 
 .modal {
+
+    &-open .modal {
+        background: #707070;
+    }
+
     &-header {
         position: relative;
         border: none;
@@ -53,7 +58,7 @@
             opacity: 1;
             margin: 0;
             outline: none;
-
+            font-size: 21px;
             &:hover {
                 opacity: 1!important;
             }
@@ -93,16 +98,17 @@
                 font-size: 16px;
                 font-weight: 500;
                 color: $color-black-2;
-                padding-left: 9px;
+                padding-left: 17px;
             }
 
             .button {
                 background-color: $color-green;
                 border-color: $color-green;
                 min-width: 230px;
-                height: 50px;
+                // height: 50px;
                 font-size: 14px;
                 font-weight: 500;
+                line-height: 30px;
                 &:hover{
                     background-color: #52D373;
                     color: #fff;
@@ -126,6 +132,7 @@
                         right: 10px;
                         transform: translateY(-50%);
                         transition: all 0.3s;
+                        font-size: 13px;
                     }
                     &:hover{
                         &:after {
@@ -162,7 +169,21 @@
             }
         }
     }
-
+    &--contact{
+        .modal{
+            &-body {
+                padding: 60px 20px;
+                .box-item {
+                    padding: 10px 5px;
+                    .modal-contact {
+                        padding-left: 25px;
+                    }
+                }
+                
+            }
+        }
+       
+    }
     &--video {
         .modal-dialog {
             margin-top: 25px;
@@ -240,18 +261,35 @@
             line-height: 35px;
             padding: 0 5px;
             margin-bottom: 15px;
+            border: 1px solid transparent;
+            
             &.btn-cancel{
                 background-color: #E8E8E8;
                 color: #222222;
                 margin-right: 12px;
+                &:hover{
+                    background-color: #fff;
+                    border: 1px solid #222222;
+                    color: #222222;
+                }
             }
             &.btn-ok{
                 background-color: $color_primary;
                 color: #fff;
+                &:hover{
+                    background-color: #fff;
+                    border: 1px solid #222222;
+                    color: #222222;
+                }
             }
             &.btn-del{
                 background-color: #DE2424;
                 color: #fff;
+                &:hover{
+                    background-color: #fff;
+                    border: 1px solid #222222;
+                    color: #222222;
+                }
             }
         }
         @media (min-width: 768px) {
@@ -276,17 +314,40 @@
             }
         }
         @media (max-width: 410px) {
+            .modal-header .close {
+                right: -30px;
+            }
+
+            .modal-content {
+                margin: 15px;
+                padding: 35px 10px;
+            }
             .button{
+                min-width: 120px;
                 &.btn-cancel {
                     margin-right: 0px;
                 }
             }
         }
+        
     }
 
+    &--history{
+        .modal-body {
+            padding: 50px 10px 40px;
+        }
+        .image-box{
+            margin-bottom: 20px;
+        }
+        @media (max-width: 767px) {
+            .modal-body {
+                padding: 50px 0 40px;
+            }
+        }
+    }
     &-history {
         max-height: 60vh;
-        padding-right: 10px;
+        padding: 0 45px;
 
         .modal-body .title-modal {
             margin-bottom: 15px;
@@ -308,7 +369,6 @@
                 border-color: $color-gray-3;
                 padding: 5px 14px;
             }
-
             @media (max-width:479px) {
                 flex-direction: column;
                 align-items: flex-start;
@@ -318,6 +378,9 @@
                     margin-right: 0;
                 }
             }
+        }
+        @media (max-width: 767px) {
+            padding: 0 10px;
         }
     }
 
@@ -355,7 +418,7 @@
                     padding: 5px 20px;
                     font-size: 12px;
                     &:after {
-                        top: 6px;
+                        font-size: 10px;
                     }
                 }
             }
