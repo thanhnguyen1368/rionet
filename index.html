@@ -26,7 +26,7 @@
                 <a href="#" class="header__user__name d-none d-lg-inline-block" data-toggle="modal" data-target="#modal_logout">こんにちは 東京駅前店 山田 太郎様<span class="ic-logout"></span></a>
             </div>
             <div class="header-content">
-                <a class="text" href="#">リオネット セールスポートとは</a>
+                <a class="text" href="about.html">リオネット セールスポートとは</a>
                 <a href="mylist.html" class="button d-none d-md-inline-block">マイリスト</a>
                 <a href="mylist.html" class="header__mylist__icon d-md-none"><span class="icon-heart"></span></a>
 
@@ -1348,79 +1348,84 @@
     </ul>
     <div class="menu-nav">
         <div class="container">
-            <ul class="menu-nav__link">
-                <li class="item">
-                    <a href="about.html">
+            <ul class="menu-nav__link row">
+                <li class="item col-md-4">
+                    <a href="about.html" class="-large">
                         <span class="sub">About</span>
-                        <span class="name">販売店ポータルとは</span>
+                        <span class="name">リオネット セールスポートとは</span>
                     </a>
                 </li>
-                <li class="item">
+                <li class="item col-md-4">
                     <a href="movie-list.html">
                         <span class="sub">Movie</span>
                         <span class="name">動画</span>
                     </a>
                 </li>
-                <li class="item">
+                <li class="item col-md-4">
                     <a href="download-list.html">
                         <span class="sub">Download</span>
                         <span class="name">各種ダウンロード</span>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="product-list.html">
+                <li class="item col-md-4">
+                    <a href="product-list.html" class="-large">
                         <span class="sub">Products</span>
                         <span class="name">製品情報</span>
                     </a>
                 </li>
-                <li class="item">
+                <li class="item col-md-4">
                     <a href="news-list.html">
                         <span class="sub">News</span>
                         <span class="name">営業ニュース</span>
                     </a>
                 </li>
-                <li class="item">
+                <li class="item col-md-4">
                     <a href="topic.html">
                         <span class="sub">Topics</span>
                         <span class="name">トピックス</span>
                     </a>
                 </li>
             </ul>
-            <ul class="menu-nav__button">
-                <li class="item">
+            <ul class="menu-nav__button row no-gutters15">
+                <li class="item col-12 col-lg-20">
                     <a href="mylist.html" class="button">
                     マイリスト
                 </a>
                 </li>
-                <li class="item">
+                <li class="item col-12 col-lg-20">
                     <a href="#" class="button" data-toggle="modal" data-target="#modalContact">
                     サポート窓口
                 </a>
                 </li>
-                <li class="item">
+                <li class="item col-12 col-lg-20">
                     <a href="#" class="button download">
                     リオネットフォーラム
                 </a>
                 </li>
-                <li class="item">
+                <li class="item col-12 col-lg-20">
                     <a href="#" class="button download" data-toggle="modal" data-target="#modalContact">
-                    オンライン注文
-                </a>
+                        オンライン注文
+                    </a>
+                </li>
+                <li class="item col-12 col-lg-20">
+                    <a href="#" class="button download" data-toggle="modal" data-target="#modalContact">
+                        進捗状況
+                    </a>
                 </li>
             </ul>
             <p class="d-flex justify-content-end button-user">
                 <a href="#" class="btn btn-infoz mr-3"><img src="./assets/images/user.svg" alt=""> <span>お客様情報</span> <img src="./assets/images/login-icon1.png" alt=""></a>
-                <a href="#" class="btn btn-logout" data-toggle="modal" data-target="#modal_logout">お客様情報 <span class="ic-logout"></span></a>
+                <a href="#" class="btn btn-logout" data-toggle="modal" data-target="#modal_logout">ログアウト <span class="ic-logout"></span></a>
             </p>
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade modal--contact" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span class="icon-close"></span>
                 </button>
                 </div>
                 <div class="modal-body">
@@ -1448,12 +1453,12 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="modalHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade modal--history" id="modalHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog width-1090" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span class="icon-close"></span>
                 </button>
                 </div>
                 <div class="modal-body">
@@ -1461,18 +1466,16 @@
                         閲覧履歴
                     </div>
                     <p class="modal-sub">登録数 00（最大登録数30）</p>
-                    <div class="modal-history scrollbar">
+                    <div class="modal-history scrollbar js-sc__content">
                         <div class="modal-history__top">
                             <p>チェックした項目を</p>
-                            <a href="#" class="button">マイリスト登録</a>
+                            <a href="#" class="button btn__list-tick style-2 js-ckeck-all">マイリスト登録</a>
                         </div>
-                        <div class="row">
+                        <div class="row no-gutters20">
                             <div class="col-lg-6">
                                 <div class="image-box style-2">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1482,7 +1485,7 @@
                                         <div class="title">
                                             リオネットシリーズ
                                         </div>
-                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="des">マキシエンス<p class="sku"> HB-A3AA</p></div>
                                         <div class="bottom d-flex">
                                             <p>発売時期</p>
                                             <div class="meta">
@@ -1495,9 +1498,7 @@
                             <div class="col-lg-6">
                                 <div class="image-box style-2">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1507,7 +1508,7 @@
                                         <div class="title">
                                             リオネットシリーズ
                                         </div>
-                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="des">マキシエンス<p class="sku"> HB-A3AA</p></div>
                                         <div class="bottom d-flex">
                                             <p>発売時期</p>
                                             <div class="meta">
@@ -1520,9 +1521,7 @@
                             <div class="col-lg-6">
                                 <div class="image-box style-2">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1532,7 +1531,7 @@
                                         <div class="title">
                                             リオネットシリーズ
                                         </div>
-                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="des">マキシエンス<p class="sku"> HB-A3AA</p></div>
                                         <div class="bottom d-flex">
                                             <p>発売時期</p>
                                             <div class="meta">
@@ -1545,9 +1544,7 @@
                             <div class="col-lg-6">
                                 <div class="image-box style-2">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1557,7 +1554,7 @@
                                         <div class="title">
                                             リオネットシリーズ
                                         </div>
-                                        <p class="des">マキシエンス<br> HB-A3AA </p>
+                                        <div class="des">マキシエンス<p class="sku"> HB-A3AA</p></div>
                                         <div class="bottom d-flex">
                                             <p>発売時期</p>
                                             <div class="meta">
@@ -1568,11 +1565,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1590,11 +1585,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1612,11 +1605,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1634,11 +1625,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1656,11 +1645,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1679,11 +1666,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1702,11 +1687,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1725,11 +1708,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1748,11 +1729,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1771,11 +1750,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1794,11 +1771,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1817,11 +1792,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1840,11 +1813,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">
@@ -1863,11 +1834,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="image-box">
+                                <div class="image-box -mb-sm">
                                     <div class="image-box__thumb">
-                                        <div class="dnfix__thumb">
                                         <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div>
-                                        </div>
                                     </div>
                                     <div class="image-box__content">
                                         <div class="content-button d-flex justify-content-between align-items-center">

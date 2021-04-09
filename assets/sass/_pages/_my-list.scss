@@ -1,76 +1,83 @@
 .section-page {
-    .container {
-        .wrapper-page {
-            .content-top.none {
-                border-bottom: none;
+
+    .wrapper-page {
+        .content-top.none {
+            border-bottom: none;
+        }
+        .button.-primary {
+                border: 1px solid #0A4CE0;
+                color: #0A4CE0;
+                transition: .5s;
+                &:last-child {
+                    margin-left: 10px;
+                }
+                &:hover, &.button-active {
+                    background: #0A4CE0;
+                    color: $color-white!important;
+                }
+        } 
+    }
+    .title-page {
+        .sub2:last-child {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 3% 0;
+        }
+    }
+    .image-box {
+        .image-box__content {
+            .button:nth-child(2) {
+                background: #fff;
+                color: #DE2424;
+                border: 1px solid #DE2424;
+                border-radius: 6px;
+                cursor: pointer;
+                &:hover{
+                    color: #fff;
+                    background: #DE2424;
+                }
             }
-            .button.-primary {
-                    border: 1px solid #0A4CE0;
+            .select-delete-active {
+                background: #DE2424 !important;
+                color: white !important;
+                border-color: #DE2424!important;
+            }
+            @media (max-width:992px) {
+                .button {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .style1 {
+        .image-box__content {
+            .title {
+                a {
+                    font-size: 14px;
+                }
+            }
+            .des {
+                font-size: 16px;
+            }
+            .gr_btn {
+                margin-top: 20px;
+                a {
                     color: #0A4CE0;
-                    transition: .5s;
-                    &:last-child {
-                        margin-left: 10px;
-                    }
-                    &:hover, &.button-active {
-                        background: #0A4CE0;
-                        color: $color-white!important;
-                    }
-            } 
-        }
-        .title-page {
-            .sub2:last-child {
-                font-size: 20px;
-                font-weight: 500;
-                margin: 3% 0;
-            }
-        }
-        .image-box {
-            .image-box__content {
-                .button:nth-child(2) {
-                    background: #fff;
-                    color: #DE2424;
-                    border: 1px solid #DE2424;
-                    border-radius: 6px;
-                    cursor: pointer;
-                    &:hover{
-                        color: #fff;
-                        background: #DE2424;
-                    }
+                    margin-right: 10px;
                 }
-                .select-delete-active {
-                    background: $color_primary !important;
-                    color: white !important;
-                    border-color: $color_primary!important;
-                }
-                @media (max-width:992px) {
-                    .button {
-                        font-size: 11px;
-                    }
+                span {
+                    color: #222222;
                 }
             }
         }
-        .style1 {
-            .image-box__content {
-                .title {
-                    a {
-                        font-size: 14px;
-                    }
-                }
-                .des {
-                    font-size: 16px;
-                }
-                .gr_btn {
-                    margin-top: 20px;
-                    a {
-                        color: #0A4CE0;
-                        margin-right: 10px;
-                    }
-                    span {
-                        color: #222222;
-                    }
-                }
-            }
-        }
+    }
+}
+
+.mylist__content{
+    min-height: 400px;
+
+    @media (max-width:767px) {
+        min-height: 650px;
     }
 }
 

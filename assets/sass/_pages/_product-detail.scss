@@ -139,6 +139,12 @@
                         align-items: center;
                         margin-bottom: 10px;
                         font-size: 16px;
+                        a{
+                            color: #345FD1;
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                     .pdf {
                         font-family: 'Montserrat', sans-serif;

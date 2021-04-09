@@ -1,4 +1,10 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
     box-shadow: 0px 1px 10px 0 rgba(0, 0, 0, .16);
     &--login {
         box-shadow: none;
@@ -138,6 +144,14 @@
         }
     }
 }
+main,.breadcrumb-page {
+    padding-top: 58px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.breadcrumb-page + main {
+    padding-top: 0;
+}
 .ic-logout{
     width: 23px;
     height: 23px;
@@ -170,23 +184,21 @@
     visibility: hidden;
     overflow: hidden;
     background-color: $color-white;
-    padding-top: 100px;
+    padding-top: 120px;
     z-index: 1001;
     transition: all 0.3s ease-in-out;
+    padding-bottom: 70px;
     &__link {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 930px;
-        margin: 0 auto 10px;
         .item {
-            width: 33.333333%;
-            padding-left: 55px;
             a {
                 position: relative;
                 display: block;
-                max-width: 190px;
+                max-width: 197px;
                 font-weight: 500;
                 margin-bottom: 50px;
+                &.-large{
+                    max-width: 287px;
+                }
                 span {
                     display: block;
                     &.sub {
@@ -199,17 +211,20 @@
                         position: relative;
                         font-size: 18px;
                         color: $color-black-2;
+                        padding-right: 20px;
                         &:after {
+                            content: "\e901";
+                            font-family: 'icomoon';
                             position: absolute;
                             top: 50%;
                             right: 0;
-                            width: 6px;
-                            height: 10px;
                             transform: translateY(-50%);
-                            content: "";
-                            background: url(../images/arrow-right-active.svg) center no-repeat;
-                            background-size: cover;
                             transition: all 0.3s;
+                            display: block;
+                            font-size: 20px;
+                            line-height: 16px;
+                            color: #0A4CE0;
+                            
                         }
                     }
                 }
@@ -221,27 +236,22 @@
                     }
                 }
             }
-            &:first-child,
-            &:nth-child(4) {
-                padding-left: 30px;
-            }
         }
     }
     &__button {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 auto 20px;
+       
         .item {
-            width: 25%;
-            padding: 0px 10px;
+            // width: 25%;
+            // padding: 0px 10px;
             .button {
                 width: 100%;
-                font-size: 16px;
+                font-size: 13px;
                 color: $color-primary;
                 border-color: $color-primary;
-                &.download:before {
-                    background-image: url(../images/login-icon1.png);
+                margin-bottom: 20px;
+                padding: 9px 8px;
+                &.download{
+                    padding-right: 27px;
                 }
                 &:hover {
                     background: $color-primary;
@@ -287,26 +297,16 @@
     @media (max-width: 1200px) {
         padding-top: 25px;
     }
-    @media (max-width: 991px) {
-        &__button {
-            .item {
-                width: 50%;
-                padding: 0 10px 20px;
-            }
-        }
-    }
     @media (max-width: 767px) {
+        
         &__link {
             .item {
-                width: 50%;
-                padding-left: 15px;
-                &:first-child,
-                &:nth-child(4) {
-                    padding-left: 15px;
-                }
                 a {
-                    max-width: 215px;
+                    max-width: 100%;
                     margin-bottom: 15px;
+                    &.-large{
+                        max-width: 100%;
+                    }
                     span.name {
                         font-size: 16px;
                     }
@@ -315,31 +315,15 @@
         }
         &__button{
             .item {
-                padding: 0 0px 10px;
+                .button{
+                    margin-bottom: 15px;
+                }
             }
         }
        
     }
     @media (max-width: 576px) {
-        &__link {
-            .item {
-                width: 100%;
-                padding-left: 0;
-                &:first-child,
-                &:nth-child(4) {
-                    padding-left: 0;
-                }
-                a {
-                    max-width: 100%;
-                }
-            }
-        }
-        &__button {
-            .item {
-                width: 100%;
-                padding: 0 0px 20px;
-            }
-        }
+        
         .button-user .btn-infoz{
             -ms-flex-positive: 1;
             flex-grow: 1;
