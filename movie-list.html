@@ -52,19 +52,19 @@
     </div>
     <!-- Content -->
     <main>
-        <section class="section-page">
+        <section class="section-page ">
             <div class="container">
                 <div class="title-page text-center">
                     <h2 class="title">動画</h2>
                     <p class="sub">Movie</p>
                 </div>
-                <div class="form-page">
-                    <form action="#" class="search-page">
-                        <div class="form-text">
-                            <input type="text" class="form-control" placeholder="動画内で絞り込み" data-placeholder="品名・品番・キーワードで検索">
-                        </div>
-                        <div class="form-button">
-                            <button type="submit" class="btn btn-primary">検索 <img src="./assets/images/icon-search.svg" alt="search"></button>
+                <div class="section-header-search pt-0 pb-3 pb-md-5">
+                    <form role="search" method="get" action="search.html" class="search__form search-page">
+                        <div class="input-group mb-4 mb-md-3 pb-2 pb-md-0">
+                            <input type="text" name="s" class="form-control search-field -s2" placeholder="品名・品番・キーワードで検索">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary search-submit"> 検索 <img src="./assets/images/icon-search.png" alt=""></button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -83,7 +83,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -106,31 +106,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
-                                    <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
-                                </button>
-                            </div>
-                            <div class="video-box__content">
-                                <div class="content-button d-flex justify-content-between align-items-center">
-                                    <div class="meta">
-                                        <span>2017.11.29</span>
-                                    </div>
-                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
-                                </div>
-                                <a href="movie-detail.html">
-                                    <div class="title">
-                                        補聴器販売に関わる基礎知識（初級編）
-                                    </div>
-                                </a>
-                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="video-box">
-                            <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -154,7 +130,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -178,7 +154,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -202,7 +178,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -226,7 +202,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -250,7 +226,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -274,7 +250,7 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -298,7 +274,31 @@
                     <div class="col-md-6">
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
+                                    <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
+                                </button>
+                            </div>
+                            <div class="video-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <div class="meta">
+                                        <span>2017.11.29</span>
+                                    </div>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <a href="movie-detail.html">
+                                    <div class="title">
+                                        補聴器販売に関わる基礎知識（初級編）
+                                    </div>
+                                </a>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-box">
+                            <div class="video-box__thumb style-2">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/img-video-1.png" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>

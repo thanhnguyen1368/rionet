@@ -46,7 +46,7 @@
           
                 <form role="search" method="get" action="search.html" class="search__form">
                     <div class="input-group mb-4 mb-md-3 pb-2 pb-md-0">
-                        <input type="text" name="s" class="form-control search-field" placeholder="品名・品番・キーワードで検索" aria-label="品名・品番・キーワードで検索" aria-describedby="basic-addon2">
+                        <input type="text" name="s" class="form-control search-field -s2" placeholder="品名・品番・キーワードで検索" aria-label="品名・品番・キーワードで検索" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <button type="submit" class="btn btn-primary search-submit"> 検索 <img src="./assets/images/icon-search.png" alt=""></button>
                         </div>
@@ -1098,7 +1098,26 @@
                     <div>
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
+                                    <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span>
+                                </button>
+                            </div>
+                            <div class="video-box__content">
+                                <div class="content-button d-flex justify-content-between align-items-center">
+                                    <div class="meta"><span>2017.11.29</span></div>
+                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
+                                </div>
+                                <a href="movie-detail.html">
+                                    <div class="title">補聴器販売に関わる基礎知識（初級編）</div>
+                                </a>
+                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="video-box">
+                            <div class="video-box__thumb style-2">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -1121,7 +1140,7 @@
                     <div>
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -1144,30 +1163,7 @@
                     <div>
                         <div class="video-box">
                             <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
-                                    <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span>
-                                </button>
-                            </div>
-                            <div class="video-box__content">
-                                <div class="content-button d-flex justify-content-between align-items-center">
-                                    <div class="meta">
-                                        <span>2017.11.29</span>
-                                    </div>
-                                    <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label>
-                                </div>
-                                <a href="movie-detail.html">
-                                    <div class="title">
-                                        補聴器販売に関わる基礎知識（初級編）
-                                    </div>
-                                </a>
-                                <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="video-box">
-                            <div class="video-box__thumb style-2">
-                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                     <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span>
                                 </button>
                             </div>
@@ -1194,7 +1190,7 @@
                         <div class="col-md-6">
                             <div class="video-box">
                                 <div class="video-box__thumb style-2">
-                                    <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                    <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                         <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span>
                                     </button>
                                 </div>
@@ -1217,7 +1213,7 @@
                         <div class="col-md-6">
                             <div class="video-box">
                                 <div class="video-box__thumb style-2">
-                                    <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video">
+                                    <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8">
                                         <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span>
                                     </button>
                                 </div>
@@ -1468,7 +1464,7 @@
                     <p class="modal-sub">登録数 00（最大登録数30）</p>
                     <div class="modal-history scrollbar js-sc__content">
                         <div class="modal-history__top">
-                            <p>チェックした項目を</p>
+                            <p class="d-none d-md-block">チェックした項目を</p>
                             <a href="#" class="button btn__list-tick style-2 js-ckeck-all">マイリスト登録</a>
                         </div>
                         <div class="row no-gutters20">

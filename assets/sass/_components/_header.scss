@@ -14,9 +14,7 @@
         }
     }
     &__wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-content(wrap, space-between, center);
         .logo {
             padding-left: 30px;
         }
@@ -140,6 +138,17 @@
         @media (max-width: 1200px) {
             .text {
                 display: none;
+            }
+        }
+    }
+    @media (max-width:767px){
+        &__wrap{
+            .logo {
+                padding-left: 10px;
+                img{
+                    display: block;
+                    max-width: 210px;
+                }
             }
         }
     }

@@ -5,7 +5,7 @@
     color: $color-white;
     padding: 9px 25px;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 6px;
     min-width: 68px;
     text-align: center;
 
@@ -29,13 +29,18 @@
 
     &.style-2 {
         color: $color-gray-3;
-        border-color: $color-gray-3;
+        border-color: #B7B7B7;
         padding: 4px 10px 5px;
         min-width: 130px;
         &:hover, &.button-active{
             background-color: $color_primary;
             border-color: $color_primary;
             color: #fff;
+        }
+        @media (max-width:767px){
+            min-width: 120px;
+            font-size: 14px;
+            padding: 1px 5px 1px;
         }
     }
 

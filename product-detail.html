@@ -55,14 +55,15 @@
         <section class="section-page">
             <div class="container">
                 <div class="title-page text-center">
-                    <h2 class="title">製品情報</h2>
+                    <h2 class="title">関連情報</h2>
                     <p class="sub">Products</p>
                 </div>
             </div>
             <div class="container">
                 <div class="wrapper-page">
-                    <div class="content-top content-top__news">
-                        <div class="content-top__label">リオネット シリーズ　マキシエンス　HB-A3AA</div>
+                    <div class="content-top content-top__news -s2">
+                        <div class="content-top__label"><label class="fake-checkbox"><input type="checkbox" class="check-input"><div class="square"></div></label>リオネット シリーズ　マキシエンス　HB-A3AA</div>
+                        <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
                     </div>
                 </div>
 
@@ -82,14 +83,14 @@
                             <p class="brand"> リオネットシリーズ </br>マキシエンス</p>
                             <p class="name"> HB-A3AA <span class="status"> NEW!</span></p>
 
-                            <div class="quantity d-md-none border-0 p-0 text-right">
+                            <div class="quantity -mb d-md-none border-0 p-0 pt-3 text-right">
                                 <div class="ml-auto mb-2">耳かけ型</div>
                             </div>
 
                             <p class="detail clearfix">サマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキストサマリーテキスト</p>
-                            <div class="quantity d-none d-md-flex">
+                            <div class="quantity">
                                 <p>製品色は全9カラー、豊富なカラーバリエーションをご用意しています。</p>
-                                <div class="">耳かけ型</div>
+                                <div class="d-none d-md-flex">耳かけ型</div>
                             </div>
                             <div class="d-md-none">
                                 <ul class="product__detail__list">
@@ -101,12 +102,12 @@
                             </div>
                             <div class="price clearfix">
                                 <div class="details_price__left">
-                                    <p>希望小売価格 </p>
+                                    <p>希望<br>小売価格 </p>
                                 </div>
                                 <div class="details_price__right">
-                                    <div class="d-md-inline">両耳（2台） <span>612,000</span></div>
-                                    <div class="d-md-inline">円　 片耳（1台） <span>360,000</span>円</div>
-                                    <p>※補聴器は非課税です。</p>
+                                    <div class="d-md-inline">両耳（2台）<span>612,000</span></div>
+                                    <div class="d-md-inline">片耳（1台）<span>360,000</span>円</div>
+                                    <p>※希望小売価格は非課税となります。</p>
                                 </div>
                             </div>
                             <div class="see_more__wrap">
@@ -119,24 +120,24 @@
                         <div class="content">
                             <div>
                                 <div class="link_pdf">
-                                    <a href="#">テクニカルインフォメーション<span class="pdf">PDF</span></a>
+                                    <a href="#"><span class="-text">テクニカルインフォメーション</span><span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">取説<span class="pdf">PDF</span></a>
+                                    <a href="#"><span class="-text">取説</span><span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">添付文書<span class="pdf">PDF</span></a>
+                                    <a href="#"><span class="-text">添付文書</span><span class="pdf">PDF</span></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="link_pdf">
-                                    <a href="#">セールスガイド<span class="pdf">PDF</span></a>
+                                    <a href="#"><span class="-text">セールスガイド</span><span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">メンテナンスガイド<span class="pdf">PDF</span></a>
+                                    <a href="#"><span class="-text">メンテナンスガイド</span><span class="pdf">PDF</span></a>
                                 </div>
                                 <div class="link_pdf">
-                                    <a href="#">医療機器認証番号<span class="pdf">PDF</span></a>
+                                    <a href="#"><span class="-text">医療機器認証番号</span><span class="pdf">PDF</span></a>
                                 </div>
                             </div>
                         </div>
@@ -179,13 +180,12 @@
                         </div>
                         <div class="d-md-none w-100">
                             <div class="content-bottom style-2 -mb-style1">
-                                <div class="wrap-select before-select">
-                                    <select name="select">
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                    </select>
+                                <div class="show-more-action -orderby mb-0">
+                                    <a href="#" class="fake-select">新しい順</a>
+                                    <ul class="list-more list-unstyled">
+                                        <li class="list-item"><a href="">新しい順</a></li>
+                                        <li class="list-item"><a href="">古い順</a></li>
+                                    </ul>
                                 </div>
                                 <div class="content-top__right">
                                     <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
@@ -196,11 +196,12 @@
                     <div class="content-bottom style-2 d-none d-md-flex">
                         <div class="d-flex align-items-center ml-auto">
                             <p class="d-none d-md-block">並び替え</p>
-                            <div class="wrap-select before-select">
-                                <select name="select">
-                                    <option value="">新しい順</option>
-                                    <option value="">古い順</option>
-                                </select>
+                            <div class="show-more-action -orderby mb-0">
+                                <a href="#" class="fake-select">新しい順</a>
+                                <ul class="list-more list-unstyled">
+                                    <li class="list-item"><a href="">新しい順</a></li>
+                                    <li class="list-item"><a href="">古い順</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -360,13 +361,12 @@
                         </div>
                         <div class="d-md-none w-100">
                             <div class="content-bottom style-2 -mb-style1">
-                                <div class="wrap-select before-select">
-                                    <select name="select">
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                    </select>
+                                <div class="show-more-action -orderby mb-0">
+                                    <a href="#" class="fake-select">新しい順</a>
+                                    <ul class="list-more list-unstyled">
+                                        <li class="list-item"><a href="">新しい順</a></li>
+                                        <li class="list-item"><a href="">古い順</a></li>
+                                    </ul>
                                 </div>
                                 <div class="content-top__right">
                                     <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
@@ -377,11 +377,12 @@
                     <div class="content-bottom style-2 d-none d-md-flex">
                         <div class="d-flex align-items-center ml-auto">
                             <p class="d-none d-md-block">並び替え</p>
-                            <div class="wrap-select before-select">
-                                <select name="select">
-                                    <option value="">新しい順</option>
-                                    <option value="">古い順</option>
-                                </select>
+                            <div class="show-more-action -orderby mb-0">
+                                <a href="#" class="fake-select">新しい順</a>
+                                <ul class="list-more list-unstyled">
+                                    <li class="list-item"><a href="">新しい順</a></li>
+                                    <li class="list-item"><a href="">古い順</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -523,13 +524,12 @@
                         </div>
                         <div class="d-md-none w-100">
                             <div class="content-bottom style-2 -mb-style1">
-                                <div class="wrap-select before-select">
-                                    <select name="select">
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                    </select>
+                                <div class="show-more-action -orderby mb-0">
+                                    <a href="#" class="fake-select">新しい順</a>
+                                    <ul class="list-more list-unstyled">
+                                        <li class="list-item"><a href="">新しい順</a></li>
+                                        <li class="list-item"><a href="">古い順</a></li>
+                                    </ul>
                                 </div>
                                 <div class="content-top__right">
                                     <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
@@ -540,11 +540,12 @@
                     <div class="content-bottom style-2 d-none d-md-flex">
                         <div class="d-flex align-items-center ml-auto">
                             <p class="d-none d-md-block">並び替え</p>
-                            <div class="wrap-select before-select">
-                                <select name="select">
-                                    <option value="">新しい順</option>
-                                    <option value="">古い順</option>
-                                </select>
+                            <div class="show-more-action -orderby mb-0">
+                                <a href="#" class="fake-select">新しい順</a>
+                                <ul class="list-more list-unstyled">
+                                    <li class="list-item"><a href="">新しい順</a></li>
+                                    <li class="list-item"><a href="">古い順</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -692,13 +693,12 @@
                         </div>
                         <div class="d-md-none w-100">
                             <div class="content-bottom style-2 -mb-style1">
-                                <div class="wrap-select before-select">
-                                    <select name="select">
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                        <option value="最新">最新</option>
-                                    </select>
+                                <div class="show-more-action -orderby mb-0">
+                                    <a href="#" class="fake-select">新しい順</a>
+                                    <ul class="list-more list-unstyled">
+                                        <li class="list-item"><a href="">新しい順</a></li>
+                                        <li class="list-item"><a href="">古い順</a></li>
+                                    </ul>
                                 </div>
                                 <div class="content-top__right">
                                     <a href="javascript:void(0)" class="button style-2 btn__list-tick js-ckeck-all">マイリスト登録</a>
@@ -709,12 +709,13 @@
                     <div class="content-bottom style-2 d-none d-md-flex">
                         <div class="d-flex align-items-center ml-auto">
                             <p class="d-none d-md-block">並び替え</p>
-                            <div class="wrap-select before-select">
-                                <select name="select">
-                                    <option value="">新しい順</option>
-                                    <option value="">古い順</option>
-                                </select>
-                            </div>
+                            <div class="show-more-action -orderby mb-0">
+                                    <a href="#" class="fake-select">新しい順</a>
+                                    <ul class="list-more list-unstyled">
+                                        <li class="list-item"><a href="">新しい順</a></li>
+                                        <li class="list-item"><a href="">古い順</a></li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                     

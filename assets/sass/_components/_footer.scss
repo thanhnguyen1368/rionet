@@ -12,16 +12,14 @@
         margin-bottom: 45px;
     }
     &__menu {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex-content(wrap, center, null);
         max-width: 680px;
         margin: 0 auto 45px;
         text-align: left;
 
         &-item {
-            width: 33.333333%;
+            @include flex-col(33.333333%);
             padding-left: 30px;
-
             a {
                 position: relative;
                 display: block;
@@ -34,12 +32,10 @@
                     position: absolute;
                     top: 50%;
                     right: 0;
-                    width: 6px;
-                    height: 10px;
                     transform: translateY(-50%);
-                    content: "";
-                    background: url(../images/arrow-right.svg) center no-repeat;
-                    background-size: cover;
+                    content: "\e918";
+                    font-family: 'icomoon';
+                    font-size: 8px;
                     transition: all 0.3s;
                 }
 
@@ -52,6 +48,53 @@
 
             &:first-child, &:nth-child(4) {
                 padding-left: 0;
+            }
+        }
+    }
+    &__menu2 {
+        // @include flex-content(wrap, center, null);
+        max-width: 680px;
+        margin: 0 auto 35px;
+        // text-align: left;
+
+        &-item {
+            // @include flex-col(33.333333%);
+            position: relative;
+            display: inline-block;
+            padding: 0 25px 0 20px;
+            margin: 0 25px 20px;
+            a {
+                display: block;
+                color: $color-white;
+                font-weight: 500;
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    content: "\e918";
+                    font-family: 'icomoon';
+                    font-size: 8px;
+                    transition: all 0.3s;
+                }
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    margin-top: 1px;
+                    transform: translateY(-50%);
+                    background-size: cover;
+                    transition: all 0.3s;
+                    content: "\e916";
+                    font-family: 'icomoon';
+                    font-size: 13px;
+                }
+
+                &:hover {
+                    &:before {
+                        transform: translateY(-50%) translateX(5px);
+                    }
+                }
             }
         }
     }

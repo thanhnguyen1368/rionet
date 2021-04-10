@@ -1,7 +1,7 @@
 .image-box {
     background-color: $color-gray;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     font-size: 14px;
     line-height: 20px;
     display: inline-block;
@@ -422,11 +422,6 @@
         font-size: 15px;
         width: 100%;
         height: 46px;
-        img {
-            position: relative;
-            top: 3px;
-            right: -5px;
-        }
 
         &.color-blue {
             background: $color-blue-2;
@@ -447,16 +442,15 @@
     position: relative;
     font-size: 16px;
     .content-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-content(wrap, space-between, center);
         padding-bottom: 10px;
         border-bottom: 1px solid $color-primary;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         &__label {
             color: $color-primary;
             font-size: 24px;
             font-weight: 500;
+            font-family: 'NotoSansCJKjp';
         }
         &__right {
             display: flex;
@@ -465,6 +459,12 @@
                 margin-right: 15px;
             }
         }
+        &.-s2{
+            .fake-checkbox{
+                margin-right: 10px;
+            }
+        }
+        
         @media (max-width:767px) {
             flex-direction: column;
             border: 0!important;
@@ -480,6 +480,15 @@
                 align-self: flex-end;
                 >p{
                     display: none;
+                }
+            }
+            &.-s2{
+                .content-top__label{
+                    order: 2;
+                }
+                .btn__list-tick {
+                    margin-left: auto;
+                    margin-bottom: 15px;
                 }
             }
         }

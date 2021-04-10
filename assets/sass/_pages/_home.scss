@@ -891,8 +891,7 @@
     padding: 50px 0;
     .content {
         display: flex;
-        border-top: 1px solid #B2B2B2;
-        border-bottom: 1px solid #B2B2B2;
+        border: 1px solid #B2B2B2;
         padding: 30px 0;
         .res_link {
             display: none;
@@ -900,10 +899,10 @@
             text-decoration: underline;
         }
         img {
-            padding-left: 50px;
+            padding-left: 70px;
         }
         .text {
-            padding-left: 50px;
+            padding-left: 70px;
             p {
                 font-size: 16px;
                 font-weight: bold;
