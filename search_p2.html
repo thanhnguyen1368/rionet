@@ -62,29 +62,30 @@
                     商品名やシリーズ名など別のキーワードを使ってみてください。　（例　HB-A3AA、リオネットクラッセなど）<br>
                     単語と単語のあいだはスペースを入力すると両方の単語を含むページが検索されます。 　</p>
             </div>
+  
             <div class="section-header-search">
                 <form role="search" method="get" action="search.html" class="search__form">
                     <div class="input-group mb-4 mb-md-3 pb-2 pb-md-0">
                         <input type="text" name="s" class="form-control search-field -s2" placeholder="品名・品番・キーワードで検索" aria-label="品名・品番・キーワードで検索" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary search-submit"> 検索 <img src="./assets/images/icon-search.png" alt=""></button>
+                            <button type="submit" class="btn btn-primary search-submit"> 検索 <span class="icon-search"></span></button>
                         </div>
-                        <button class="btn btn-secondary btn-history"> 閲覧履歴</button>
+                        <button type="button" class="btn btn-secondary btn-history" data-toggle="modal" data-target="#modalHistory"> 閲覧履歴</button>
                     </div>
                     <div class="search__keyword">
                         <p class="search__keyword__title">おすすめキーワード</p>
                         <ul class="list-unstyled">
-                            <li class="active">耳かけ型</li>
-                            <li>軟骨伝道</li>
-                            <li>HC-〇〇</li>
-                            <li>リオネットクラッセ</li>
-                            <li>キーワード</li>
-                            <li>耳穴型</li>
-                            <li>HA-〇〇</li>
-                            <li>HB-〇〇</li>
-                            <li>防水型補聴器</li>
-                            <li>キーワード</li>
-                            <li>キーワード</li>
+                            <li class="active mb-order-1">耳かけ型</li>
+                            <li class="mb-order-2">軟骨伝道</li>
+                            <li class="mb-order-3">HC-〇〇</li>
+                            <li class="mb-order-7">リオネットクラッセ</li>
+                            <li class="mb-order-9">キーワード</li>
+                            <li class="mb-order-4">耳穴型</li>
+                            <li class="mb-order-5">HA-〇〇</li>
+                            <li class="mb-order-6">HB-〇〇</li>
+                            <li class="mb-order-8">防水型補聴器</li>
+                            <li class="mb-order-10">キーワード</li>
+                            <li class="mb-order-11">キーワード</li>
                         </ul>
                     </div>
                 </form>
@@ -711,7 +712,7 @@
             </div>
             <div class="modal-body">
                 <div class="">
-                    <a href="#" class="button btn-cancel">キャンセル</a>
+                    <a href="#" class="button btn-cancel" data-dismiss="modal">キャンセル</a>
                     <a href="#" class="button btn-ok">ログアウト</a>
                 </div>
             </div>

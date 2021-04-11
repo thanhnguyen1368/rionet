@@ -42,13 +42,16 @@ function choose_item(elm) {
 }
 function dn_accordion(){
     // console.log('innerWidth' + innerWidth);
-    let $element = $('.jd-accordionz');
-    let $accordion_parent = '#accordion-s1';
+
+    
+    let $element = $('.js-accordionz');
+    let $accordion_parent = '.js-accordionz';
 
     let button = $element.find('.bnt__collapse')
     let content = $element.find('.collapse')
 
-    if(innerWidth<768){
+    if(window.innerWidth<=768){
+        
         button.addClass('collapsed').attr('aria-expanded',false)
         content.removeClass('show').attr('data-parent',$accordion_parent)
 
@@ -60,18 +63,29 @@ function dn_accordion(){
     }
 }
 
-function focus_text(){
-    $('.js-focus-text').mouseover(function(){
-        let attr = $(this).text()
-        let data_attr = $(this).data('hover')
-        $(this).data('hover', attr); 
-        $(this).text(data_attr); 
-    }).mouseout(function(){
-        let attr = $(this).text()
-        let data_attr = $(this).data('hover')
-        $(this).data('hover', attr); 
-        $(this).text(data_attr); 
-    });
+function focus_text(innerWidth){
+console.log(innerWidth);
+    if(innerWidth >= 768){
+        $('.js-focus-text').addClass('js-pc')
+    }else{
+        $('.js-focus-text').removeClass('js-pc')
+    }
+
+    if($('.js-focus-text').hasClass('js-pc')){
+        console.log('11111111111');
+        $('.js-focus-text').mouseover(function(){
+            let attr = $(this).text()
+            let data_attr = $(this).data('hover')
+            $(this).data('hover', attr); 
+            $(this).text(data_attr); 
+        }).mouseout(function(){
+            let attr = $(this).text()
+            let data_attr = $(this).data('hover')
+            $(this).data('hover', attr); 
+            $(this).text(data_attr); 
+        });
+    }
+    
 }
 
 $(document).ready(function() {
@@ -79,14 +93,12 @@ $(document).ready(function() {
     // header_fixed();
     open_under('.show-more-action>a');
     choose_item('.nav-tabs__choose');
-    dn_accordion();
-
-    // Check PC
-    if(window.innerWidth >= 768){
-        focus_text();
-    }
     
+    dn_accordion();
+    // Check PC
 
+    focus_text(window.innerWidth);
+    
     $('.btn-menu').click(function() {
         $(this).toggleClass('active');
     });
@@ -460,11 +472,7 @@ function resStarted() {
 function resEnded(innerWidth) { 
     console.log('Resize Ended') 
     dn_accordion(innerWidth);
-
-    if(innerWidth>=768){
-        console.log(innerWidth);
-        focus_text()
-    }
+    focus_text(innerWidth)
 
 }
 
