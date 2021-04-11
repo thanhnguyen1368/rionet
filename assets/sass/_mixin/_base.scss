@@ -822,3 +822,10 @@ $color-blue: #ECF0FA;
 $color-blue-2: #1376FC;
 
 
+$lenght: 11;
+@for $i from 1 through $lenght {
+    .mb-order-#{$i} {
+        -ms-flex-order: $i;
+        order: $i;
+    }
+}
