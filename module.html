@@ -122,7 +122,7 @@
                 </div>
                 <div class="content content3">
                     <h2>画像小さいパターン</h2>
-                    <div class="row wow fadeInLeft" data-wow-duration="2s">
+                    <div class="row">
                         <div class="col-9 text">
                             標準テキスト16px行間1.6#333333この文字サイズは本文テキストをはじめとする本サイトの標準テキストサイズとなります。標準テキスト16px行間1.6#333333この文字サイズは本文テキストをはじめとする本サイトの標準テキストサイズとなります。標準テキスト16px行間1.6#333333この文字サイズは本文テキストをはじめとする本サイトの標準テキストサイズとなります。標準テキスト16px行間1.6#333333この文字サイズは本文テキストをはじめとする本サイトの標準テキストサイズとなります。標準テキスト16px行間1.6#333333この文字サイズは本文テキストをはじめと
                         </div>
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row wow fadeInRight" data-wow-duration="2s">
+                    <div class="row">
                         <div class="col-3 ">
                             <div class="img">
                                 <img src="./assets/images/img01.png" alt="">
@@ -521,7 +521,10 @@
         <section class="sec-btnn">
             <div class="container">
                 <div class="title">ボタン</div>
-                <button class="btn">もっと見る <img src="./assets/images/btn.png" alt=""></button>
+                <div class="btn__loadmore__wrap">
+                    <div class="btn__readmore -s1 text-center" data-show="4">もっと見る</div>
+                </div>
+
             </div>
         </section>
         <section class="sec-connect">
@@ -656,7 +659,7 @@
                     <img src="./assets/images/down_adobe.png" alt="down_adobe">
                     <div class="text">
                         <p>PDFファイルをご覧いただくには、Adobe Readerが必要です。</p>
-                        <span class="linkpdf">></span> <a class="linkpdf" href="#"> Adobe Readerのダウンロードページ<img src="./assets/images//icon-icon2.png" alt=""></a>
+                        <span class="icon-chevron-right"></span> <a class="linkpdf" href="#"> Adobe Readerのダウンロードページ<img src="./assets/images//icon-icon2.png" alt=""></a>
                     </div>
                     <span class="res_link">></span > <a class="res_link" href="#"> Adobe Readerのダウンロードページ<img src="./assets/images//icon-icon2.png" alt=""></a>
                 </div>
@@ -698,23 +701,22 @@
             <ul class="footer__button">
                 <li class="footer__button-item">
                     <a href="mylist.html" class="button">
-                    マイリスト
-                </a>
+                        マイリスト
+                    </a>
                 </li>
                 <li class="footer__button-item">
                     <a href="#" class="button" data-toggle="modal" data-target="#modalContact">
-                    サポート窓口
-                </a>
+                        サポート窓口
+                    </a>
                 </li>
                 <li class="footer__button-item">
-                    <a href="#" class="button download">
-                    リオネットフォーラム
-                </a>
+                    <a href="#" class="button download">リオネットフォーラム</a>
                 </li>
                 <li class="footer__button-item">
-                    <a href="#" class="button download" data-toggle="modal" data-target="#modalContact">
-                    オンライン注文
-                </a>
+                    <a href="#" class="button download" data-toggle="modal" data-target="#modalContact">オンライン注文</a>
+                </li>
+                <li class="footer__button-item">
+                    <a href="#" class="button download" data-toggle="modal" data-target="#modalContact">進捗状況</a>
                 </li>
             </ul>
             <div class="d-flex justify-content-center mb-4">

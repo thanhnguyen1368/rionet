@@ -105,6 +105,7 @@
             .item__cat{
                 position: relative; 
                 @include flex-content(wrap, null, center);
+                -ms-flex-align:center;
                 border: 1px solid #B7B7B7;
                 border-radius: 6px;
                 margin: 0 7.5px 10px;
@@ -114,15 +115,14 @@
                 width: 190px;
                 cursor: pointer;
                 line-height: normal;
-                min-height: 56px;
-           
+                height: 56px;
                 &:after{
-                    content: "\e901";
+                    content: "\e918";
                     font-family: 'icomoon';
                     position: absolute;
                     top: 50%;
                     right: 20px;
-                    font-size: 20px;
+                    font-size: 8px;
                     transform: translateY(-50%);
                 }
                 &:hover{
@@ -502,12 +502,12 @@
             color: $color_primary;
             padding-right: 20px;
             &::after{
-                content: "\e901";
+                content: "\e918";
                 font-family: 'icomoon';
                 position: absolute;
                 top: 0;
                 right: 0;
-                font-size: 20px;
+                font-size: 8px;
                 color: $color_primary;
             }
             &:hover{
