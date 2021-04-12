@@ -99,19 +99,15 @@
         }
     }
     &__button {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 800px;
-        margin: 0 auto 50px;
+        @include flex-content(wrap, space-between, center);
+        margin: 0 -10px 35px;
         &-item {
-            width: 25%;
-            padding: 0px 5px;
-
+            width: 20%;
+            padding: 0px 10px;
+            margin-bottom: 15px;
             .button {
                 width: 100%;
                 font-size: 12px;
-
                 &:hover {
                     background: #fff;
                     color: $color-primary;

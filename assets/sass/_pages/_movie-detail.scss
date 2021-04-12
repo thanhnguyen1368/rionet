@@ -2,11 +2,32 @@
     width: 100%;
     max-width: 690px;
     padding-bottom: 40px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     .video-box {
-        
         background: white;
         padding: 0;
+        .embed-responsive{
+            border-radius: 10px;
+        }
+        .icon-play{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 60px;
+            height: 60px;
+            display: block;
+            line-height: 60px;
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+            border-radius: 50%;
+            background-color: #0A4CE0;
+            &:before {
+                position: relative;
+                left: 3px;
+            }
+        }
     }
    
     .core__knowledge {

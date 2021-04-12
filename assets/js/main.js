@@ -66,13 +66,7 @@ function dn_accordion(){
 function focus_text(innerWidth){
 console.log(innerWidth);
     if(innerWidth >= 768){
-        $('.js-focus-text').addClass('js-pc')
-    }else{
-        $('.js-focus-text').removeClass('js-pc')
-    }
-
-    if($('.js-focus-text').hasClass('js-pc')){
-        console.log('11111111111');
+        console.log('PC');
         $('.js-focus-text').mouseover(function(){
             let attr = $(this).text()
             let data_attr = $(this).data('hover')
@@ -84,7 +78,10 @@ console.log(innerWidth);
             $(this).data('hover', attr); 
             $(this).text(data_attr); 
         });
+    }else{
+        console.log('MB');
     }
+
     
 }
 
@@ -287,7 +284,18 @@ $('.js-ckeck-all').on("click", function(e) {
         input_checkbox.after($html).remove();
     }
 });
-
+/**/
+$('.js-check-input2').on("click", function(e) {
+    // e.preventDefault();
+    let $checked = $( ".check-input:checked" ).length;
+    let check_all = $(this).closest('.content-top').find('.js-ckeck-all2')
+    if ($checked > 0) {
+        check_all.addClass('button-active');
+    } else {
+        check_all.removeClass('button-active');
+    }
+    
+});
 // load more
 $('.button-loadmore__download').on("click", function() {
     let pshow = $(this).attr('data-show')
@@ -309,7 +317,7 @@ $('.button-loadmore__movie1').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.movie1 .row')[0].innerHTML += '<div class="col-md-6"> <a href="movie-detail.html"> <div class="video-box"> <div class="video-box__thumb"> <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video1"> <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span> </button> </div> <div class="video-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <div class="meta"> <span>2017.11.29</span> </div> <input type="checkbox" class="check-input"> </div> <div class="title"> 補聴器販売に関わる基礎知識（初級編） </div> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p> </div> </div> </a> </div>'
+        $('.movie1 .row')[0].innerHTML += '<div class="col-md-6"> <div class="video-box"> <div class="video-box__thumb style-2"> <button class="btn_modal_video" data-toggle="modal" data-target="#modal_video" data-videosrc="https://www.youtube.com/embed/ITPk6iks_H8"> <img src="./assets/images/video.jpg" alt="image"><span class="icon-play"></span> </button> </div> <div class="video-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <div class="meta"><span>2017.11.29</span></div> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <a href="movie-detail.html"> <div class="title">補聴器販売に関わる基礎知識（初級編）</div> </a> <p class="des">補聴器販売に関わる基礎知識（初心者向け）の動画です。<br>補聴器販売に関わる基礎知識（初心者向け）の動画です。</p> </div> </div> </div>'
     };
 });
 
@@ -317,7 +325,7 @@ $('.button-loadmore__movie2').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.js-loadmore-movie2')[0].innerHTML += '<div class="col-md-6"> <div class="image-box -mb-sm"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">各種ダウンロード</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> Version.1.13.1(S) </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール… <span class="pdf">PDF</span></p> </div> </div> </div>'
+        $('.js-loadmore-movie2')[0].innerHTML += '<div class="col-md-6"> <div class="image-box -mb-sm"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">営業ニュース</span> <label class="fake-checkbox"><input type="checkbox" class="check-input"></input><div class="square"></div></label> </div> <div class="meta"> <span>2017.11.29</span> </div> <div class="title"> Version.1.13.1(S) </div> <p class="des">「UV ソフトイヤモールド」「オーダーイヤチップ」仕様変更のご案内<br> リオネットロコ・HB-L1用イヤモール…<span class="pdf">PDF</span></p> </div> </div> </div>'
     };
 });
 
@@ -325,7 +333,7 @@ $('.button-loadmore__product').on("click", function() {
    let pshow = $(this).attr('data-show')
    $(this).closest('.btn__loadmore__wrap').hide()
     for (var n = 0; n < pshow; ++n) {
-        $('.row_product')[0].innerHTML += '<div class="col-md-6"> <a href="product-detail.html"> <div class="image-box style-2"> <div class="image-box__thumb"> <div class="dnfix__thumb"><img src="./assets/images/image-box.jpg" alt="image"></div> </div> <div class="image-box__content"> <div class="content-button d-flex justify-content-between align-items-center"> <span class="button">製品情報</span> <input type="checkbox" class="check-input"> </div> <div class="title"> リオネットシリーズ </div> <p class="des">マキシエンス<br> HB-A3AA </p> <div class="bottom d-flex"> <p>発売時期</p> <div class="meta"> <span>2017.11.29</span> </div> </div> </div> </div> </a> </div>'
+        $('.row_product')[0].innerHTML += '<div class="col-md-6"><a href="product-detail.html"><div class="image-box style-2"><div class="image-box__thumb"><div class="dnfix__thumb"><img src="./assets/images/image-box.jpg"alt="image"></div></div><div class="image-box__content"><div class="content-button d-flex justify-content-between align-items-center"><span class="button">製品情報</span><label class="fake-checkbox"><input type="checkbox"class="check-input"></input><div class="square"></div></label></div><div class="title -st2">リオネットシリーズ</div><div class="des">マキシエンス<p class="sku"> HB-A3AA</p></div><div class="bottom d-flex"><p>発売時期</p><div class="meta"><span>2017.11.29</span></div></div></div></div></a></div>'
     };
 });
 $('.button-loadmore__product2').on("click", function() {
@@ -495,3 +503,13 @@ $('.modal--video .close').on('click', function(e) {
     e.preventDefault();
     $('.modal iframe').attr('src', '');
  });
+
+
+
+ $('#play').on('click', function(e) {
+	e.preventDefault();
+	$("#player")[0].src += "?autoplay=1";
+	// $('#player').show();
+	// $('#video-cover').hide();
+	$('#play').hide();
+})
