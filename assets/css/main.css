@@ -4204,7 +4204,7 @@ main, .breadcrumb-page {
     .search__keyword__title {
       font-size: 12px; }
     .search__keyword ul li {
-      padding: 0 10px; } }
+      padding: 0 8px; } }
 @media (max-width: 390px) {
   .search__form .search-field {
     font-size: 14px;
