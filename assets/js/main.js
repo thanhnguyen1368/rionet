@@ -81,8 +81,6 @@ console.log(innerWidth);
     }else{
         console.log('MB');
     }
-
-    
 }
 
 $(document).ready(function() {
@@ -259,7 +257,10 @@ var wow = new WOW({
 wow.init();
 
 $('.nav-tabs .nav-link').on("click", function(e) {
-    $('.nav-tabs__choose').text($(this).text())
+    // $('.nav-tabs__choose').text($(this).text())
+    
+    $('.nav-tabs__choose.has_under_open + .nav-tabs').slideUp()
+    $('.nav-tabs__choose').removeClass('has_under_open')
     $('.nav-tabs').removeClass('show');
 })
 
@@ -486,6 +487,7 @@ function resEnded(innerWidth) {
 
 $('.nav-tabs__choose').on("click",function(){
     $('#productSearchTab').slideToggle();
+    
 })
 // End Accordion
 
@@ -503,8 +505,6 @@ $('.modal--video .close').on('click', function(e) {
     e.preventDefault();
     $('.modal iframe').attr('src', '');
  });
-
-
 
  $('#play').on('click', function(e) {
 	e.preventDefault();

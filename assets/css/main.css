@@ -3744,8 +3744,6 @@ main, .breadcrumb-page {
             margin-bottom: 10px;
             border-radius: 6px;
             border: 1px solid #0A4CE0; }
-            .section-product-search .nav-tabs .nav-item .nav-link.active {
-              display: none; }
       .section-product-search .tab-content {
         padding: 20px 10px;
         margin-top: -40px; }
