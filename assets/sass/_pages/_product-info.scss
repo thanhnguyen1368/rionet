@@ -782,7 +782,7 @@
                     display: inline-block;
                     width: 12px;
                     height: 12px;
-                    margin-right: 6px;
+                    margin-right: 5px;
                     background-image: url(../images/tag.png);
                     background-size: contain;
                     background-position: center;
@@ -821,9 +821,10 @@
             }
             ul{
                 li{
-                    padding: 0 8px;
+                    padding: 0 9px;
                 }
             }
+
         }
     }
     @media (max-width: 390px) {
